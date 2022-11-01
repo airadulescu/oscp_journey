@@ -1,0 +1,95 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2022-10-30 20:13 HKT
+NSE: Loaded 181 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 20:13
+NSE Timing: About 83.33% done; ETC: 20:14 (0:00:06 remaining)
+Completed NSE at 20:14, 34.06s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 20:14
+Completed NSE at 20:14, 0.00s elapsed
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Initiating Ping Scan at 20:14
+Scanning 10.11.1.5 [4 ports]
+Completed Ping Scan at 20:14, 0.36s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:14
+Completed Parallel DNS resolution of 1 host. at 20:14, 0.00s elapsed
+Initiating SYN Stealth Scan at 20:14
+Scanning 10.11.1.5 [65535 ports]
+Discovered open port 1025/tcp on 10.11.1.5
+Discovered open port 135/tcp on 10.11.1.5
+Discovered open port 445/tcp on 10.11.1.5
+Discovered open port 139/tcp on 10.11.1.5
+SYN Stealth Scan Timing: About 14.91% done; ETC: 20:17 (0:02:57 remaining)
+SYN Stealth Scan Timing: About 41.93% done; ETC: 20:16 (0:01:24 remaining)
+Completed SYN Stealth Scan at 20:16, 111.27s elapsed (65535 total ports)
+Initiating Service scan at 20:16
+Scanning 4 services on 10.11.1.5
+Completed Service scan at 20:16, 7.21s elapsed (4 services on 1 host)
+NSE: Script scanning 10.11.1.5.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 20:16
+NSE Timing: About 99.00% done; ETC: 20:16 (0:00:00 remaining)
+Completed NSE at 20:16, 36.81s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 20:16
+Completed NSE at 20:17, 13.80s elapsed
+Nmap scan report for 10.11.1.5
+Host is up, received echo-reply ttl 127 (0.30s latency).
+Scanned at 2022-10-30 20:14:17 HKT for 169s
+Not shown: 63443 closed tcp ports (reset), 2088 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE      REASON          VERSION
+135/tcp  open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+139/tcp  open  netbios-ssn  syn-ack ttl 127 Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds syn-ack ttl 127 Microsoft Windows XP microsoft-ds
+1025/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+Service Info: OSs: Windows, Windows XP; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_xp
+
+Host script results:
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|           The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,
+|           Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary
+|           code via a crafted RPC request that triggers the overflow during path canonicalization.
+|           
+|     Disclosure date: 2008-10-23
+|     References:
+|       https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|_smb-vuln-ms10-061: NT_STATUS_OBJECT_NAME_NOT_FOUND
+|_smb-vuln-ms10-054: false
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 20:17
+Completed NSE at 20:17, 0.00s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 20:17
+Completed NSE at 20:17, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 203.93 seconds
+           Raw packets sent: 78611 (3.459MB) | Rcvd: 64843 (2.595MB)
