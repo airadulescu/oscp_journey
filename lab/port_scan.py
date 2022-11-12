@@ -11,10 +11,12 @@ import time
 import math
 
 
-def scan(ip, port, q_done):
-    if not os.path.exists(f"{ip}/port_server"):
-        os.system(f"mkdir {ip}/port_server")
-    cmd = f"sudo nmap {ip} -p {port} -sV --open --reason --script=auth,vuln > ./{ip}/port_server/{port}.txt"
+def scan(ip, q_done):
+    if not os.path.exists(ip):
+        os.system(f"mkdir {ip}")
+    cmd = (
+        f"sudo nmap {ip} -Pn -p 1-65535 -sS -T4 -O --open --reason -oN ./{ip}/ports.txt"
+    )
     try:
         rs = os.system(cmd)
     except Exception as e:
@@ -22,7 +24,7 @@ def scan(ip, port, q_done):
     q_done.put(port)
 
 
-def checkstatus(q_todo, q_done, host):
+def checkstatus(q_todo, q_done):
     array = ["\\", "|", "/", "-"]
     res = {}
     t0 = datetime.datetime.now()
@@ -50,12 +52,11 @@ def checkstatus(q_todo, q_done, host):
         s = ""
         os.system("clear")
         # l = 30
-        host_len = len(host) + 2
-        left = math.floor((30 - host_len) * 0.5)
-        msg = f"\r{'='*left} {ip} {'='*(30-host_len-left)}"
+        left = math.floor((30 - 10) * 0.5)
+        msg = f"\r{'='*left} IP Explore {'='*left}"
         for key in res.keys():
             msg += "\n"
-            ks = "Port:" + " " * (6 - len(key)) + key
+            ks = "IP:  " + key + " " * (17 - len(key))
             if res[key]:
                 msg += f"\r{ks} Scan Finished.  [*]"
             else:
@@ -79,19 +80,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-host", "--host", help="Target Host.", type=str)
     # TODO add output path
-    parser.add_argument(
-        "-ports", "--ports", help="Target Ports, use ',' to split each port.", type=str
-    )
     args = parser.parse_args()
 
-    ip = args.host
-    print(f"Target ip is {ip}")
-    ports = args.ports.split(",")
-    print(f"{len(ports)} Ports {ports}")
-    q_todo = multiprocessing.Manager().Queue(len(ports))
-    q_done = multiprocessing.Manager().Queue(len(ports))
-    for port in ports:
-        q_todo.put(port)
+    ips = args.host.split(",")
+    q_todo = multiprocessing.Manager().Queue(len(ips))
+    q_done = multiprocessing.Manager().Queue(len(ips))
+    for ip in ips:
+        q_todo.put(ip)
+        print(ip)
 
     # 启一个监控的线程
     print(f"启动监控线程")
@@ -100,16 +96,15 @@ if __name__ == "__main__":
         args=(
             q_todo,
             q_done,
-            ip,
         ),
     )
     controller.start()
 
     p = Pool(10)
-    for port in ports:
+    for ip in ips:
         p.apply_async(
             scan,
-            args=(ip, port, q_done),
+            args=(ip, q_done),
         )
 
     p.close()

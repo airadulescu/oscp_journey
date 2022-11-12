@@ -1,0 +1,5 @@
+windows/smb/ms17_010_psexec
+payload/windows/shell/reverse_tcp
+
+alice
+alice.ALICE
