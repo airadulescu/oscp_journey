@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Sun Nov 13 16:28:39 2022 as: nmap -p- --min-rate=5000 -vv -oA enum/all-ports.txt 10.11.1.5
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.11.1.5 ()	Status: Up
+Host: 10.11.1.5 ()	Ports: 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 1025/open/tcp//NFS-or-IIS///
+# Nmap done at Sun Nov 13 16:30:27 2022 -- 1 IP address (1 host up) scanned in 108.28 seconds

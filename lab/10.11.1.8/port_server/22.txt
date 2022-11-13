@@ -1,0 +1,51 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2022-11-13 15:16 HKT
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.11.1.8
+Host is up, received echo-reply ttl 63 (0.23s latency).
+
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 3.9p1 (protocol 1.99)
+| vulners: 
+|   cpe:/a:openbsd:openssh:3.9p1: 
+|     	SECURITYVULNS:VULN:7388	10.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:7388
+|     	PACKETSTORM:55074	10.0	https://vulners.com/packetstorm/PACKETSTORM:55074	*EXPLOIT*
+|     	CVE-2006-5051	9.3	https://vulners.com/cve/CVE-2006-5051
+|     	SECURITYVULNS:VULN:7640	7.8	https://vulners.com/securityvulns/SECURITYVULNS:VULN:7640
+|     	CVE-2006-4924	7.8	https://vulners.com/cve/CVE-2006-4924
+|     	CVE-2010-4478	7.5	https://vulners.com/cve/CVE-2010-4478
+|     	CVE-2004-1653	6.4	https://vulners.com/cve/CVE-2004-1653
+|     	SECURITYVULNS:VULN:7004	6.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:7004
+|     	SSV:60656	5.0	https://vulners.com/seebug/SSV:60656	*EXPLOIT*
+|     	SECURITYVULNS:VULN:7105	5.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:7105
+|     	PACKETSTORM:73600	5.0	https://vulners.com/packetstorm/PACKETSTORM:73600	*EXPLOIT*
+|     	CVE-2010-5107	5.0	https://vulners.com/cve/CVE-2010-5107
+|     	CVE-2007-2243	5.0	https://vulners.com/cve/CVE-2007-2243
+|     	CVE-2006-5052	5.0	https://vulners.com/cve/CVE-2006-5052
+|     	CVE-2005-2798	5.0	https://vulners.com/cve/CVE-2005-2798
+|     	SSV:66339	4.9	https://vulners.com/seebug/SSV:66339	*EXPLOIT*
+|     	SSV:10777	4.9	https://vulners.com/seebug/SSV:10777	*EXPLOIT*
+|     	EXPLOITPACK:B5E7D30E7583980F37EF6DBC0B05FBC3	4.9	https://vulners.com/exploitpack/EXPLOITPACK:B5E7D30E7583980F37EF6DBC0B05FBC3	*EXPLOIT*
+|     	EDB-ID:8163	4.9	https://vulners.com/exploitdb/EDB-ID:8163	*EXPLOIT*
+|     	CVE-2009-0537	4.9	https://vulners.com/cve/CVE-2009-0537
+|     	SSV:1979	4.6	https://vulners.com/seebug/SSV:1979	*EXPLOIT*
+|     	CVE-2006-0225	4.6	https://vulners.com/cve/CVE-2006-0225
+|     	CVE-2012-0814	3.5	https://vulners.com/cve/CVE-2012-0814
+|     	CVE-2011-5000	3.5	https://vulners.com/cve/CVE-2011-5000
+|     	CVE-2011-4327	2.1	https://vulners.com/cve/CVE-2011-4327
+|     	CVE-2008-3259	1.2	https://vulners.com/cve/CVE-2008-3259
+|_    	CVE-2005-2666	1.2	https://vulners.com/cve/CVE-2005-2666
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     gssapi-with-mic
+|_    password
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 85.21 seconds

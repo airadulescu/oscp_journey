@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Sun Nov 13 16:29:34 2022 as: nmap -vv -sCV -T4 -oA enum/services.txt -p 135,139,445,1025 10.11.1.5
+# Ports scanned: TCP(4;135,139,445,1025) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.11.1.5 ()	Status: Up
+Host: 10.11.1.5 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Microsoft Windows XP microsoft-ds/, 1025/open/tcp//msrpc//Microsoft Windows RPC/
+# Nmap done at Sun Nov 13 16:30:13 2022 -- 1 IP address (1 host up) scanned in 38.95 seconds

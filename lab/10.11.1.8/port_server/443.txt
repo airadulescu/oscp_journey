@@ -1,0 +1,236 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2022-11-13 15:16 HKT
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.11.1.8
+Host is up, received syn-ack ttl 63 (0.23s latency).
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 Apache httpd 2.0.52 ((CentOS))
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  BID:49303  CVE:CVE-2011-3192
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|       https://www.securityfocus.com/bid/49303
+|_      https://www.tenable.com/plugins/nessus/55976
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-server-header: Apache/2.0.52 (CentOS)
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       http://ha.ckers.org/slowloris/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_sslv2-drown: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| ssl-ccs-injection: 
+|   VULNERABLE:
+|   SSL/TLS MITM vulnerability (CCS Injection)
+|     State: VULNERABLE
+|     Risk factor: High
+|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+|       does not properly restrict processing of ChangeCipherSpec messages,
+|       which allows man-in-the-middle attackers to trigger use of a zero
+|       length master key in certain OpenSSL-to-OpenSSL communications, and
+|       consequently hijack sessions or obtain sensitive information, via
+|       a crafted TLS handshake, aka the "CCS Injection" vulnerability.
+|           
+|     References:
+|       http://www.cvedetails.com/cve/2014-0224
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+|_      http://www.openssl.org/news/secadv_20140605.txt
+| http-enum: 
+|   /robots.txt: Robots file
+|   /icons/: Potentially interesting directory w/ listing on 'apache/2.0.52 (centos)'
+|   /internal/: Potentially interesting folder
+|_  /manual/: Potentially interesting folder
+| ssl-dh-params: 
+|   VULNERABLE:
+|   Transport Layer Security (TLS) Protocol DHE_EXPORT Ciphers Downgrade MitM (Logjam)
+|     State: VULNERABLE
+|     IDs:  BID:74733  CVE:CVE-2015-4000
+|       The Transport Layer Security (TLS) protocol contains a flaw that is
+|       triggered when handling Diffie-Hellman key exchanges defined with
+|       the DHE_EXPORT cipher. This may allow a man-in-the-middle attacker
+|       to downgrade the security of a TLS session to 512-bit export-grade
+|       cryptography, which is significantly weaker, allowing the attacker
+|       to more easily break the encryption and monitor or tamper with
+|       the encrypted stream.
+|     Disclosure date: 2015-5-19
+|     Check results:
+|       EXPORT-GRADE DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: mod_ssl 2.0.x/512-bit MODP group with safe prime modulus
+|             Modulus Length: 512
+|             Generator Length: 8
+|             Public Key Length: 512
+|     References:
+|       https://www.securityfocus.com/bid/74733
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4000
+|       https://weakdh.org
+|   
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     State: VULNERABLE
+|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+|       of insufficient strength, especially those using one of a few commonly
+|       shared groups, may be susceptible to passive eavesdropping attacks.
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_DES_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: mod_ssl 2.0.x/1024-bit MODP group with safe prime modulus
+|             Modulus Length: 1024
+|             Generator Length: 8
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+| ssl-poodle: 
+|   VULNERABLE:
+|   SSL POODLE information leak
+|     State: VULNERABLE
+|     IDs:  BID:70574  CVE:CVE-2014-3566
+|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+|           products, uses nondeterministic CBC padding, which makes it easier
+|           for man-in-the-middle attackers to obtain cleartext data via a
+|           padding-oracle attack, aka the "POODLE" issue.
+|     Disclosure date: 2014-10-14
+|     Check results:
+|       TLS_RSA_WITH_AES_128_CBC_SHA
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+|       https://www.openssl.org/~bodo/ssl-poodle.pdf
+|       https://www.imperialviolet.org/2014/10/14/poodle.html
+|_      https://www.securityfocus.com/bid/70574
+|_http-trace: TRACE is enabled
+|_http-config-backup: ERROR: Script execution failed (use -d to debug)
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| vulners: 
+|   cpe:/a:apache:http_server:2.0.52: 
+|     	CVE-2005-2700	10.0	https://vulners.com/cve/CVE-2005-2700
+|     	SSV:72403	7.8	https://vulners.com/seebug/SSV:72403	*EXPLOIT*
+|     	SSV:26043	7.8	https://vulners.com/seebug/SSV:26043	*EXPLOIT*
+|     	SSV:20899	7.8	https://vulners.com/seebug/SSV:20899	*EXPLOIT*
+|     	PACKETSTORM:126851	7.8	https://vulners.com/packetstorm/PACKETSTORM:126851	*EXPLOIT*
+|     	PACKETSTORM:123527	7.8	https://vulners.com/packetstorm/PACKETSTORM:123527	*EXPLOIT*
+|     	PACKETSTORM:122962	7.8	https://vulners.com/packetstorm/PACKETSTORM:122962	*EXPLOIT*
+|     	EXPLOITPACK:186B5FCF5C57B52642E62C06BABC6F83	7.8	https://vulners.com/exploitpack/EXPLOITPACK:186B5FCF5C57B52642E62C06BABC6F83	*EXPLOIT*
+|     	EDB-ID:18221	7.8	https://vulners.com/exploitdb/EDB-ID:18221	*EXPLOIT*
+|     	CVE-2011-3192	7.8	https://vulners.com/cve/CVE-2011-3192
+|     	1337DAY-ID-21170	7.8	https://vulners.com/zdt/1337DAY-ID-21170	*EXPLOIT*
+|     	SSV:6610	7.6	https://vulners.com/seebug/SSV:6610	*EXPLOIT*
+|     	SSV:63874	7.6	https://vulners.com/seebug/SSV:63874	*EXPLOIT*
+|     	SSV:429	7.6	https://vulners.com/seebug/SSV:429	*EXPLOIT*
+|     	SSV:16391	7.6	https://vulners.com/seebug/SSV:16391	*EXPLOIT*
+|     	SAINT:B572402CE6E5C851D7572BF044507A14	7.6	https://vulners.com/saint/SAINT:B572402CE6E5C851D7572BF044507A14	*EXPLOIT*
+|     	SAINT:386ECCECD3AA34FA1E84E6D3D2B71C7B	7.6	https://vulners.com/saint/SAINT:386ECCECD3AA34FA1E84E6D3D2B71C7B	*EXPLOIT*
+|     	SAINT:35A5AA91DCF68555669689272BFFD3E7	7.6	https://vulners.com/saint/SAINT:35A5AA91DCF68555669689272BFFD3E7	*EXPLOIT*
+|     	SAINT:14705540EFEE2160EBFBAF5BDA3E828C	7.6	https://vulners.com/saint/SAINT:14705540EFEE2160EBFBAF5BDA3E828C	*EXPLOIT*
+|     	PACKETSTORM:83108	7.6	https://vulners.com/packetstorm/PACKETSTORM:83108	*EXPLOIT*
+|     	PACKETSTORM:62377	7.6	https://vulners.com/packetstorm/PACKETSTORM:62377	*EXPLOIT*
+|     	PACKETSTORM:56989	7.6	https://vulners.com/packetstorm/PACKETSTORM:56989	*EXPLOIT*
+|     	PACKETSTORM:55727	7.6	https://vulners.com/packetstorm/PACKETSTORM:55727	*EXPLOIT*
+|     	PACKETSTORM:49400	7.6	https://vulners.com/packetstorm/PACKETSTORM:49400	*EXPLOIT*
+|     	EXPLOITPACK:8FEEBCD1B617ED74B8D2179061252A44	7.6	https://vulners.com/exploitpack/EXPLOITPACK:8FEEBCD1B617ED74B8D2179061252A44	*EXPLOIT*
+|     	EXPLOITPACK:6E3090CD46CEEE08D52992589E824D90	7.6	https://vulners.com/exploitpack/EXPLOITPACK:6E3090CD46CEEE08D52992589E824D90	*EXPLOIT*
+|     	EDB-ID:3680	7.6	https://vulners.com/exploitdb/EDB-ID:3680	*EXPLOIT*
+|     	EDB-ID:2237	7.6	https://vulners.com/exploitdb/EDB-ID:2237	*EXPLOIT*
+|     	CVE-2006-3747	7.6	https://vulners.com/cve/CVE-2006-3747
+|     	SSV:12673	7.5	https://vulners.com/seebug/SSV:12673	*EXPLOIT*
+|     	SSV:12626	7.5	https://vulners.com/seebug/SSV:12626	*EXPLOIT*
+|     	CVE-2005-1344	7.5	https://vulners.com/cve/CVE-2005-1344
+|     	CVE-2004-0885	7.5	https://vulners.com/cve/CVE-2004-0885
+|     	SSV:11802	7.1	https://vulners.com/seebug/SSV:11802	*EXPLOIT*
+|     	CVE-2009-1891	7.1	https://vulners.com/cve/CVE-2009-1891
+|     	CVE-2006-4154	6.8	https://vulners.com/cve/CVE-2006-4154
+|     	SSV:4227	5.4	https://vulners.com/seebug/SSV:4227	*EXPLOIT*
+|     	CVE-2005-3357	5.4	https://vulners.com/cve/CVE-2005-3357
+|     	SSV:60788	5.1	https://vulners.com/seebug/SSV:60788	*EXPLOIT*
+|     	CVE-2013-1862	5.1	https://vulners.com/cve/CVE-2013-1862
+|     	SSV:63025	5.0	https://vulners.com/seebug/SSV:63025	*EXPLOIT*
+|     	SSV:20993	5.0	https://vulners.com/seebug/SSV:20993	*EXPLOIT*
+|     	SSV:20979	5.0	https://vulners.com/seebug/SSV:20979	*EXPLOIT*
+|     	SSV:20969	5.0	https://vulners.com/seebug/SSV:20969	*EXPLOIT*
+|     	SSV:19592	5.0	https://vulners.com/seebug/SSV:19592	*EXPLOIT*
+|     	SSV:15491	5.0	https://vulners.com/seebug/SSV:15491	*EXPLOIT*
+|     	PACKETSTORM:35097	5.0	https://vulners.com/packetstorm/PACKETSTORM:35097	*EXPLOIT*
+|     	PACKETSTORM:105672	5.0	https://vulners.com/packetstorm/PACKETSTORM:105672	*EXPLOIT*
+|     	PACKETSTORM:105591	5.0	https://vulners.com/packetstorm/PACKETSTORM:105591	*EXPLOIT*
+|     	EXPLOITPACK:E9EA96C2B20207865E30D83F6DC37198	5.0	https://vulners.com/exploitpack/EXPLOITPACK:E9EA96C2B20207865E30D83F6DC37198	*EXPLOIT*
+|     	EXPLOITPACK:460143F0ACAE117DD79BD75EDFDA154B	5.0	https://vulners.com/exploitpack/EXPLOITPACK:460143F0ACAE117DD79BD75EDFDA154B	*EXPLOIT*
+|     	EDB-ID:855	5.0	https://vulners.com/exploitdb/EDB-ID:855	*EXPLOIT*
+|     	EDB-ID:17969	5.0	https://vulners.com/exploitdb/EDB-ID:17969	*EXPLOIT*
+|     	CVE-2011-3368	5.0	https://vulners.com/cve/CVE-2011-3368
+|     	CVE-2009-3095	5.0	https://vulners.com/cve/CVE-2009-3095
+|     	CVE-2008-2364	5.0	https://vulners.com/cve/CVE-2008-2364
+|     	CVE-2007-6750	5.0	https://vulners.com/cve/CVE-2007-6750
+|     	CVE-2007-3847	5.0	https://vulners.com/cve/CVE-2007-3847
+|     	CVE-2005-2970	5.0	https://vulners.com/cve/CVE-2005-2970
+|     	CVE-2005-2728	5.0	https://vulners.com/cve/CVE-2005-2728
+|     	CVE-2005-1268	5.0	https://vulners.com/cve/CVE-2005-1268
+|     	CVE-2004-0942	5.0	https://vulners.com/cve/CVE-2004-0942
+|     	SSV:2174	4.7	https://vulners.com/seebug/SSV:2174	*EXPLOIT*
+|     	CVE-2007-3304	4.7	https://vulners.com/cve/CVE-2007-3304
+|     	SSV:30024	4.6	https://vulners.com/seebug/SSV:30024	*EXPLOIT*
+|     	CVE-2012-0031	4.6	https://vulners.com/cve/CVE-2012-0031
+|     	1337DAY-ID-27465	4.6	https://vulners.com/zdt/1337DAY-ID-27465	*EXPLOIT*
+|     	SSV:23169	4.4	https://vulners.com/seebug/SSV:23169	*EXPLOIT*
+|     	CVE-2011-3607	4.4	https://vulners.com/cve/CVE-2011-3607
+|     	1337DAY-ID-27473	4.4	https://vulners.com/zdt/1337DAY-ID-27473	*EXPLOIT*
+|     	SSV:71772	4.3	https://vulners.com/seebug/SSV:71772	*EXPLOIT*
+|     	SSV:4786	4.3	https://vulners.com/seebug/SSV:4786	*EXPLOIT*
+|     	SSV:3804	4.3	https://vulners.com/seebug/SSV:3804	*EXPLOIT*
+|     	SSV:30094	4.3	https://vulners.com/seebug/SSV:30094	*EXPLOIT*
+|     	SSV:30056	4.3	https://vulners.com/seebug/SSV:30056	*EXPLOIT*
+|     	SSV:2819	4.3	https://vulners.com/seebug/SSV:2819	*EXPLOIT*
+|     	SSV:2818	4.3	https://vulners.com/seebug/SSV:2818	*EXPLOIT*
+|     	SSV:2801	4.3	https://vulners.com/seebug/SSV:2801	*EXPLOIT*
+|     	SSV:24250	4.3	https://vulners.com/seebug/SSV:24250	*EXPLOIT*
+|     	SSV:20555	4.3	https://vulners.com/seebug/SSV:20555	*EXPLOIT*
+|     	SSV:19320	4.3	https://vulners.com/seebug/SSV:19320	*EXPLOIT*
+|     	PACKETSTORM:61420	4.3	https://vulners.com/packetstorm/PACKETSTORM:61420	*EXPLOIT*
+|     	PACKETSTORM:109284	4.3	https://vulners.com/packetstorm/PACKETSTORM:109284	*EXPLOIT*
+|     	PACKETSTORM:102234	4.3	https://vulners.com/packetstorm/PACKETSTORM:102234	*EXPLOIT*
+|     	EXPLOITPACK:FDCB3D93694E48CD5EE27CE55D6801DE	4.3	https://vulners.com/exploitpack/EXPLOITPACK:FDCB3D93694E48CD5EE27CE55D6801DE	*EXPLOIT*
+|     	EXPLOITPACK:683C3B1D02827D6B32706DB1D146B2D8	4.3	https://vulners.com/exploitpack/EXPLOITPACK:683C3B1D02827D6B32706DB1D146B2D8	*EXPLOIT*
+|     	EDB-ID:17393	4.3	https://vulners.com/exploitdb/EDB-ID:17393	*EXPLOIT*
+|     	CVE-2012-0053	4.3	https://vulners.com/cve/CVE-2012-0053
+|     	CVE-2011-4317	4.3	https://vulners.com/cve/CVE-2011-4317
+|     	CVE-2011-3639	4.3	https://vulners.com/cve/CVE-2011-3639
+|     	CVE-2011-0419	4.3	https://vulners.com/cve/CVE-2011-0419
+|     	CVE-2010-0434	4.3	https://vulners.com/cve/CVE-2010-0434
+|     	CVE-2008-2939	4.3	https://vulners.com/cve/CVE-2008-2939
+|     	CVE-2008-2168	4.3	https://vulners.com/cve/CVE-2008-2168
+|     	CVE-2008-0005	4.3	https://vulners.com/cve/CVE-2008-0005
+|     	CVE-2007-6388	4.3	https://vulners.com/cve/CVE-2007-6388
+|     	CVE-2007-6203	4.3	https://vulners.com/cve/CVE-2007-6203
+|     	CVE-2007-5000	4.3	https://vulners.com/cve/CVE-2007-5000
+|     	CVE-2007-4465	4.3	https://vulners.com/cve/CVE-2007-4465
+|     	CVE-2006-5752	4.3	https://vulners.com/cve/CVE-2006-5752
+|     	CVE-2005-3352	4.3	https://vulners.com/cve/CVE-2005-3352
+|     	CVE-2005-2088	4.3	https://vulners.com/cve/CVE-2005-2088
+|     	SSV:12628	2.6	https://vulners.com/seebug/SSV:12628	*EXPLOIT*
+|     	CVE-2009-3094	2.6	https://vulners.com/cve/CVE-2009-3094
+|     	SSV:60250	1.2	https://vulners.com/seebug/SSV:60250	*EXPLOIT*
+|_    	CVE-2011-4415	1.2	https://vulners.com/cve/CVE-2011-4415
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 2359.86 seconds

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Nov 13 16:29:34 2022 as: nmap -vv -sCV -T4 -oA enum/services.txt -p 135,139,445,1025 10.11.1.5 -->
+<nmaprun scanner="nmap" args="nmap -vv -sCV -T4 -oA enum/services.txt -p 135,139,445,1025 10.11.1.5" start="1668328174" startstr="Sun Nov 13 16:29:34 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="135,139,445,1025"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668328175"/>
+<taskend task="NSE" time="1668328175"/>
+<taskbegin task="NSE" time="1668328175"/>
+<taskend task="NSE" time="1668328175"/>
+<taskbegin task="NSE" time="1668328175"/>
+<taskend task="NSE" time="1668328175"/>
+<taskbegin task="Ping Scan" time="1668328175"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.11.1.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1668328175" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1668328175"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1668328175"/>
+<taskbegin task="Connect Scan" time="1668328175"/>
+<taskend task="Connect Scan" time="1668328175" extrainfo="4 total ports"/>
+<taskbegin task="Service scan" time="1668328175"/>
+<taskend task="Service scan" time="1668328183" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1668328183"/>
+<taskend task="NSE" time="1668328213"/>
+<taskbegin task="NSE" time="1668328213"/>
+<taskend task="NSE" time="1668328213"/>
+<taskbegin task="NSE" time="1668328213"/>
+<taskend task="NSE" time="1668328213"/>
+<host starttime="1668328175" endtime="1668328213"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Microsoft Windows XP microsoft-ds" ostype="Windows XP" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows_xp</cpe></service></port>
+<port protocol="tcp" portid="1025"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="clock-skew" output="0s"><elem key="median">0</elem>
+<elem key="stddev">0</elem>
+<elem key="mean">0</elem>
+<elem key="count">1</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 36286/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 22424/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 43481/udp): CLEAN (Failed to receive data)&#xa;  Check 4 (port 55739/udp): CLEAN (Failed to receive data)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="nbstat" output="NetBIOS name: ALICE, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 005056baba50 (VMware)&#xa;Names:&#xa;  ALICE&lt;00&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  ALICE&lt;20&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  THINC&lt;00&gt;            Flags: &lt;group&gt;&lt;active&gt;&#xa;  ALICE&lt;03&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  THINC&lt;1e&gt;            Flags: &lt;group&gt;&lt;active&gt;&#xa;  THINC&lt;1d&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;Statistics:&#xa;  005056baba500000000000000000000000&#xa;  0000000000000000000000000000000000&#xa;  0000000000000000000000000000"/><script id="smb2-security-mode" output="Couldn&apos;t establish a SMBv2 connection."/><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script></hostscript><times srtt="309919" rttvar="99192" to="706687"/>
+</host>
+<taskbegin task="NSE" time="1668328213"/>
+<taskend task="NSE" time="1668328213"/>
+<taskbegin task="NSE" time="1668328213"/>
+<taskend task="NSE" time="1668328213"/>
+<taskbegin task="NSE" time="1668328213"/>
+<taskend task="NSE" time="1668328213"/>
+<runstats><finished time="1668328213" timestr="Sun Nov 13 16:30:13 2022" summary="Nmap done at Sun Nov 13 16:30:13 2022; 1 IP address (1 host up) scanned in 38.95 seconds" elapsed="38.95" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
