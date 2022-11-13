@@ -1,0 +1,51 @@
+# Nmap 7.93 scan initiated Sun Nov 13 18:46:56 2022 as: nmap -Pn -sCV -vv -T4 -oN enum/services -p 3389 10.11.1.7
+Nmap scan report for 10.11.1.7
+Host is up, received user-set (0.31s latency).
+Scanned at 2022-11-13 18:46:56 HKT for 16s
+
+PORT     STATE SERVICE       REASON  VERSION
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: PEDRO
+|   NetBIOS_Domain_Name: PEDRO
+|   NetBIOS_Computer_Name: PEDRO
+|   DNS_Domain_Name: pedro
+|   DNS_Computer_Name: pedro
+|   Product_Version: 10.0.17134
+|_  System_Time: 2022-11-13T10:47:04+00:00
+| ssl-cert: Subject: commonName=pedro
+| Issuer: commonName=pedro
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-07-18T16:07:06
+| Not valid after:  2023-01-17T16:07:06
+| MD5:   7f57df538f534278e0f2d13e4183e5a2
+| SHA-1: fa9aff82b53e41203547519952ffeb32fcafbbcc
+| -----BEGIN CERTIFICATE-----
+| MIICzjCCAbagAwIBAgIQLp4lCXEiNa9BVdn2DI01ejANBgkqhkiG9w0BAQsFADAQ
+| MQ4wDAYDVQQDEwVwZWRybzAeFw0yMjA3MTgxNjA3MDZaFw0yMzAxMTcxNjA3MDZa
+| MBAxDjAMBgNVBAMTBXBlZHJvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+| AQEAt0TQBfBJBqq2ewRgyUjRjuRPlRzByEGgCTjHKGGCOk4KqE7pcbjP07FmibMX
+| 3iZ1EMBV+qKmHH2AhcAEzMry1skcIkyv7T0e71GBppQcYE8m1qZGQW2U3UPlMdwC
+| 8YEH2QUuWLT9Aip88JV9Dmo8cAz9DvzE4A6S2uMOstbHJhJeIsZiIx51jt89QJZs
+| lT1wQrQIYtMYsDyM8LXQWfLU1tIure9TYFX8sTUB1Ga3mNTQVJnxXrYEa+iB+d9h
+| 2ntA03gw9N9AUrg/ziXffHcdiXW4/imm8uWJeNNWVIssPwDftkkOLuEjM+W8iN5n
+| VkwqKkof0WD/uYgIo/BFjYwfjQIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD
+| ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAJ8LqBLDH0mLcJZDOwBS
+| 2mWP8a39tMgddC1tblzWHwkkTYl/Xn+aM+kys+Hp+KyZtcmzBVbX5vNfifN8s2Rw
+| Wbh19U/QxcHP7snQ+QwAhUJLJZNTFvNIiP2agQOUFbX0Vefb+oYCNFqJQUh27fHA
+| P1k2abXebuIPFByAwrNardYPqoFlVkQUtSP4pd9Hr56m/V7zoM60kkuZ+sPQd7fe
+| Cz2RDD3iJoZzeKTq7CP7tAOhzY9IoS2c7k7nwK3HK73uwqdCbO0fRpRdWtWtrIFj
+| BX7fODlF6ZdvnAPgB7haV0Rfm8VKKh7zQ7BC4agk4w3edD25wf/gggvRFc/kVDxK
+| vAk=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2022-11-13T10:47:08+00:00; -1s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -2s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 13 18:47:12 2022 -- 1 IP address (1 host up) scanned in 15.89 seconds

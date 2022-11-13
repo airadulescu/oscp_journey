@@ -1,0 +1,8 @@
+# Nmap 7.93 scan initiated Sun Nov 13 18:47:54 2022 as: nmap -Pn -p- --min-rate=5000 -oN enum/all-ports 10.11.1.7
+Nmap scan report for 10.11.1.7
+Host is up (0.31s latency).
+Not shown: 65534 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+# Nmap done at Sun Nov 13 18:48:50 2022 -- 1 IP address (1 host up) scanned in 56.87 seconds
