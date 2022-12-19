@@ -1,0 +1,1 @@
+# Nmap 7.93 scan initiated Sun Dec 18 21:15:03 2022 as: nmap -p- -Pn -vv -sA -T4 -sC -sU -o ports.txt 10.129.3.164
