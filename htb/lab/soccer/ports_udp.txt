@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Mon Dec 19 21:29:59 2022 as: nmap -sS -T4 -p- -A -vv -sU -oN ports_udp.txt 10.129.117.129
+Increasing send delay for 10.129.117.129 from 0 to 50 due to 11 out of 17 dropped probes since last increase.
+Warning: 10.129.117.129 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.129.117.129 from 200 to 400 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.129.117.129 from 400 to 800 due to 11 out of 13 dropped probes since last increase.
