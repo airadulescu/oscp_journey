@@ -1,0 +1,25 @@
+# Nmap 7.93 scan initiated Tue Jan  3 14:18:55 2023 as: nmap -T4 -p- -sT -Pn -oN ports.txt -vv 10.129.173.195
+Increasing send delay for 10.129.173.195 from 5 to 10 due to 11 out of 12 dropped probes since last increase.
+Warning: 10.129.173.195 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.129.173.195
+Host is up, received user-set (0.24s latency).
+Scanned at 2023-01-03 14:19:01 CST for 1598s
+Not shown: 65521 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE    REASON
+22/tcp    open     ssh        syn-ack
+80/tcp    open     http       syn-ack
+2239/tcp  filtered imagequery no-response
+2542/tcp  filtered udrawgraph no-response
+12145/tcp filtered unknown    no-response
+12312/tcp filtered unknown    no-response
+20853/tcp filtered unknown    no-response
+29424/tcp filtered unknown    no-response
+46227/tcp filtered unknown    no-response
+48895/tcp filtered unknown    no-response
+49309/tcp filtered unknown    no-response
+49963/tcp filtered unknown    no-response
+52255/tcp filtered unknown    no-response
+64999/tcp open     unknown    syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Jan  3 14:45:39 2023 -- 1 IP address (1 host up) scanned in 1604.11 seconds

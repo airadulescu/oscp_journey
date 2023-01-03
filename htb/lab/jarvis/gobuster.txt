@@ -1,0 +1,16 @@
+/.php                [33m (Status: 403)[0m [Size: 293]
+/index.php           [32m (Status: 200)[0m [Size: 23628]
+/.html               [33m (Status: 403)[0m [Size: 294]
+/images              [36m (Status: 301)[0m [Size: 317][34m [--> http://10.129.173.195/images/][0m
+/nav.php             [32m (Status: 200)[0m [Size: 1333]
+/footer.php          [32m (Status: 200)[0m [Size: 2237]
+/css                 [36m (Status: 301)[0m [Size: 314][34m [--> http://10.129.173.195/css/][0m
+/js                  [36m (Status: 301)[0m [Size: 313][34m [--> http://10.129.173.195/js/][0m
+/fonts               [36m (Status: 301)[0m [Size: 316][34m [--> http://10.129.173.195/fonts/][0m
+/phpmyadmin          [36m (Status: 301)[0m [Size: 321][34m [--> http://10.129.173.195/phpmyadmin/][0m
+/connection.php      [32m (Status: 200)[0m [Size: 0]
+/room.php            [36m (Status: 302)[0m [Size: 3024][34m [--> index.php][0m
+/.html               [33m (Status: 403)[0m [Size: 294]
+/.php                [33m (Status: 403)[0m [Size: 293]
+/sass                [36m (Status: 301)[0m [Size: 315][34m [--> http://10.129.173.195/sass/][0m
+/server-status       [33m (Status: 403)[0m [Size: 302]
