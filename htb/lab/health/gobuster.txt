@@ -1,0 +1,7 @@
+/.php                [33m (Status: 403)[0m [Size: 279]
+/index.php           [32m (Status: 200)[0m [Size: 7366]
+/.html               [33m (Status: 403)[0m [Size: 279]
+/css                 [36m (Status: 301)[0m [Size: 314][34m [--> http://10.129.193.186/css/][0m
+/js                  [36m (Status: 301)[0m [Size: 313][34m [--> http://10.129.193.186/js/][0m
+/javascript          [36m (Status: 301)[0m [Size: 321][34m [--> http://10.129.193.186/javascript/][0m
+/robots.txt          [32m (Status: 200)[0m [Size: 24]

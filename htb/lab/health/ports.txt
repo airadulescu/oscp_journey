@@ -1,0 +1,6 @@
+# Nmap 7.93 scan initiated Thu Dec 22 16:21:35 2022 as: nmap -T4 -p- -A -vv -sT -sV -O --script=vuln,auth -oN ports.txt -vv 10.129.193.186
+Warning: 10.129.193.186 giving up on port because retransmission cap hit (6).
+adjust_timeouts2: packet supposedly had rtt of -1340861 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1340861 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1343488 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1343488 microseconds.  Ignoring time.
