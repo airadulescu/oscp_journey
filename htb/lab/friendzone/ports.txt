@@ -1,0 +1,33 @@
+# Nmap 7.93 scan initiated Wed Jan  4 14:53:11 2023 as: nmap -T4 -p- -sT -Pn -oN ports.txt -vv 10.129.154.249
+Warning: 10.129.154.249 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.129.154.249
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-01-04 14:53:16 CST for 1411s
+Not shown: 65512 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE      REASON
+21/tcp    open     ftp          syn-ack
+22/tcp    open     ssh          syn-ack
+53/tcp    open     domain       syn-ack
+80/tcp    open     http         syn-ack
+139/tcp   open     netbios-ssn  syn-ack
+443/tcp   open     https        syn-ack
+445/tcp   open     microsoft-ds syn-ack
+2234/tcp  filtered directplay   no-response
+2550/tcp  filtered ads          no-response
+6646/tcp  filtered unknown      no-response
+11717/tcp filtered unknown      no-response
+18987/tcp filtered unknown      no-response
+20620/tcp filtered unknown      no-response
+20848/tcp filtered unknown      no-response
+21644/tcp filtered unknown      no-response
+33041/tcp filtered unknown      no-response
+34659/tcp filtered unknown      no-response
+35930/tcp filtered unknown      no-response
+36445/tcp filtered unknown      no-response
+42804/tcp filtered unknown      no-response
+53728/tcp filtered unknown      no-response
+55483/tcp filtered unknown      no-response
+57740/tcp filtered unknown      no-response
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Jan  4 15:16:47 2023 -- 1 IP address (1 host up) scanned in 1416.64 seconds

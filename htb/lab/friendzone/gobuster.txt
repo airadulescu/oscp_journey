@@ -1,0 +1,8 @@
+/index.html          [32m (Status: 200)[0m [Size: 324]
+/.html               [33m (Status: 403)[0m [Size: 294]
+/.php                [33m (Status: 403)[0m [Size: 293]
+/wordpress           [36m (Status: 301)[0m [Size: 320][34m [--> http://10.129.154.249/wordpress/][0m
+/robots.txt          [32m (Status: 200)[0m [Size: 13]
+/.php                [33m (Status: 403)[0m [Size: 293]
+/.html               [33m (Status: 403)[0m [Size: 294]
+/server-status       [33m (Status: 403)[0m [Size: 302]
