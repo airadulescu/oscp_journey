@@ -1,0 +1,14 @@
+# Nmap 7.93 scan initiated Fri Jan  6 10:05:22 2023 as: nmap -T4 -p- -sT -Pn -oN ports.txt -vv 10.129.122.122
+Nmap scan report for 10.129.122.122
+Host is up, received user-set (0.21s latency).
+Scanned at 2023-01-06 10:05:28 CST for 231s
+Not shown: 65530 filtered tcp ports (no-response)
+PORT      STATE  SERVICE   REASON
+21/tcp    open   ftp       syn-ack
+22/tcp    open   ssh       syn-ack
+80/tcp    open   http      syn-ack
+8192/tcp  closed sophos    conn-refused
+25565/tcp open   minecraft syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Jan  6 10:09:19 2023 -- 1 IP address (1 host up) scanned in 236.37 seconds
