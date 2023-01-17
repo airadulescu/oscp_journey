@@ -1,0 +1,118 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirbs.txt
+START_TIME: Mon Jan 16 22:00:30 2023
+URL_BASE: https://10.129.69.210/
+WORDLIST_FILES: /usr/share/wordlists/dirb/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: https://10.129.69.210/ ----
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirbs.txt
+START_TIME: Tue Jan 17 00:44:33 2023
+URL_BASE: http://10.129.69.210/
+WORDLIST_FILES: /usr/share/wordlists/dirb/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.129.69.210/ ----
+==> DIRECTORY: http://10.129.69.210/department/
+==> DIRECTORY: https://10.129.69.210/db/
++ http://10.129.69.210/server-status (CODE:403|SIZE:301)
+
+---- Entering directory: http://10.129.69.210/department/ ----
++ http://10.129.69.210/department/138 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1383 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/139 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1399 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/14 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/140 (CODE:502|SIZE:0)
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: SSL CONNECT ERROR)
+
+-----------------
+END_TIME: Tue Jan 17 02:12:48 2023
+DOWNLOADED: 8824 - FOUND: 0
++ http://10.129.69.210/department/1400 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1405 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/141 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/142 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/143 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/144 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/14430 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/145 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/146 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/147 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/148 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1480 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1489 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/149 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1493 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1498 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/15 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/150 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1500 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/151 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/152 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/153 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/154 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1548 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/155 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/156 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/157 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1572 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/158 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1585 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/159 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1590 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1593 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1594 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1595 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1596 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/16 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/160 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/161 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/162 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/164 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/165 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1650 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/166 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/167 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1676 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/168 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/169 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1694 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1698 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/17 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/170 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1701d (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1702 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1703 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1704 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1705 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1706 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1707 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/171 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1717 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/172 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1720 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/173 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/1736 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/174 (CODE:502|SIZE:0)
+==> DIRECTORY: http://10.129.69.210/department/css/
+==> DIRECTORY: http://10.129.69.210/department/files/

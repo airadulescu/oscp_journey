@@ -1,0 +1,4 @@
+/.htaccess           [33m (Status: 403)[0m [Size: 297]
+/.htpasswd           [33m (Status: 403)[0m [Size: 297]
+/department          [36m (Status: 301)[0m [Size: 319][34m [--> http://10.129.69.210/department/][0m
+/server-status       [33m (Status: 403)[0m [Size: 301]

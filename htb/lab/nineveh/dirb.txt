@@ -1,0 +1,95 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Mon Jan 16 21:55:04 2023
+URL_BASE: http://10.129.69.210/
+WORDLIST_FILES: /usr/share/wordlists/dirb/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.129.69.210/ ----
+==> DIRECTORY: http://10.129.69.210/department/
++ http://10.129.69.210/server-status (CODE:403|SIZE:301)
+
+---- Entering directory: http://10.129.69.210/department/ ----
+==> DIRECTORY: http://10.129.69.210/department/css/
+==> DIRECTORY: http://10.129.69.210/department/files/
++ http://10.129.69.210/department/should (CODE:502|SIZE:0)
++ http://10.129.69.210/department/shout (CODE:502|SIZE:0)
++ http://10.129.69.210/department/shoutbox (CODE:502|SIZE:0)
++ http://10.129.69.210/department/shoutcast (CODE:502|SIZE:0)
++ http://10.129.69.210/department/show (CODE:502|SIZE:0)
++ http://10.129.69.210/department/show_post (CODE:502|SIZE:0)
++ http://10.129.69.210/department/show_thread (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showallsites (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showbanner (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showbiz (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showblog (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showcase (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showcat (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showcode (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showday (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showdown (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showenv (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showgroups (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showjobs (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showkey (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showlogin (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showmap (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showmembers (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showmsg (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showpage (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showpic (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showpost (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showproducts (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showprofile (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showroom (CODE:502|SIZE:0)
++ http://10.129.69.210/department/shows (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showsell (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showthread (CODE:502|SIZE:0)
++ http://10.129.69.210/department/showtimes (CODE:502|SIZE:0)
++ http://10.129.69.210/department/shp (CODE:502|SIZE:0)
++ http://10.129.69.210/department/shrek (CODE:502|SIZE:0)
++ http://10.129.69.210/department/shrek3 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/shtml (CODE:502|SIZE:0)
++ http://10.129.69.210/department/shutdown (CODE:502|SIZE:0)
++ http://10.129.69.210/department/shuttle (CODE:502|SIZE:0)
++ http://10.129.69.210/department/si (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sia (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sic (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sicherheit (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sicherung (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sicilia (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sid (CODE:502|SIZE:0)
++ http://10.129.69.210/department/side (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sidebar (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sidebars (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sider (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sides (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sidewiki (CODE:502|SIZE:0)
++ http://10.129.69.210/department/siding (CODE:502|SIZE:0)
++ http://10.129.69.210/department/siemens (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sierra (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sifr (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sifr3 (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sig (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sigma (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sign (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sign-in (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sign-out (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sign-up (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sign_in (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sign_out (CODE:502|SIZE:0)
++ http://10.129.69.210/department/sign_up (CODE:502|SIZE:0)
++ http://10.129.69.210/department/signage (CODE:502|SIZE:0)
++ http://10.129.69.210/department/signature (CODE:502|SIZE:0)
++ http://10.129.69.210/department/signaturepics (CODE:502|SIZE:0)
++ http://10.129.69.210/department/signatures (CODE:502|SIZE:0)
+
+---- Entering directory: http://10.129.69.210/department/css/ ----

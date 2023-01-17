@@ -1,0 +1,11 @@
+# Nmap 7.93 scan initiated Mon Jan 16 21:42:03 2023 as: nmap -T4 -oV -Pn -p- -vv -oN server.txt 10.129.69.210
+Nmap scan report for 10.129.69.210
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-01-16 21:42:08 EST for 251s
+Not shown: 65533 filtered tcp ports (no-response)
+PORT    STATE SERVICE REASON
+80/tcp  open  http    syn-ack ttl 63
+443/tcp open  https   syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Jan 16 21:46:19 2023 -- 1 IP address (1 host up) scanned in 255.96 seconds
