@@ -1,0 +1,45 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb443withlowercase.txt
+START_TIME: Tue Jan 17 21:52:03 2023
+URL_BASE: https://10.129.6.145/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+
+-----------------
+
+GENERATED WORDS: 207628
+(!) WARNING: Wordlist is too large. This will take a long time to end.
+    (Use mode '-w' if you want to scan anyway)
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb443withlowercase.txt
+START_TIME: Tue Jan 17 23:28:51 2023
+URL_BASE: https://10.129.6.145/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 207628
+(!) WARNING: Wordlist is too large. This will take a long time to end.
+    (Use mode '-w' if you want to scan anyway)
+
+---- Scanning URL: https://10.129.6.145/ ----
+==> DIRECTORY: https://10.129.6.145/themes/
+==> DIRECTORY: https://10.129.6.145/css/
+==> DIRECTORY: https://10.129.6.145/includes/
+==> DIRECTORY: https://10.129.6.145/javascript/
+==> DIRECTORY: https://10.129.6.145/classes/
+==> DIRECTORY: https://10.129.6.145/widgets/
+==> DIRECTORY: https://10.129.6.145/tree/
+==> DIRECTORY: https://10.129.6.145/shortcuts/
+==> DIRECTORY: https://10.129.6.145/installer/
+==> DIRECTORY: https://10.129.6.145/wizards/

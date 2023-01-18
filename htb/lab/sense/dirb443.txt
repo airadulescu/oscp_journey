@@ -1,0 +1,29 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb443.txt
+START_TIME: Tue Jan 17 21:45:27 2023
+URL_BASE: https://10.129.6.145/
+WORDLIST_FILES: /usr/share/wordlists/dirb/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: https://10.129.6.145/ ----
+==> DIRECTORY: https://10.129.6.145/classes/
+==> DIRECTORY: https://10.129.6.145/css/
++ https://10.129.6.145/favicon.ico (CODE:200|SIZE:1406)
+==> DIRECTORY: https://10.129.6.145/includes/
+==> DIRECTORY: https://10.129.6.145/installer/
+==> DIRECTORY: https://10.129.6.145/javascript/
+==> DIRECTORY: https://10.129.6.145/themes/
+==> DIRECTORY: https://10.129.6.145/tree/
+==> DIRECTORY: https://10.129.6.145/widgets/
+==> DIRECTORY: https://10.129.6.145/wizards/
++ https://10.129.6.145/~sys~ (CODE:403|SIZE:345)
+
+---- Entering directory: https://10.129.6.145/classes/ ----
