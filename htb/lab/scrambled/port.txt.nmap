@@ -1,0 +1,1 @@
+# Nmap 7.93 scan initiated Tue Jan 31 22:19:26 2023 as: nmap -Pn -sC -sV -p- -oA port.txt -v 10.129.173.154
