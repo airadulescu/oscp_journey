@@ -1,0 +1,134 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Fri Feb  3 00:25:13 2023
+URL_BASE: http://10.129.224.131/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+USER_AGENT: Custom Agent
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 87568
+
+---- Scanning URL: http://10.129.224.131/ ----
++ http://10.129.224.131/index5 (CODE:502|SIZE:0)
++ http://10.129.224.131/visit (CODE:502|SIZE:0)
++ http://10.129.224.131/HG (CODE:502|SIZE:0)
++ http://10.129.224.131/lookup (CODE:502|SIZE:0)
++ http://10.129.224.131/whatis (CODE:502|SIZE:0)
++ http://10.129.224.131/anal (CODE:502|SIZE:0)
++ http://10.129.224.131/2404 (CODE:502|SIZE:0)
++ http://10.129.224.131/script (CODE:502|SIZE:0)
++ http://10.129.224.131/domain (CODE:502|SIZE:0)
++ http://10.129.224.131/city (CODE:502|SIZE:0)
++ http://10.129.224.131/offers (CODE:502|SIZE:0)
++ http://10.129.224.131/od (CODE:502|SIZE:0)
++ http://10.129.224.131/305 (CODE:502|SIZE:0)
++ http://10.129.224.131/databases (CODE:502|SIZE:0)
++ http://10.129.224.131/211 (CODE:502|SIZE:0)
++ http://10.129.224.131/226 (CODE:502|SIZE:0)
++ http://10.129.224.131/price (CODE:502|SIZE:0)
++ http://10.129.224.131/india (CODE:502|SIZE:0)
++ http://10.129.224.131/autos (CODE:502|SIZE:0)
++ http://10.129.224.131/wa (CODE:502|SIZE:0)
++ http://10.129.224.131/homes (CODE:502|SIZE:0)
++ http://10.129.224.131/wap (CODE:502|SIZE:0)
++ http://10.129.224.131/NEWS (CODE:502|SIZE:0)
+==> DIRECTORY: http://10.129.224.131/webservices/
++ http://10.129.224.131/press_release (CODE:502|SIZE:0)
++ http://10.129.224.131/notices (CODE:502|SIZE:0)
++ http://10.129.224.131/en-us (CODE:502|SIZE:0)
++ http://10.129.224.131/rants (CODE:502|SIZE:0)
++ http://10.129.224.131/1000 (CODE:502|SIZE:0)
++ http://10.129.224.131/arrows (CODE:502|SIZE:0)
++ http://10.129.224.131/diversity (CODE:502|SIZE:0)
++ http://10.129.224.131/buzz (CODE:502|SIZE:0)
++ http://10.129.224.131/Government (CODE:502|SIZE:0)
++ http://10.129.224.131/tennis (CODE:502|SIZE:0)
++ http://10.129.224.131/banery (CODE:502|SIZE:0)
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Fri Feb  3 00:45:30 2023
+URL_BASE: http://10.129.224.131/webservices/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+USER_AGENT: Custom Agent
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 87568
+
+---- Scanning URL: http://10.129.224.131/webservices/ ----
++ http://10.129.224.131/Anti-Virus (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/pl (CODE:502|SIZE:0)
++ http://10.129.224.131/translations (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/consumer (CODE:502|SIZE:0)
++ http://10.129.224.131/s4 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/57 (CODE:502|SIZE:0)
++ http://10.129.224.131/rainbow (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/63 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/61 (CODE:502|SIZE:0)
++ http://10.129.224.131/sed (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/h (CODE:502|SIZE:0)
++ http://10.129.224.131/695 (CODE:502|SIZE:0)
++ http://10.129.224.131/1422 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/52 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/details (CODE:502|SIZE:0)
++ http://10.129.224.131/364 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/whatsnew (CODE:502|SIZE:0)
++ http://10.129.224.131/619 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/password (CODE:502|SIZE:0)
++ http://10.129.224.131/iran (CODE:502|SIZE:0)
++ http://10.129.224.131/484 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/affiliate (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/pictures (CODE:502|SIZE:0)
++ http://10.129.224.131/actions (CODE:502|SIZE:0)
++ http://10.129.224.131/auction (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/56 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/policies (CODE:502|SIZE:0)
++ http://10.129.224.131/linkto (CODE:502|SIZE:0)
++ http://10.129.224.131/1138 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/sp (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/mp3 (CODE:502|SIZE:0)
++ http://10.129.224.131/cam (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/reg (CODE:502|SIZE:0)
++ http://10.129.224.131/regulations (CODE:502|SIZE:0)
++ http://10.129.224.131/webring (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/tags (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/j (CODE:502|SIZE:0)
++ http://10.129.224.131/742 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/navigation (CODE:502|SIZE:0)
++ http://10.129.224.131/keyword (CODE:502|SIZE:0)
++ http://10.129.224.131/ping (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/traceroute (CODE:502|SIZE:0)
++ http://10.129.224.131/610 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/applications (CODE:502|SIZE:0)
++ http://10.129.224.131/611 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/loading (CODE:502|SIZE:0)
++ http://10.129.224.131/630 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/line (CODE:502|SIZE:0)
++ http://10.129.224.131/advsearch (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/logo2 (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/core (CODE:502|SIZE:0)
++ http://10.129.224.131/presskit (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/k (CODE:502|SIZE:0)
++ http://10.129.224.131/echelon (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/quotes (CODE:502|SIZE:0)
++ http://10.129.224.131/recovery (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/college (CODE:502|SIZE:0)
++ http://10.129.224.131/planning (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/friends (CODE:502|SIZE:0)
++ http://10.129.224.131/target (CODE:502|SIZE:0)
++ http://10.129.224.131/webservices/sections (CODE:502|SIZE:0)
++ http://10.129.224.131/telephony (CODE:502|SIZE:0)
+==> DIRECTORY: http://10.129.224.131/webservices/wp/
