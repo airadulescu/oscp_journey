@@ -1,0 +1,54 @@
+# Nmap 7.93 scan initiated Thu Feb  2 01:23:53 2023 as: nmap -T4 -sS -oV -sV -sC -Pn -A -p- -vv --min-rate 5000 -oN server.txt 10.129.224.193
+Nmap scan report for 10.129.224.193
+Host is up, received user-set (0.76s latency).
+Scanned at 2023-02-02 01:23:59 EST for 74s
+Not shown: 65533 filtered tcp ports (no-response)
+PORT     STATE SERVICE            REASON         VERSION
+22/tcp   open  ssh                syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 dc5e34a625db43eceb40f4967b8ed1da (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwesV+Yg8+5O97ZnNFclkSnRTeyVnj6XokDNKjhB3+8R2I+r78qJmEgVr/SLJ44XjDzzlm0VGUqTmMP2KxANfISZWjv79Ljho3801fY4nbA43492r+6/VXeer0qhhTM4KhSPod5IxllSU6ZSqAV+O0ccf6FBxgEtiiWnE+ThrRiEjLYnZyyWUgi4pE/WPvaJDWtyfVQIrZohayy+pD7AzkLTrsvWzJVA8Vvf+Ysa0ElHfp3lRnw28WacWSaOyV0bsPdTgiiOwmoN8f9aKe5q7Pg4ZikkxNlqNG1EnuBThgMQbrx72kMHfRYvdwAqxOPbRjV96B2SWNWpxMEVL5tYGb
+|   256 6c8e5e5f4fd5417d1895d1dc2e3fe59c (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKQ4w0iqXrfz0H+KQEu5D6zKCfc6IOH2GRBKKkKOnP/0CrH2I4stmM1C2sGvPLSurZtohhC+l0OSjKaZTxPu4sU=
+|   256 d878b85d85ffad7be6e2b5da1e526236 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB5cgCL/RuiM/AqWOqKOIL1uuLLjN9E5vDSBVDqIYU6y
+3000/tcp open  hadoop-tasktracker syn-ack ttl 63 Apache Hadoop
+| hadoop-tasktracker-info: 
+|_  Logs: /login
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: MyPlace
+| hadoop-datanode-info: 
+|_  Logs: /login
+|_http-favicon: Unknown favicon MD5: 30F2CC86275A96B522F9818576EC65CF
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.10 - 4.11 (91%), Linux 3.12 (91%), Linux 3.13 (91%), Linux 3.13 or 4.2 (91%), Linux 3.16 (91%), Linux 3.16 - 4.6 (91%), Linux 3.18 (91%), Linux 3.2 - 4.9 (91%), Linux 3.8 - 3.11 (91%), Linux 4.2 (91%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.93%E=4%D=2/2%OT=22%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=63DB5749%P=x86_64-pc-linux-gnu)
+SEQ(SP=104%GCD=1%ISR=10A%TI=Z%TS=8)
+OPS(O1=M537ST11NW7%O2=M537ST11NW7%O3=M537NNT11NW7%O4=M537ST11NW7%O5=M537ST11NW7%O6=M537ST11)
+WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)
+ECN(R=Y%DF=Y%TG=40%W=7210%O=M537NNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=N)
+IE(R=Y%DFI=N%TG=40%CD=S)
+
+Uptime guess: 0.003 days (since Thu Feb  2 01:21:34 2023)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 22/tcp)
+HOP RTT        ADDRESS
+1   1423.54 ms 10.10.16.1
+2   1524.44 ms 10.129.224.193
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  2 01:25:13 2023 -- 1 IP address (1 host up) scanned in 80.05 seconds
