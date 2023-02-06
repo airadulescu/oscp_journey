@@ -1,4 +1,0 @@
-/.php                [33m (Status: 403)[0m [Size: 293]
-/index.html          [32m (Status: 200)[0m [Size: 10766]
-/.html               [33m (Status: 403)[0m [Size: 294]
-/robots.txt          [32m (Status: 200)[0m [Size: 208]
