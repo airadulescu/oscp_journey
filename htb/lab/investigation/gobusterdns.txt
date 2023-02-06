@@ -1,0 +1,349 @@
+[32mFound[0m: www.support [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.news [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.video [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.chat [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.my [32mStatus: 200[0m [Size: 3923]
+[32mFound[0m: www.games [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.media [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.live [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.gallery [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.tv [36mStatus: 301[0m [Size: 53][34m [--> https://turnon.tv/][0m
+[32mFound[0m: www.email [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.fr [36mStatus: 301[0m [Size: 228][34m [--> https://www.afnic.fr][0m
+[32mFound[0m: www.social [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.directory [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: autodiscover.store [36mStatus: 301[0m [Size: 126][34m [--> http://dan.com/buy-domain/autodiscover.store?redirected=true][0m
+[32mFound[0m: www.uk [32mStatus: 200[0m [Size: 823]
+[32mFound[0m: www.ru [32mStatus: 200[0m [Size: 16654]
+[32mFound[0m: www.business [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.shopping [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: ai [32mStatus: 200[0m [Size: 702]
+[32mFound[0m: www.software [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.community [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.training [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.photos [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.marketing [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.tools [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.pt [32mStatus: 200[0m [Size: 823]
+[32mFound[0m: www.xxx [36mStatus: 301[0m [Size: 232][34m [--> https://icmregistry.biz/][0m
+[32mFound[0m: ftp.blog [36mStatus: 302[0m [Size: 110][34m [--> https://www.afternic.com:443/forsale/ftp.blog?utm_source=TDFS_DASLNC&utm_medium=DASLNC&utm_campaign=TDFS_DASLNC&traffic_type=TDFS_DASLNC&traffic_id=daslnc&][0m
+[32mFound[0m: www.events [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.gold [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.life [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.education [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.mba [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.jp [32mStatus: 200[0m [Size: 2490]
+[32mFound[0m: www.pl [32mStatus: 200[0m [Size: 3826]
+[32mFound[0m: www.partners [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.services [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.school [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: autoconfig.email [36mStatus: 302[0m [Size: 154][34m [--> https://autoconfig.email/][0m
+[32mFound[0m: autodiscover.email [33mStatus: 403[0m [Size: 2867]
+[32mFound[0m: www.careers [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.cd [32mStatus: 200[0m [Size: 20849]
+[32mFound[0m: www.domains [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.team [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.sc [32mStatus: 200[0m [Size: 4297]
+[32mFound[0m: www.ms [32mStatus: 200[0m [Size: 823]
+[32mFound[0m: www.world [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.ua [36mStatus: 301[0m [Size: 162][34m [--> https://hostmaster.ua/][0m
+[32mFound[0m: www.movie [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.tienda [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.money [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.market [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.dating [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.plus [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.hr [36mStatus: 301[0m [Size: 295][34m [--> https://www.hr/][0m
+[32mFound[0m: www.studio [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.az [32mStatus: 200[0m [Size: 19390]
+[32mFound[0m: www.cards [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.ph [32mStatus: 200[0m [Size: 467]
+[32mFound[0m: d.ns.email [36mStatus: 301[0m [Size: 122][34m [--> http://www.d.ns.email][0m
+[32mFound[0m: www.house [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: c.ns.email [36mStatus: 301[0m [Size: 122][34m [--> http://www.c.ns.email][0m
+[32mFound[0m: e.ns.email [36mStatus: 301[0m [Size: 122][34m [--> http://www.e.ns.email][0m
+[32mFound[0m: a.ns.email [36mStatus: 301[0m [Size: 122][34m [--> http://www.a.ns.email][0m
+[32mFound[0m: b.ns.email [36mStatus: 301[0m [Size: 122][34m [--> http://www.b.ns.email][0m
+[32mFound[0m: www.am [32mStatus: 200[0m [Size: 620]
+[32mFound[0m: f.ns.email [36mStatus: 301[0m [Size: 122][34m [--> http://www.f.ns.email][0m
+[32mFound[0m: www.st [36mStatus: 301[0m [Size: 299][34m [--> https://www.nic.st/][0m
+[32mFound[0m: www.com [33mStatus: 400[0m [Size: 15]
+[32mFound[0m: www.sale [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: webdisk.link [33mStatus: 400[0m [Size: 15]
+[32mFound[0m: www.sl [36mStatus: 301[0m [Size: 162][34m [--> https://www.sl/][0m
+[32mFound[0m: pn [32mStatus: 200[0m [Size: 177]
+[32mFound[0m: www.soccer [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.sex [36mStatus: 301[0m [Size: 232][34m [--> https://icmregistry.biz/][0m
+[32mFound[0m: www.ee [32mStatus: 200[0m [Size: 41807]
+[32mFound[0m: www.golf [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.family [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.ac [32mStatus: 200[0m [Size: 2147]
+[32mFound[0m: www.finance [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.net [36mStatus: 301[0m [Size: 139][34m [--> https://www.net/][0m
+[32mFound[0m: www.ws [32mStatus: 200[0m [Size: 3923]
+[32mFound[0m: www.cl [32mStatus: 200[0m [Size: 2100]
+[32mFound[0m: autodiscover.it [32mStatus: 200[0m [Size: 14270]
+[32mFound[0m: www.at [36mStatus: 302[0m [Size: 274][34m [--> http://www.ispa.at][0m
+[32mFound[0m: webdisk.it [32mStatus: 200[0m [Size: 178666]
+[32mFound[0m: webdisk.us [32mStatus: 200[0m [Size: 19069]
+[32mFound[0m: www.exchange [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.org [36mStatus: 301[0m [Size: 169][34m [--> https://www.org/][0m
+[32mFound[0m: www.hn [32mStatus: 200[0m [Size: 432]
+[32mFound[0m: www.futbol [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.reviews [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.sm [36mStatus: 301[0m [Size: 162][34m [--> https://www.sm/][0m
+[32mFound[0m: www.international [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: lo.vip [36mStatus: 302[0m [Size: 110][34m [--> https://www.afternic.com:443/forsale/lo.vip?utm_source=TDFS_DASLNC&utm_medium=DASLNC&utm_campaign=TDFS_DASLNC&traffic_type=TDFS_DASLNC&traffic_id=daslnc&][0m
+[32mFound[0m: www.im [32mStatus: 200[0m [Size: 51]
+[32mFound[0m: www.ci [33mStatus: 403[0m [Size: 146]
+[32mFound[0m: www.la [36mStatus: 302[0m [Size: 199][34m [--> https://www.la/][0m
+[32mFound[0m: www.football [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.cm [36mStatus: 302[0m [Size: 11][34m [--> http://ww1.www.cm][0m
+[32mFound[0m: www.moda [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.computer [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.ls [32mStatus: 200[0m [Size: 823]
+[32mFound[0m: www.digital [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: prod.tools [32mStatus: 200[0m [Size: 2826]
+[32mFound[0m: www.sd [32mStatus: 200[0m [Size: 83153]
+[32mFound[0m: www.energy [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: autodiscover.us [32mStatus: 200[0m [Size: 2826]
+[32mFound[0m: www.group [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: webdisk.cn [32mStatus: 200[0m [Size: 9239]
+[32mFound[0m: autoconfig.link [33mStatus: 400[0m [Size: 15]
+[32mFound[0m: www.tt [36mStatus: 302[0m [Size: 203][34m [--> https://www.nic.tt/][0m
+[32mFound[0m: www.sk [36mStatus: 301[0m [Size: 227][34m [--> https://www.swan.sk][0m
+[32mFound[0m: www.by [32mStatus: 200[0m [Size: 28913]
+[32mFound[0m: www.fm [32mStatus: 200[0m [Size: 23119]
+[32mFound[0m: www.management [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: mail.de [36mStatus: 301[0m [Size: 162][34m [--> https://mail.de/][0m
+[32mFound[0m: www.network [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.report [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.deals [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.delivery [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.photography [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.tk [32mStatus: 200[0m [Size: 107]
+[32mFound[0m: mail.news [36mStatus: 301[0m [Size: 234][34m [--> http://www.dmgmedia.co.uk/][0m
+[32mFound[0m: www.style [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.casino [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.dental [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: autodiscover.cn [32mStatus: 200[0m [Size: 348]
+[32mFound[0m: www.vn [36mStatus: 301[0m [Size: 574][34m [--> Https://dot.vn][0m
+[32mFound[0m: www.auction [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.center [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.et [32mStatus: 200[0m [Size: 3458]
+[32mFound[0m: autoconfig.de [32mStatus: 200[0m [Size: 7973]
+[32mFound[0m: www.va [33mStatus: 404[0m [Size: 345]
+[32mFound[0m: start.ru [36mStatus: 301[0m [Size: 162][34m [--> https://start.ru/][0m
+[32mFound[0m: www.holiday [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.mp [32mStatus: 200[0m [Size: 9]
+[32mFound[0m: www.gd [32mStatus: 200[0m [Size: 23370]
+[32mFound[0m: www.mv [31mStatus: 502[0m [Size: 150]
+[32mFound[0m: www.city [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: mobile.dev [36mStatus: 301[0m [Size: 166][34m [--> https://mobile.dev/][0m
+[32mFound[0m: www.gt [36mStatus: 301[0m [Size: 169][34m [--> https://www.gt/][0m
+[32mFound[0m: www.salon [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: wiki.dev [36mStatus: 302[0m [Size: 237][34m [--> http://slipper-hero.com/?domain=wiki.dev][0m
+[32mFound[0m: www.solutions [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.tennis [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.sb [36mStatus: 301[0m [Size: 162][34m [--> https://www.sb/][0m
+[32mFound[0m: www.glass [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.tours [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.dj [32mStatus: 200[0m [Size: 4371]
+[32mFound[0m: www.technology [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.cool [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.boutique [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: autodiscover.host [36mStatus: 301[0m [Size: 178][34m [--> https://autodiscover.host/][0m
+[32mFound[0m: www.td [32mStatus: 200[0m [Size: 86]
+[32mFound[0m: www.fan [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: mail.pics [36mStatus: 301[0m [Size: 70][34m [--> https://mailtime.com/?ref=mail.pics][0m
+[32mFound[0m: www.bo [32mStatus: 200[0m [Size: 823]
+[32mFound[0m: www.financial [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.porn [36mStatus: 301[0m [Size: 232][34m [--> https://icmregistry.biz/][0m
+[32mFound[0m: www.next [36mStatus: 301[0m [Size: 2][34m [--> https://www.next.co.uk/?utm_campaign=TLD_Redirect&utm_medium=web_tld&utm_source=www.next][0m
+[32mFound[0m: api.new [36mStatus: 301[0m [Size: 134][34m [--> https://api.new:443/][0m
+[32mFound[0m: www.camp [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.kitchen [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: mail.new [36mStatus: 301[0m [Size: 214][34m [--> https://mail.new/][0m
+[32mFound[0m: webmail.blog [32mStatus: 200[0m [Size: 15386]
+[32mFound[0m: www.mk [32mStatus: 200[0m [Size: 2096]
+[32mFound[0m: www.systems [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.ai [32mStatus: 200[0m [Size: 1229]
+[32mFound[0m: www.clinic [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.fish [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.be [36mStatus: 302[0m [Size: 271][34m [--> https://www.be/][0m
+[32mFound[0m: m.media [36mStatus: 301[0m [Size: 162][34m [--> https://m.media/][0m
+[32mFound[0m: www.direct [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.omega [36mStatus: 301[0m [Size: 162][34m [--> https://www.omegawatches.com][0m
+[32mFound[0m: www.properties [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.si [36mStatus: 301[0m [Size: 226][34m [--> http://www.www.si/][0m
+[32mFound[0m: www.bingo [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: mail.plus [36mStatus: 301[0m [Size: 70][34m [--> https://mailtime.com/?ref=mail.plus][0m
+[32mFound[0m: webdisk.pt [32mStatus: 200[0m [Size: 1379]
+[32mFound[0m: www.tax [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.fi [36mStatus: 301[0m [Size: 134][34m [--> https://www.fi:443/][0m
+[32mFound[0m: mail.uk [36mStatus: 301[0m [Size: 162][34m [--> https://mail.co.uk/][0m
+[32mFound[0m: www.paris [36mStatus: 301[0m [Size: 178][34m [--> http://bienvenue.paris:80/][0m
+[32mFound[0m: www.cg [32mStatus: 200[0m [Size: 57042]
+[32mFound[0m: www.ck [32mStatus: 200[0m [Size: 12114]
+[32mFound[0m: www.ly [32mStatus: 200[0m [Size: 51]
+[32mFound[0m: ads.be [36mStatus: 302[0m [Size: 202][34m [--> http://www.adsi.nl][0m
+[32mFound[0m: www.camera [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.gifts [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.cash [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.jewelry [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.legal [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.vision [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.ie [32mStatus: 200[0m [Size: 168]
+[32mFound[0m: www.recipes [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: rosie-glow.co.uk [32mStatus: 200[0m [Size: 18556]
+[32mFound[0m: www.wf [32mStatus: 200[0m [Size: 2100]
+[32mFound[0m: d100.dev [32mStatus: 200[0m [Size: 21683]
+[32mFound[0m: www.adult [36mStatus: 301[0m [Size: 232][34m [--> https://icmregistry.biz/][0m
+[32mFound[0m: www.clothing [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: nero.cc [36mStatus: 301[0m [Size: 56][34m [--> https://corerecon.com][0m
+[32mFound[0m: cg.vip [32mStatus: 200[0m [Size: 2826]
+[32mFound[0m: localhost.media [36mStatus: 302[0m [Size: 50][34m [--> http://www.localhost.media/][0m
+[32mFound[0m: www.pub [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.coop [36mStatus: 301[0m [Size: 162][34m [--> https://www.coop/][0m
+[32mFound[0m: autodiscover.contact [32mStatus: 200[0m [Size: 61]
+[32mFound[0m: www.is [33mStatus: 403[0m [Size: 146]
+[32mFound[0m: www.bike [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.pictures [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.kg [32mStatus: 200[0m [Size: 959]
+[32mFound[0m: static.dev [36mStatus: 308[0m [Size: 34][34m [--> https://static.dev/][0m
+[32mFound[0m: www.pro.glass [36mStatus: 302[0m [Size: 82][34m [--> http://pro.glass][0m
+[32mFound[0m: pro.glass [36mStatus: 301[0m [Size: 84][34m [--> https://pro.glass/][0m
+[32mFound[0m: www.melbourne [36mStatus: 302[0m [Size: 2][34m [--> http://live.melbourne/][0m
+[32mFound[0m: www.coffee [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.limited [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: localhost.cc [32mStatus: 200[0m [Size: 612]
+[32mFound[0m: ghs.google.com [33mStatus: 404[0m [Size: 1561]
+[32mFound[0m: www.theater [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.af [32mStatus: 200[0m [Size: 823]
+[32mFound[0m: www.hospital [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.fitness [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.healthcare [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.coupons [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: blog.dev [36mStatus: 302[0m [Size: 221][34m [--> https://www.sixapart.jp/][0m
+[32mFound[0m: www.gratis [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.watch [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: dev.services [36mStatus: 301[0m [Size: 87][34m [--> https://dev.services/][0m
+[32mFound[0m: www.guru [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: s48.as [36mStatus: 301[0m [Size: 166][34m [--> https://www.s48.no/][0m
+[32mFound[0m: es.dev [32mStatus: 200[0m [Size: 2826]
+[32mFound[0m: www.itv [32mStatus: 200[0m [Size: 94]
+[32mFound[0m: www.guide [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.academy [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.viajes [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: m.cafe [32mStatus: 200[0m [Size: 823]
+[32mFound[0m: www.fund [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: mail.fr [36mStatus: 301[0m [Size: 162][34m [--> https://mail.fr/][0m
+[32mFound[0m: www.ba [36mStatus: 301[0m [Size: 162][34m [--> http://webhosting.ba/][0m
+[32mFound[0m: ftp.in [36mStatus: 301[0m [Size: 166][34m [--> https://sedo.com/search/details/?domain=ftp.in&campaignId=329145&origin=sales_lander_15][0m
+[32mFound[0m: www.express [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: mail.hk [32mStatus: 200[0m [Size: 246]
+[32mFound[0m: www.sr [32mStatus: 200[0m [Size: 13115]
+[32mFound[0m: partner.dev [36mStatus: 301[0m [Size: 162][34m [--> https://partner.dev/][0m
+[32mFound[0m: www.re [36mStatus: 301[0m [Size: 162][34m [--> https://www.re/][0m
+[32mFound[0m: www.fo [36mStatus: 301[0m [Size: 223][34m [--> https://www.fo/][0m
+[32mFound[0m: www.kw [36mStatus: 301[0m [Size: 167][34m [--> https://www.kw/][0m
+[32mFound[0m: download.im [36mStatus: 302[0m [Size: 110][34m [--> https://www.afternic.com:443/forsale/download.im?utm_source=TDFS_DASLNC&utm_medium=DASLNC&utm_campaign=TDFS_DASLNC&traffic_type=TDFS_DASLNC&traffic_id=daslnc&][0m
+[32mFound[0m: www.agency [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: dev.support [32mStatus: 200[0m [Size: 12014]
+[32mFound[0m: zeus.cc [32mStatus: 200[0m [Size: 2491]
+[32mFound[0m: mail.chat [36mStatus: 301[0m [Size: 1001][34m [--> https://mailtime.com/?ref=mail.chat][0m
+[32mFound[0m: time.services [36mStatus: 301[0m [Size: 88][34m [--> https://time.services/][0m
+[32mFound[0m: www.nf [32mStatus: 200[0m [Size: 138]
+[32mFound[0m: www.mw [36mStatus: 301[0m [Size: 162][34m [--> https://www.mw/][0m
+[32mFound[0m: as.im [32mStatus: 200[0m [Size: 26842]
+[32mFound[0m: www.sharp [33mStatus: 403[0m [Size: 146]
+[32mFound[0m: www.consulting [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: mail.biz [36mStatus: 301[0m [Size: 140][34m [--> https://mail.biz/][0m
+[32mFound[0m: autoconfig.ws [32mStatus: 200[0m [Size: 565]
+[32mFound[0m: autodiscover.ws [32mStatus: 200[0m [Size: 571]
+[32mFound[0m: spring.net [32mStatus: 200[0m [Size: 2826]
+[32mFound[0m: season.net [32mStatus: 200[0m [Size: 4622]
+[32mFound[0m: autumn.net [32mStatus: 200[0m [Size: 1558]
+[32mFound[0m: mail.co [32mStatus: 200[0m [Size: 22551]
+[32mFound[0m: www.farm [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.uz [36mStatus: 302[0m [Size: 154][34m [--> https://www.uz/][0m
+[32mFound[0m: staging.services [32mStatus: 200[0m [Size: 2826]
+[32mFound[0m: qa.tools [36mStatus: 302[0m [Size: 275][34m [--> https://qa.tools/][0m
+[32mFound[0m: mail.jp [36mStatus: 301[0m [Size: 224][34m [--> https://mail.jp/][0m
+[32mFound[0m: ci.dev [32mStatus: 200[0m [Size: 2667]
+[32mFound[0m: www.expert [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.credit [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: marketing.team [36mStatus: 301[0m [Size: 231][34m [--> https://marketing.team/][0m
+[32mFound[0m: lounge.team [32mStatus: 200[0m [Size: 839]
+[32mFound[0m: pegasus.cc [36mStatus: 302[0m [Size: 110][34m [--> https://www.afternic.com:443/forsale/pegasus.cc?utm_source=TDFS_DASLNC&utm_medium=DASLNC&utm_campaign=TDFS_DASLNC&traffic_type=TDFS_DASLNC&traffic_id=daslnc&][0m
+[32mFound[0m: webdisk.co [36mStatus: 301[0m [Size: 85][34m [--> https://webdisk.co/][0m
+[32mFound[0m: editors.team [32mStatus: 200[0m [Size: 10882]
+[32mFound[0m: content.team [36mStatus: 302[0m [Size: 210][34m [--> https://contentpartners.de][0m
+[32mFound[0m: www.graphics [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: assets.team [32mStatus: 200[0m [Size: 839]
+[32mFound[0m: www.rocks [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.vg [32mStatus: 200[0m [Size: 589]
+[32mFound[0m: www.pizza [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: haven.team [32mStatus: 200[0m [Size: 835]
+[32mFound[0m: www.fox [36mStatus: 301[0m [Size: 54][34m [--> https://www.fox.com][0m
+[32mFound[0m: www.restaurant [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.gl [32mStatus: 200[0m [Size: 17554]
+[32mFound[0m: tech.team [36mStatus: 301[0m [Size: 84][34m [--> https://tech.team/][0m
+[32mFound[0m: www.bs [32mStatus: 200[0m [Size: 19064]
+[32mFound[0m: www.dentist [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.wtf [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.tips [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.company [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: load.support [32mStatus: 200[0m [Size: 78]
+[32mFound[0m: it.dev [36mStatus: 301[0m [Size: 114][34m [--> http://dan.com/buy-domain/it.dev?redirected=true][0m
+[32mFound[0m: www.works [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: mx1.email [32mStatus: 200[0m [Size: 1662]
+[32mFound[0m: dns.ee [32mStatus: 200[0m [Size: 53661]
+[32mFound[0m: www.zone [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.land [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.forsale [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.bible [36mStatus: 301[0m [Size: 234][34m [--> http://get.bible/www-bible][0m
+[32mFound[0m: www.shoes [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www-test.intra.finance [32mStatus: 200[0m [Size: 2209]
+[32mFound[0m: www.surgery [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.army [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.today [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.admin.careers [32mStatus: 200[0m [Size: 9733]
+[32mFound[0m: api.money [32mStatus: 200[0m [Size: 468]
+[32mFound[0m: www.target [36mStatus: 301[0m [Size: 2][34m [--> http://www.target.com/][0m
+[32mFound[0m: www.show [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: shaun.ee [36mStatus: 301[0m [Size: 292][34m [--> https://shaun.ee/][0m
+[32mFound[0m: www.toys [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: spam.cn [32mStatus: 200[0m [Size: 2112]
+[32mFound[0m: www.construction [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: flickr.com [36mStatus: 301[0m [Size: 167][34m [--> https://flickr.com/][0m
+[32mFound[0m: www.university [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: www.flickr.com [36mStatus: 301[0m [Size: 167][34m [--> https://www.flickr.com/][0m
+[32mFound[0m: ns10.hyperhosting.gr [32mStatus: 200[0m [Size: 1360]
+[32mFound[0m: ns9.hyperhosting.gr [32mStatus: 200[0m [Size: 1352]
+[32mFound[0m: mail.ci [36mStatus: 301[0m [Size: 224][34m [--> https://mail.ci/][0m
+[32mFound[0m: rsync.us [36mStatus: 302[0m [Size: 43][34m [--> http://www.rsync.us/][0m
+[32mFound[0m: dev.tools [36mStatus: 301[0m [Size: 84][34m [--> https://dev.tools/][0m
+[32mFound[0m: webmail.support [36mStatus: 308[0m [Size: 164][34m [--> https://webmail.support][0m
+[32mFound[0m: ftp.eu [36mStatus: 301[0m [Size: 23][34m [--> https://trusted.evo-media.eu/ftp.eu][0m
+[32mFound[0m: mail.media [36mStatus: 301[0m [Size: 1001][34m [--> https://mailtime.com/?ref=mail.media][0m
+[32mFound[0m: sip.it [36mStatus: 301[0m [Size: 162][34m [--> https://sip.it/][0m
+[32mFound[0m: new.new [36mStatus: 301[0m [Size: 707][34m [--> https://new.new/][0m
+[32mFound[0m: dev.media [36mStatus: 308[0m [Size: 33][34m [--> https://dev.media/][0m
+[32mFound[0m: vps2.serverel.com [33mStatus: 401[0m [Size: 172]
+[32mFound[0m: www.dog [36mStatus: 302[0m [Size: 206][34m [--> https://donuts.domains][0m
+[32mFound[0m: autodiscover.ru [32mStatus: 200[0m [Size: 669]
+[32mFound[0m: autoconfig.nl [32mStatus: 200[0m [Size: 614]
+[32mFound[0m: webdisk.nl [32mStatus: 200[0m [Size: 1111]
+[32mFound[0m: autodiscover.ca [33mStatus: 404[0m [Size: 315]
+[32mFound[0m: mail.vip [36mStatus: 308[0m [Size: 164][34m [--> https://mail.vip][0m
+[32mFound[0m: mail.black [36mStatus: 308[0m [Size: 164][34m [--> https://mail.black][0m
+[32mFound[0m: jira.dev [36mStatus: 301[0m [Size: 73][34m [--> https://www.atlassian.com/software/jira][0m
+[32mFound[0m: mail.world [36mStatus: 301[0m [Size: 146][34m [--> https://www.mail.world/][0m
+[32mFound[0m: autodiscover.click [32mStatus: 200[0m [Size: 23634]
+[32mFound[0m: wolfman.co [32mStatus: 200[0m [Size: 2826]
+[32mFound[0m: library.co [32mStatus: 200[0m [Size: 2826]
+[32mFound[0m: report.dev [32mStatus: 200[0m [Size: 2826]
+[32mFound[0m: internal.dev [36mStatus: 301[0m [Size: 120][34m [--> http://dan.com/buy-domain/internal.dev?redirected=true][0m
+[32mFound[0m: www.tn [33mStatus: 404[0m [Size: 721]
+[32mFound[0m: www.li [32mStatus: 200[0m [Size: 106]

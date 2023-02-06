@@ -1,0 +1,18 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Mon Feb  6 03:25:40 2023
+URL_BASE: http://eforenzics.htb/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+USER_AGENT: Custom Agent
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 87568
+
+---- Scanning URL: http://eforenzics.htb/ ----
