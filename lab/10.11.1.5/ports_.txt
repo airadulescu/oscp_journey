@@ -1,0 +1,15 @@
+Nmap scan report for 10.11.1.5
+Host is up (0.31s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+Device type: general purpose|specialized|power-device|WAP
+Running (JUST GUESSING): Microsoft Windows XP|7|2000 (90%), Belkin embedded (86%), SMA embedded (86%), Apple embedded (85%)
+OS CPE: cpe:/o:microsoft:windows_xp cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_2000::sp4 cpe:/h:apple:airport_extreme
+Aggressive OS guesses: Microsoft Windows XP (90%), Belkin OmniView KVM switch or SMA Sunny WebBox solar panel monitor (86%), Microsoft Windows 7 (86%), Microsoft Windows 2000 SP4 (86%), Microsoft Windows XP SP2 (85%), Apple AirPort Extreme WAP (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 3 hops
+
