@@ -1,7 +1,7 @@
-# Nmap 7.93 scan initiated Tue Feb  7 04:19:03 2023 as: nmap -sCV -p- -T4 --min-rate=5000 -oN ports.txt -Pn -vv 10.11.1.10
+# Nmap 7.93 scan initiated Tue Feb  7 19:09:24 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.10
 Nmap scan report for 10.11.1.10
-Host is up, received user-set (0.22s latency).
-Scanned at 2023-02-07 04:19:09 EST for 53s
+Host is up, received user-set (0.24s latency).
+Scanned at 2023-02-07 19:09:24 HKT for 56s
 Not shown: 65534 filtered tcp ports (no-response)
 PORT   STATE SERVICE REASON  VERSION
 80/tcp open  http    syn-ack Microsoft IIS httpd 6.0
@@ -14,4 +14,4 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Tue Feb  7 04:20:02 2023 -- 1 IP address (1 host up) scanned in 58.96 seconds
+# Nmap done at Tue Feb  7 19:10:20 2023 -- 1 IP address (1 host up) scanned in 56.53 seconds
