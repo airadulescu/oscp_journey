@@ -1,3 +1,132 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:38:28 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.13/ports.txt 10.11.1.13
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:39:08 2023 -- 1 IP address (1 host up) scanned in 40.76 seconds
+# Nmap 7.93 scan initiated Tue Feb  7 22:01:12 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.13
+Increasing send delay for 10.11.1.13 from 0 to 5 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.11.1.13 from 5 to 10 due to 544 out of 1359 dropped probes since last increase.
+Warning: 10.11.1.13 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.11.1.13
+Host is up, received user-set (0.24s latency).
+Scanned at 2023-02-07 22:01:12 HKT for 208s
+Not shown: 64723 closed tcp ports (conn-refused), 794 filtered tcp ports (no-response)
+PORT      STATE SERVICE            REASON  VERSION
+21/tcp    open  ftp                syn-ack Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 04-07-19  10:25PM       <DIR>          aspnet_client
+| 04-07-19  07:14PM                99710 iis-85.png
+|_04-07-19  07:14PM                  701 iisstart.htm
+| ftp-syst: 
+|_  SYST: Windows_NT
+135/tcp   open  msrpc              syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn        syn-ack Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       syn-ack Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp  open  ms-sql-s           syn-ack Microsoft SQL Server 2012 11.00.2100.00; RTM
+|_ssl-date: 2023-02-07T14:04:31+00:00; -1s from scanner time.
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2023-01-26T07:47:32
+| Not valid after:  2053-01-26T07:47:32
+| MD5:   ef571be12248ba524f681c60a765d1cb
+| SHA-1: cb98a85ae8deeb96f4d4900b5b2d886a12d40487
+| -----BEGIN CERTIFICATE-----
+| MIIB+zCCAWSgAwIBAgIQe5gP/5VH/p1JW5v8yj7oZDANBgkqhkiG9w0BAQUFADA7
+| MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA
+| bABsAGIAYQBjAGswIBcNMjMwMTI2MDc0NzMyWhgPMjA1MzAxMjYwNzQ3MzJaMDsx
+| OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs
+| AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAkt5VKKHeeOIn
+| j+hxhdBaNn2x+MIjZFCadoCPH73I6myQHChSwwejGYipwMjxu10CqlLHPKCYCNlV
+| xICfCcrTlw+Et9Z7Xi1lh2RwsJytxZLrfki3IVRGMozro0Bu7IZi71JNxG00o4Cx
+| ubThlDeIH+qKVlRw2D9LxtPsCPdZxL8CAwEAATANBgkqhkiG9w0BAQUFAAOBgQCR
+| JHewmkfxxBqGnSGcr+F8QTknHLGdkrzfBXy9YjasXnWHLk9na+HCVnyQQpK16MkZ
+| +PyqqraIpnLpnmbEegmeIU3ZjYNFqCmvfsTUOiOhKDWjJWUogVj2gopbNQKjI/YM
+| XTKH8vD4IN9I+tY4F2skdTtT5wjKnJLgOo8zu0aT5g==
+|_-----END CERTIFICATE-----
+3389/tcp  open  ssl/ms-wbt-server? syn-ack
+|_ssl-date: 2023-02-07T14:04:31+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=disco
+| Issuer: commonName=disco
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-25T07:47:32
+| Not valid after:  2023-07-27T07:47:32
+| MD5:   59655b07841dbc3f299ba45c514b95af
+| SHA-1: 253d3fefae59773a9ed433923d10c43fa281d940
+| -----BEGIN CERTIFICATE-----
+| MIICzjCCAbagAwIBAgIQWNsC9ZvPWbRDBZZCne8lDzANBgkqhkiG9w0BAQsFADAQ
+| MQ4wDAYDVQQDEwVkaXNjbzAeFw0yMzAxMjUwNzQ3MzJaFw0yMzA3MjcwNzQ3MzJa
+| MBAxDjAMBgNVBAMTBWRpc2NvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+| AQEAtmA0kX5nzjKQvn5GSS61g1JgRBVsMV/MotozRqynCHt1MZ8Uyn9Ip0R733+W
+| x9g7J0fzsMmnMsmJTW7ycCg39dFS7zL5GQB94o1hxpg/w6NWVxkEaeMhcTZSMSrP
+| U6gIz7RNH9Q1lSHGPgtJkNsIGCIMAh9mg6QLYtZR0ut3223POxDVmjgYqAFZEhnx
+| 8L8K6gEWdOGPod2OUVPoVzXZmZgMhiBcqiBH75HiwgW9t+H0d30Ni64cIBQi7Jsj
+| DOSAolEezyJvlW402VfC3jLMixYX010IX0M3VaslNWtgQ+dY+tJaX/uRhfxwmzjs
+| MI/89/HPe6z8OHEuokZM688JGQIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD
+| ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAKTOlFOf0Ubhp1M6L2F+
+| DroRtlsuMnZjvoiNH7H9mZ6ncM0VhhiYS4UXTXs1DMoeNokLw1G2DwMifToFFgbn
+| H3jc2tSOY+ya+IV4w6O2NA1ToDmq++CbLj0rFUnloOLk0z3yJc44tmFMhP5xcSoY
+| hdx2JIfIVdm8Rj6/GCxsGxkVumFHAS8/aZLXLYsfE1LcKVajPDx+zl3fYX8PEUMa
+| tlZtM+vsOPlB9xnwd5ScJT6IaGmM53T1C7BKa/KkJJ8TX+y4D/ryBinZ7uuLyawD
+| uulWOkVwBXYPC/E5dT0VxZ5hTzXAduSDXA47cEpATJYMora8FfTvUdaBZUgXqt19
+| gpw=
+|_-----END CERTIFICATE-----
+4167/tcp  open  http               syn-ack Microsoft IIS httpd 8.5
+|_http-title: IIS Windows Server
+|_http-server-header: Microsoft-IIS/8.5
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+5800/tcp  open  vnc-http           syn-ack TightVNC (user: disco; VNC TCP port: 5900)
+|_http-title: TightVNC desktop [disco]
+| http-methods: 
+|_  Supported Methods: GET
+5900/tcp  open  vnc                syn-ack VNC (protocol 3.8)
+| vnc-info: 
+|   Protocol version: 3.8
+|   Security types: 
+|     None (1)
+|     Tight (16)
+|   Tight auth subtypes: 
+|     None
+|_  WARNING: Server does not require authentication
+5985/tcp  open  http               syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+47001/tcp open  http               syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49152/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49153/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49154/tcp open  unknown            syn-ack
+49155/tcp open  unknown            syn-ack
+49156/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49157/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49158/tcp open  msrpc              syn-ack Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: -1s
+| smb2-time: 
+|   date: 2023-02-07T14:04:06
+|_  start_date: 2023-01-26T07:47:29
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   302: 
+|_    Message signing enabled but not required
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 46886/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 11512/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 58512/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 31737/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb  7 22:04:40 2023 -- 1 IP address (1 host up) scanned in 208.23 seconds
