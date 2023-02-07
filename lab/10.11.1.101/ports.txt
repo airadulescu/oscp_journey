@@ -1,0 +1,26 @@
+# Nmap 7.93 scan initiated Mon Feb  6 22:39:12 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.101/ports.txt 10.11.1.101
+Nmap scan report for 10.11.1.101
+Host is up, received user-set (0.30s latency).
+Not shown: 60761 filtered tcp ports (no-response), 4769 closed tcp ports (reset)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE      REASON
+21/tcp  open  ftp          syn-ack ttl 62
+22/tcp  open  ssh          syn-ack ttl 62
+80/tcp  open  http         syn-ack ttl 62
+139/tcp open  netbios-ssn  syn-ack ttl 62
+445/tcp open  microsoft-ds syn-ack ttl 62
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=2/6%OT=21%CT=20%CU=44309%PV=Y%DS=3%DC=I%G=Y%TM=63E1C81
+OS:2%P=x86_64-pc-linux-gnu)SEQ(SP=109%GCD=1%ISR=10C%TI=Z%II=I%TS=8)OPS(O1=M
+OS:54EST11NW6%O2=M54EST11NW6%O3=M54ENNT11NW6%O4=M54EST11NW6%O5=M54EST11NW6%
+OS:O6=M54EST11)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%
+OS:DF=Y%T=40%W=7210%O=M54ENNSNW6%CC=Y%Q=)ECN(R=N)T1(R=Y%DF=Y%T=40%S=O%A=S+%
+OS:F=AS%RD=0%Q=)T1(R=N)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F
+OS:=AR%O=%RD=0%Q=)T5(R=N)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G
+OS:%RID=G%RIPCK=G%RUCK=D4D4%RUD=G)U1(R=N)IE(R=Y%DFI=N%T=40%CD=S)IE(R=N)
+
+Network Distance: 3 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Feb  6 22:40:02 2023 -- 1 IP address (1 host up) scanned in 50.07 seconds

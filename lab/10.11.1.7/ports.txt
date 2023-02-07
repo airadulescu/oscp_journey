@@ -1,0 +1,51 @@
+# Nmap 7.93 scan initiated Tue Feb  7 00:12:37 2023 as: nmap -sCV -p- -T4 --min-rate=5000 -oN ports.txt -Pn -vv 10.11.1.7
+Nmap scan report for 10.11.1.7
+Host is up, received user-set (0.32s latency).
+Scanned at 2023-02-07 00:12:43 EST for 65s
+Not shown: 65534 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON  VERSION
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: PEDRO
+|   NetBIOS_Domain_Name: PEDRO
+|   NetBIOS_Computer_Name: PEDRO
+|   DNS_Domain_Name: pedro
+|   DNS_Computer_Name: pedro
+|   Product_Version: 10.0.17134
+|_  System_Time: 2023-02-07T05:13:44+00:00
+| ssl-cert: Subject: commonName=pedro
+| Issuer: commonName=pedro
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-02-06T03:31:46
+| Not valid after:  2023-08-08T03:31:46
+| MD5:   08d040471d321ddd945f539303d1996b
+| SHA-1: f5cad6bfa26a6d1e2a492e1a4376cede1c0ff9a7
+| -----BEGIN CERTIFICATE-----
+| MIICzjCCAbagAwIBAgIQFoFGcEo88q5PrHkpsbY3QzANBgkqhkiG9w0BAQsFADAQ
+| MQ4wDAYDVQQDEwVwZWRybzAeFw0yMzAyMDYwMzMxNDZaFw0yMzA4MDgwMzMxNDZa
+| MBAxDjAMBgNVBAMTBXBlZHJvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+| AQEAsyh7ob3rxqtQzfJcOiD1+PkyEDKg0W/Uti0sF6BAyNZ4gn4zPmYK+oVrNej5
+| WEzKwMXtXaUxkxiBCOLo7Dqiy2r0B9mzU9KQkRG/Evc8C2cCL7Exf29LgdEAg30O
+| BZ7Zp5Fkaw+yOOA68pjZYaBM7REH539U/+Xzi9SDPYSGIbNGJ7vgoEBdwRQE5O4W
+| Z4aHOa4ba2SwTbbxkGhcwxqGlY2lUi5Qe9PSkQmuUiIlUlooI1KTn6JLn7jqly8S
+| vCwypn51+KrrfIItIuOMdPPyHNdw5oc1M2lZLayArM/m7byseY9I728nDQBCb9Fb
+| 3mWHZiMV3grK0lZMbt3V6r544QIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD
+| ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAFsaUt4Gs6NAzt50efSf
+| goSREtu8MyTsYPCXTv9DeaS0ZryPPh79eoCKoffhNUC2Lk+drSc8wplxgIQ7a5gQ
+| U9NTZsOPLyVD5ybFagi8hXQ8sf6vgpvChRhdQPHXApCN83FOm9UJyJnMOL1s4IyG
+| F5vBIxuyLKpGfwwj71T7TeVjQYMnBtr/VoLLb6BqddpDEx7jRik6wQtV3MITrcxY
+| sVsU1T9zToEhsJ8pulbgJDkS5n5uHtRu6F5XrrK93t+WzUXO1f7i5LnqI2Klu54R
+| tBmehIBdSrpX0FKDU849ShpUBJQGFwFOslN5G8dhtQCzw6Gm8OODb2HykqcuYCRY
+| oLs=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-02-07T05:13:48+00:00; 0s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb  7 00:13:48 2023 -- 1 IP address (1 host up) scanned in 71.02 seconds

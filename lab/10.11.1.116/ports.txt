@@ -1,0 +1,19 @@
+# Nmap 7.93 scan initiated Mon Feb  6 22:39:45 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.116/ports.txt 10.11.1.116
+Nmap scan report for 10.11.1.116
+Host is up, received user-set (0.36s latency).
+Not shown: 60793 filtered tcp ports (no-response), 4737 closed tcp ports (reset)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE REASON
+21/tcp  open  ftp     syn-ack ttl 62
+22/tcp  open  ssh     syn-ack ttl 62
+80/tcp  open  http    syn-ack ttl 62
+110/tcp open  pop3    syn-ack ttl 62
+143/tcp open  imap    syn-ack ttl 62
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Feb  6 22:40:51 2023 -- 1 IP address (1 host up) scanned in 66.70 seconds
