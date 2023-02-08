@@ -1,0 +1,12 @@
+/images              [36m (Status: 301)[0m [Size: 148][34m [--> http://10.11.1.31/images/][0m
+/*checkout*          [33m (Status: 400)[0m [Size: 3420]
+/*docroot*           [33m (Status: 400)[0m [Size: 3420]
+/*                   [33m (Status: 400)[0m [Size: 3420]
+/http%3a%2f%2fwww    [33m (Status: 400)[0m [Size: 3420]
+/http%3a             [33m (Status: 400)[0m [Size: 3420]
+/q%26a               [33m (Status: 400)[0m [Size: 3420]
+/**http%3a           [33m (Status: 400)[0m [Size: 3420]
+/*http%3a            [33m (Status: 400)[0m [Size: 3420]
+/http%3a%2f%2fyoutube[33m (Status: 400)[0m [Size: 3420]
+/_private            [36m (Status: 301)[0m [Size: 150][34m [--> http://10.11.1.31/_private/][0m
+/http%3a%2f%2fblogs  [33m (Status: 400)[0m [Size: 3420]
