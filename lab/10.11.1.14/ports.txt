@@ -1,3 +1,37 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:38:28 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.14/ports.txt 10.11.1.14
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:39:11 2023 -- 1 IP address (1 host up) scanned in 44.10 seconds
+# Nmap 7.93 scan initiated Wed Feb  8 20:10:51 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.14
+Nmap scan report for 10.11.1.14
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-08 20:10:51 HKT for 108s
+Not shown: 65528 filtered tcp ports (no-response)
+PORT    STATE  SERVICE REASON       VERSION
+21/tcp  open   ftp     syn-ack      Microsoft ftpd
+| ftp-syst: 
+|_  SYST: Windows_NT
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 01-17-07  06:42PM       <DIR>          AdminScripts
+| 01-17-07  06:43PM       <DIR>          ftproot
+| 01-17-07  06:43PM       <DIR>          iissamples
+| 01-17-07  06:43PM       <DIR>          Scripts
+|_04-16-16  09:42AM       <DIR>          wwwroot
+23/tcp  closed telnet  conn-refused
+25/tcp  closed smtp    conn-refused
+80/tcp  open   http    syn-ack      Microsoft IIS httpd 5.1
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Microsoft-IIS/5.1
+| http-webdav-scan: 
+|   Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH
+|   Server Date: Wed, 08 Feb 2023 12:12:19 GMT
+|   Allowed Methods: OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK
+|   WebDAV type: Unknown
+|_  Server Type: Microsoft-IIS/5.1
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT POST
+|_  Potentially risky methods: TRACE DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT
+110/tcp closed pop3    conn-refused
+220/tcp closed imap3   conn-refused
+443/tcp open   https?  syn-ack
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb  8 20:12:39 2023 -- 1 IP address (1 host up) scanned in 108.30 seconds

@@ -1,0 +1,2 @@
+/scripts             [36m (Status: 302)[0m [Size: 149][34m [--> http://10.11.1.14/scripts/][0m
+/printers            [33m (Status: 401)[0m [Size: 24]
