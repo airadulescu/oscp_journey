@@ -1,3 +1,96 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:38:28 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.20/ports.txt 10.11.1.20
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:39:08 2023 -- 1 IP address (1 host up) scanned in 40.77 seconds
+# Nmap 7.93 scan initiated Wed Feb  8 23:17:57 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.20
+Warning: 10.11.1.20 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.11.1.20
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-08 23:17:57 HKT for 115s
+Not shown: 65429 closed tcp ports (conn-refused), 79 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON  VERSION
+53/tcp    open  domain        syn-ack Simple DNS Plus
+88/tcp    open  kerberos-sec  syn-ack Microsoft Windows Kerberos (server time: 2023-02-08 15:18:26Z)
+135/tcp   open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+389/tcp   open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: svcorp.com0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds? syn-ack
+464/tcp   open  kpasswd5?     syn-ack
+593/tcp   open  ncacn_http    syn-ack Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped    syn-ack
+3268/tcp  open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: svcorp.com0., Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped    syn-ack
+3389/tcp  open  ms-wbt-server syn-ack Microsoft Terminal Services
+|_ssl-date: 2023-02-08T15:19:40+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=sv-dc01.svcorp.com
+| Issuer: commonName=sv-dc01.svcorp.com
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-26T05:14:07
+| Not valid after:  2023-07-28T05:14:07
+| MD5:   d27c84a2c868f6eb7b18d6622ad48527
+| SHA-1: b09d000f4699e915e3aed70f7509e3917e88ecef
+| -----BEGIN CERTIFICATE-----
+| MIIC6DCCAdCgAwIBAgIQdX3dXmgxqr9NMtgxkRk8gzANBgkqhkiG9w0BAQsFADAd
+| MRswGQYDVQQDExJzdi1kYzAxLnN2Y29ycC5jb20wHhcNMjMwMTI2MDUxNDA3WhcN
+| MjMwNzI4MDUxNDA3WjAdMRswGQYDVQQDExJzdi1kYzAxLnN2Y29ycC5jb20wggEi
+| MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDbL0ifZ9YBr1IqjYFTbXQUjjXS
+| csgAG5Dit1A7AynxBnkk2fAF3AlwSzxP1LpDD6V4fXrcAJ5B2T5vW5+vNZyAmwWW
+| P8USirFzzwaqWSka9JxqtAqIJea1FooEQ/IbF+1SDvU8UJE4plHkaaI/ACPRCcib
+| US5MEl2kKsdxxFRvsf9zw3DLZykyrR9Afl9JNZUvVIaVQcVCwUTRma0PhEl+iSJ5
+| +L9hkTeqzKF9m45wgd9cYfMIwAxogKKb8+WLt2sKfOQNjhRGnH4W30jb8MsfpFpI
+| 48ah2lLmyGlZL4pNp/yX0rzpnwaXaOKFVdDgolx8kzcEZWt8JUwKn9R/IAoxAgMB
+| AAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG
+| 9w0BAQsFAAOCAQEAzkO3ZX4H6E7hjS7rRaL/Fvsz0mGxWSSYdqYZXN1A1VlmASdi
+| +LeN2DV4JRuM8hgvT/pN6yqGh/LAP7D+x4jp5oK3Xx50fsdgLvlhjdf+l9xpIMTq
+| IbzSASOKdWjDxh6J/y4ZWMr9szDCVL5m1ulk7rKrFkeNa7WPYcf+3PnVVyce1S6i
+| c255AagoHhbWMYGv5H/qOmOzha7SpyRRolHJqmNejApL0bEux+M8StqiQ2Cef83x
+| RtA7GHGeWD+DdlNeP3aIrN0eTGMzvQlQNsX6Mj8UbgCmtFBh69YOwLx7A8Ekc3o9
+| p2Mmpvre9lsmYUxvP0RJuibO9s+GswC4W+k6yA==
+|_-----END CERTIFICATE-----
+| rdp-ntlm-info: 
+|   Target_Name: svcorp
+|   NetBIOS_Domain_Name: svcorp
+|   NetBIOS_Computer_Name: SV-DC01
+|   DNS_Domain_Name: svcorp.com
+|   DNS_Computer_Name: sv-dc01.svcorp.com
+|   DNS_Tree_Name: svcorp.com
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-02-08T15:19:27+00:00
+5985/tcp  open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        syn-ack .NET Message Framing
+47001/tcp open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49665/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49666/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49667/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49669/tcp open  unknown       syn-ack
+49672/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49677/tcp open  ncacn_http    syn-ack Microsoft Windows RPC over HTTP 1.0
+49678/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49679/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49692/tcp open  tcpwrapped    syn-ack
+49706/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49715/tcp open  msrpc         syn-ack Microsoft Windows RPC
+Service Info: Host: SV-DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 8467/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 59597/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 3753/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 60237/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2023-02-08T15:19:24
+|_  start_date: N/A
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb  8 23:19:52 2023 -- 1 IP address (1 host up) scanned in 115.17 seconds
