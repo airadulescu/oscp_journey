@@ -16,3 +16,10 @@ OPTION: Not Stopping on warning messages
 GENERATED WORDS: 87568
 
 ---- Scanning URL: http://10.11.1.10/ ----
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: COULDNT CONNECT)
+
+-----------------
+END_TIME: Tue Feb  7 05:10:20 2023
+DOWNLOADED: 11676 - FOUND: 0
