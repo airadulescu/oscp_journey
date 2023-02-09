@@ -1,3 +1,116 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:40:45 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.221/ports.txt 10.11.1.221
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:41:23 2023 -- 1 IP address (1 host up) scanned in 37.90 seconds
+# Nmap 7.93 scan initiated Thu Feb  9 23:53:40 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.221
+Warning: 10.11.1.221 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.11.1.221
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-09 23:53:40 HKT for 106s
+Not shown: 65493 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE      REASON      VERSION
+21/tcp    open     ftp          syn-ack     FileZilla ftpd
+| ftp-syst: 
+|_  SYST: UNIX emulated by FileZilla
+135/tcp   open     msrpc        syn-ack     Microsoft Windows RPC
+139/tcp   open     netbios-ssn  syn-ack     Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds syn-ack     Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open     tcpwrapped   syn-ack
+| rdp-ntlm-info: 
+|   Target_Name: DEFENDER
+|   NetBIOS_Domain_Name: DEFENDER
+|   NetBIOS_Computer_Name: DEFENDER
+|   DNS_Domain_Name: defender
+|   DNS_Computer_Name: defender
+|   Product_Version: 10.0.14393
+|_  System_Time: 2023-02-09T15:55:06+00:00
+|_ssl-date: 2023-02-09T15:55:20+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=defender
+| Issuer: commonName=defender
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-25T20:54:36
+| Not valid after:  2023-07-27T20:54:36
+| MD5:   1fda87a91e217295d705196291b5de2a
+| SHA-1: 21dd7497169d9160a43b678e493238b08360ad7f
+| -----BEGIN CERTIFICATE-----
+| MIIC1DCCAbygAwIBAgIQLfo/ZSBUNodPOP0wvXoB3zANBgkqhkiG9w0BAQsFADAT
+| MREwDwYDVQQDEwhkZWZlbmRlcjAeFw0yMzAxMjUyMDU0MzZaFw0yMzA3MjcyMDU0
+| MzZaMBMxETAPBgNVBAMTCGRlZmVuZGVyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+| MIIBCgKCAQEAqt6wW9zJgD/3ly1MN/pYVpOv3WWRmfCUEcF+dpW0O8JGI5pJXE36
+| c7zS5Q2ZBeqmA8SyUymh/BoqrB+n9pvEmdlmJON93d9z4217S+jYvyC3WVZYREtq
+| UA9qCY/8XDyV+ihj/viUYch8x6UrEfcCtc873u39DzZDB57KHGGeBiyurZ+VVbnp
+| YD7zsECkScpXtzatGqtUL/7viS63PlS/F8SObl8yhVo9IqDaKfl96IUlR9ne/vwX
+| 6+tMDxntksfPDbHYrlzFwvi2Uk6cxrE7RWiNkczqkINcPPGWowWUb/G80AtLHMPN
+| +xsCsqdve0I9sdN+iwZoZ+GVqYPamA91/wIDAQABoyQwIjATBgNVHSUEDDAKBggr
+| BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAIwYNsO6+tf3
+| JuBeBwQmxhVr7RnEe+ZEu554/lPigHfxYBNsvjWD5vobvyC7HLOqy42g/hLCLB6d
+| L0n/5a2fGUPF4rZsZz0Atz2W2aUMMFEYwsqjU7tA8mY+Ghs8/PNWSLFaje9ZvCIc
+| XkLhO8MaklX3q68Zc9bHz227kRgZOAhiEscOgaWq2qUfwVFAC3XTLhM4XNfXh0kU
+| gh7M+8o3ZcUQMptesi4MCkam6n5qnq6wsJNBhcWVBff7aD90CeawlLaFQgGJTPXg
+| vGcswfruO7TUXPtgHyhEbEdBDCe7fe/7YIND3j6hAcGHrhzJwhoQvH0VFoAj8RHg
+| ISmZ0Jgw8Uc=
+|_-----END CERTIFICATE-----
+5447/tcp  filtered unknown      no-response
+5985/tcp  open     http         syn-ack     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+12011/tcp filtered unknown      no-response
+15048/tcp filtered unknown      no-response
+15772/tcp filtered unknown      no-response
+15991/tcp filtered unknown      no-response
+17735/tcp filtered unknown      no-response
+21231/tcp filtered unknown      no-response
+21924/tcp filtered unknown      no-response
+23590/tcp filtered unknown      no-response
+26658/tcp filtered unknown      no-response
+29918/tcp filtered unknown      no-response
+30124/tcp filtered unknown      no-response
+32233/tcp filtered unknown      no-response
+34540/tcp filtered unknown      no-response
+41045/tcp filtered unknown      no-response
+45940/tcp filtered unknown      no-response
+46755/tcp filtered unknown      no-response
+47001/tcp open     http         syn-ack     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+47319/tcp filtered unknown      no-response
+47375/tcp filtered unknown      no-response
+47968/tcp filtered unknown      no-response
+48695/tcp filtered unknown      no-response
+49664/tcp open     msrpc        syn-ack     Microsoft Windows RPC
+49665/tcp open     msrpc        syn-ack     Microsoft Windows RPC
+49666/tcp open     msrpc        syn-ack     Microsoft Windows RPC
+49667/tcp open     msrpc        syn-ack     Microsoft Windows RPC
+49668/tcp open     msrpc        syn-ack     Microsoft Windows RPC
+49669/tcp open     msrpc        syn-ack     Microsoft Windows RPC
+49713/tcp filtered unknown      no-response
+49716/tcp open     msrpc        syn-ack     Microsoft Windows RPC
+53389/tcp filtered unknown      no-response
+54836/tcp filtered unknown      no-response
+55228/tcp filtered unknown      no-response
+58059/tcp filtered unknown      no-response
+58910/tcp filtered unknown      no-response
+63589/tcp filtered unknown      no-response
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 34692/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 37960/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 58726/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 3917/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-security-mode: 
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| smb2-time: 
+|   date: 2023-02-09T15:55:10
+|_  start_date: 2023-01-26T20:54:36
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  9 23:55:26 2023 -- 1 IP address (1 host up) scanned in 105.89 seconds

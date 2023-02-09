@@ -15,7 +15,8 @@ def scan(ip, q_done):
     if not os.path.exists(ip):
         os.system(f"mkdir {ip}")
     cmd = (
-        f"sudo nmap {ip} -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./{ip}/ports.txt"
+        f"nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv {ip} -oN ./{ip}/ports.txt"
+        # f"sudo nmap {ip} -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./{ip}/ports.txt"
     )
     try:
         rs = os.system(cmd)

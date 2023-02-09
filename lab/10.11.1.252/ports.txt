@@ -1,3 +1,26 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:41:25 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.252/ports.txt 10.11.1.252
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:42:08 2023 -- 1 IP address (1 host up) scanned in 42.71 seconds
+# Nmap 7.93 scan initiated Fri Feb 10 00:27:47 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.252
+Nmap scan report for 10.11.1.252
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-10 00:27:47 HKT for 62s
+Not shown: 65532 filtered tcp ports (no-response)
+PORT      STATE SERVICE    REASON  VERSION
+8000/tcp  open  http       syn-ack Apache httpd 2.2.3 ((CentOS))
+| http-title: TimeClock Software :: Dev. Dpt. Thinc.local :: Log In
+|_Requested resource was login.php
+|_http-server-header: Apache/2.2.3 (CentOS)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-open-proxy: Proxy might be redirecting requests
+8888/tcp  open  http-proxy syn-ack Squid http proxy 4.6
+|_http-title: ERROR: The requested URL could not be retrieved
+|_http-server-header: squid/4.6
+22000/tcp open  ssh        syn-ack OpenSSH 4.3 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 aba786a8a039c60a810bf9ae6f4b5179 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIIzAJUM+3RuUNtxkHHcS6rXq8iPKoBv4VVc4nBq4B0d98jswO+Sk5S+u553nqho9sbMSzQyBTWs39k2MGsDz0lUQM57iO0ZqJVOuyooh4/ad1o688nmeLgFmnGOz6QjDBfYV6ABRTWkg7H6kAypHh1mn1H80rS0TWuuCRY3o5EVAAAAFQCbY10HyybZRgjKScHL8cGfeDJegwAAAIAtzlzY4NoQFXkD7s7yKV8uycp7qYLWzzymDbrBKBYvRGu8EKH/wvquRG8C1PfZu2HtWvVwRjiBBIaBJRVY8BT3c/iGpENW49zX0oVJ/AFfGwfb0xvmL5k/mEm9YsuMyxp9MP8KY+6QBFG0i6B9DAHSbEAzXAVXbP7lk4Ttt0MJvQAAAIB0TdXHd2DTnYGYDNK4Mrin5DVwFu2mnKXMrM+UXFBAdFlRK1M3gCJGINSaL/N/zCkwHlTWpk7I5eJqGA6X0l/fejNn/LYFpNoZ6TD3U2Yy5PIN8wayijSQRFNgTD2NUmG+Vm1SaII+qwYcmZJlZr/10nz3hOQPYzu7DCCb1YWOWg==
+|   2048 8ba511b8ca759e8ca7172ca3c9901e87 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAyjxjmvZVP9H18SAGDc/hMku0RzVqt6AQsTHjgxIm3EJosBzPPUK0jIdBKaT7wGy6FA+8ZJTGsHiu/+fZ2h02V6YMw3wxHH3FR9ZDwL0carHKovHLLg/4xbx/IF4ML6Wcyx5/oAqhk6BjV8CAmA+qItqcljM0m092GaZLSMz3CifBLHwNzRerfm9UJeK8QOviIu0n3NOmRb0Hdfy7BelJzfeIMlCTFXuQDdJ6vqJOJhxhlrQddu6+bMpFka1wN6Gd6/fI/5IxLX4FyIsr007NYI4jgbiY7uGCiQxv8FFGR1FcLBJEsFwtdf2grmx4XjpKsdoi00R2wAmMnuu6UPDPBQ==
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 10 00:28:49 2023 -- 1 IP address (1 host up) scanned in 62.61 seconds

@@ -1,19 +1,56 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:39:45 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.116/ports.txt 10.11.1.116
+# Nmap 7.93 scan initiated Thu Feb  9 23:51:30 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.116
+Warning: 10.11.1.116 giving up on port because retransmission cap hit (6).
 Nmap scan report for 10.11.1.116
-Host is up, received user-set (0.36s latency).
-Not shown: 60793 filtered tcp ports (no-response), 4737 closed tcp ports (reset)
-Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
-PORT    STATE SERVICE REASON
-21/tcp  open  ftp     syn-ack ttl 62
-22/tcp  open  ssh     syn-ack ttl 62
-80/tcp  open  http    syn-ack ttl 62
-110/tcp open  pop3    syn-ack ttl 62
-143/tcp open  imap    syn-ack ttl 62
-Device type: firewall
-Running (JUST GUESSING): Fortinet embedded (87%)
-OS CPE: cpe:/h:fortinet:fortigate_100d
-Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
-No exact OS matches for host (test conditions non-ideal).
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-09 23:51:30 HKT for 40s
+Not shown: 65502 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE      REASON      VERSION
+21/tcp    open     ftp          syn-ack     vsftpd 3.0.3
+22/tcp    open     ssh          syn-ack     OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 86887a3f919526ff1ad1644439ea8c1a (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvi/ypi1mmaw5TiV6EWYiiEDjeuXvpliI7rXUVn+Jx7fSFOMwTdRt0KjB7P3helUcxvs7U0diCyo+TPEeU2s2wJB+khfExrGhUws9k7zZERkybdhiUW5z45xfeil+2hUsQI8SJaIZTbpOo9hwQtcIjDu6T1WxPyPFetcvWpvn28x3xMMEenKiqoIfFflIBLnfBquQYwLKHu3t9GbqTw8Azh0+D9g1ZPMoP/3sd34anm9izHZVcX6tIE1iX0dcf0rXND3msdNcaZObtWgFkuVnf3sn051FYR20HBB28qBovRyqPMYXPre9GgE6yFQzUkoHJg6o9t/nWxM4mJwrGFqhr
+|   256 076218a5a3892f3e91d906c2ea37cc23 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCZ+//UHn+UtbG+StJ+oT2yYphFGpOl9ytdC4PpPjvHh0hjkLBxB8OUqdjrp6bbHmaiwVO3Y3CUBtCnLVjjcIL4=
+|   256 c2bea44f01a171fbb20c3a3ea4c85651 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPEIOdW3EB0KuyeW1Zm12yGMB1C5qh/HXM+0B5z/mjfp
+80/tcp    open     http         syn-ack     Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Dotty
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+110/tcp   open     tcpwrapped   syn-ack
+143/tcp   open     tcpwrapped   syn-ack
+3411/tcp  filtered biolink-auth no-response
+7954/tcp  filtered unknown      no-response
+8175/tcp  filtered unknown      no-response
+9925/tcp  filtered xybrid-cloud no-response
+10872/tcp filtered unknown      no-response
+13983/tcp filtered unknown      no-response
+17454/tcp filtered unknown      no-response
+18354/tcp filtered unknown      no-response
+18569/tcp filtered unknown      no-response
+19738/tcp filtered unknown      no-response
+19888/tcp filtered unknown      no-response
+20114/tcp filtered unknown      no-response
+23956/tcp filtered unknown      no-response
+26655/tcp filtered unknown      no-response
+28278/tcp filtered unknown      no-response
+29170/tcp filtered unknown      no-response
+31746/tcp filtered unknown      no-response
+34886/tcp filtered unknown      no-response
+35638/tcp filtered unknown      no-response
+36616/tcp filtered unknown      no-response
+40067/tcp filtered unknown      no-response
+40682/tcp filtered unknown      no-response
+42486/tcp filtered unknown      no-response
+57445/tcp filtered unknown      no-response
+58615/tcp filtered unknown      no-response
+59135/tcp filtered unknown      no-response
+59467/tcp filtered unknown      no-response
+65384/tcp filtered unknown      no-response
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:40:51 2023 -- 1 IP address (1 host up) scanned in 66.70 seconds
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  9 23:52:10 2023 -- 1 IP address (1 host up) scanned in 40.08 seconds

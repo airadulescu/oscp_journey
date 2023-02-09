@@ -1,3 +1,95 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:39:52 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.120/ports.txt 10.11.1.120
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:40:28 2023 -- 1 IP address (1 host up) scanned in 36.15 seconds
+# Nmap 7.93 scan initiated Thu Feb  9 23:52:39 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.120
+Warning: 10.11.1.120 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.11.1.120
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-09 23:52:39 HKT for 106s
+Not shown: 64815 closed tcp ports (conn-refused), 693 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON  VERSION
+53/tcp    open  domain        syn-ack Simple DNS Plus
+88/tcp    open  kerberos-sec  syn-ack Microsoft Windows Kerberos (server time: 2023-02-09 15:53:11Z)
+135/tcp   open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+389/tcp   open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: xor.com0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds? syn-ack
+464/tcp   open  kpasswd5?     syn-ack
+593/tcp   open  ncacn_http    syn-ack Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped    syn-ack
+3268/tcp  open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: xor.com0., Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped    syn-ack
+3389/tcp  open  ms-wbt-server syn-ack Microsoft Terminal Services
+| ssl-cert: Subject: commonName=xor-dc01.xor.com
+| Issuer: commonName=xor-dc01.xor.com
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-25T23:33:05
+| Not valid after:  2023-07-27T23:33:05
+| MD5:   5a2bda7e2d9cc32ef7fef04be6b54a97
+| SHA-1: c18b1801bfa306652b5cde71c7f02dadeb6ec709
+| -----BEGIN CERTIFICATE-----
+| MIIC5DCCAcygAwIBAgIQEmol/3haubhNywEmduRQ8jANBgkqhkiG9w0BAQsFADAb
+| MRkwFwYDVQQDExB4b3ItZGMwMS54b3IuY29tMB4XDTIzMDEyNTIzMzMwNVoXDTIz
+| MDcyNzIzMzMwNVowGzEZMBcGA1UEAxMQeG9yLWRjMDEueG9yLmNvbTCCASIwDQYJ
+| KoZIhvcNAQEBBQADggEPADCCAQoCggEBAO8OOH9BTl3mYJ+/IxfxBnN/+kZL9U0f
+| HYSQi9tyaqhz8EtBkbk3hJ4sJrE9BHz3PU5rHYM0EXaMXeaKZBK16qLwogqatV3D
+| uCgolhb0rOIW00zjjmez+HVf9rEb0OvZle0WOEaS+TjgAlz62ijL+yZjlDqkjkoW
+| B4H+VOlfs1hzHQaKBBGZpEahkDQMZE3Yy5BQtjIaKOZRyW0LeE0vYOjAxNtqSOPM
+| rr+qyqn+grHM18EYielazGPVHqX//3tnT5EQZF6RMCEdhynZwknWJoXojkbN3hwR
+| CPYdI2aUH7rM+9pnoYm6OIbm7Y6u/8A+nWkyhwYkcUTSNrgWW0dGD6UCAwEAAaMk
+| MCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEB
+| CwUAA4IBAQAXGDKglU2xonGpk6J9eKUwmrlP6rqg8xWhy/TZdYalzYpogwJdsCrU
+| kkN4J4rd8ijAb4GLGLH3/XRwTjGa/ocT8SI5YsJvMYVMgMnz2nsEJ6uHPaNQx7C3
+| FEMweW86gqBTqlivRMY923nddiHb9/5S52ETbCqGIPN9cnQcro/Gt4h4iPVAJmEL
+| zvN8JuOikiXuHbsyMfCc/lSMJCPAQWDu5O4kF48eSfynLHA1drYXx/8jFnFK6tVC
+| Mw6dpUQLzlyjcqvhBP/oqGYDYPVDqx7n/iOQbFJBCnhnFpFY9sc1zGa/sc8iqfEX
+| IC/un7ZREB00gXANa5bWx2+vzQckTPeW
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-02-09T15:54:18+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: xor
+|   NetBIOS_Domain_Name: xor
+|   NetBIOS_Computer_Name: XOR-DC01
+|   DNS_Domain_Name: xor.com
+|   DNS_Computer_Name: xor-dc01.xor.com
+|   DNS_Tree_Name: xor.com
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-02-09T15:54:09+00:00
+5985/tcp  open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        syn-ack .NET Message Framing
+47001/tcp open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+49664/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49665/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49666/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49667/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49669/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49672/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49677/tcp open  ncacn_http    syn-ack Microsoft Windows RPC over HTTP 1.0
+49678/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49683/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49688/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49707/tcp open  msrpc         syn-ack Microsoft Windows RPC
+50563/tcp open  msrpc         syn-ack Microsoft Windows RPC
+Service Info: Host: XOR-DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| smb2-time: 
+|   date: 2023-02-09T15:54:09
+|_  start_date: N/A
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 24649/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 48209/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 19160/udp): CLEAN (Timeout)
+|   Check 4 (port 18965/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  9 23:54:25 2023 -- 1 IP address (1 host up) scanned in 106.43 seconds

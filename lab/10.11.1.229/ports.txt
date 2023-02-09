@@ -1,3 +1,60 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:41:04 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.229/ports.txt 10.11.1.229
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:41:42 2023 -- 1 IP address (1 host up) scanned in 37.94 seconds
+# Nmap 7.93 scan initiated Fri Feb 10 00:11:32 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.229
+Increasing send delay for 10.11.1.229 from 0 to 5 due to 11 out of 27 dropped probes since last increase.
+Increasing send delay for 10.11.1.229 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.11.1.229
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-10 00:11:32 HKT for 90s
+Not shown: 65529 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON  VERSION
+25/tcp   open  tcpwrapped    syn-ack
+| smtp-commands: MAIL, SIZE 20480000, AUTH LOGIN, HELP
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY
+80/tcp   open  http          syn-ack Microsoft IIS httpd 10.0
+|_http-favicon: Unknown favicon MD5: 4859E39AE6C0F1F428F2126A6BB32BD9
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Home Page - Long Live the Squirrel
+| http-methods: 
+|_  Supported Methods: GET OPTIONS
+110/tcp  open  pop3          syn-ack hMailServer pop3d
+|_pop3-capabilities: TOP UIDL USER
+143/tcp  open  imap          syn-ack hMailServer imapd
+|_imap-capabilities: IMAP4 IDLE SORT completed NAMESPACE OK CHILDREN QUOTA RIGHTS=texkA0001 ACL CAPABILITY IMAP4rev1
+587/tcp  open  tcpwrapped    syn-ack
+|_smtp-commands: Couldn't establish connection on port 587
+|_smtp-ntlm-info: ERROR: Script execution failed (use -d to debug)
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+|_ssl-date: 2023-02-09T16:12:52+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=mail
+| Issuer: commonName=mail
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-25T22:38:15
+| Not valid after:  2023-07-27T22:38:15
+| MD5:   fe033334b8d8d49fea7ffb65274108c4
+| SHA-1: 980489672ebe30c43fc81c5d41cef088fde6a91c
+| -----BEGIN CERTIFICATE-----
+| MIICzDCCAbSgAwIBAgIQNPpq9ombDqhCd0hV2KM0HTANBgkqhkiG9w0BAQsFADAP
+| MQ0wCwYDVQQDEwRtYWlsMB4XDTIzMDEyNTIyMzgxNVoXDTIzMDcyNzIyMzgxNVow
+| DzENMAsGA1UEAxMEbWFpbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+| ANnhHZ5/xBIKhM2oYrJwB3SwEDgnAFSA3CvvBnNhKF3PbnVvKHgM7EU/bxFZM3Oc
+| oYK3gT1J83PCNYNMLkcOK40D5cvG8q2dVcGLEYLnp06TwiZiAbYVlhFWPktm1q6z
+| Aeax+Uodvs8uPNfiV/Mo05gJQxLLv+uLdKGDZ1dZe3AHUWka62+LrswDn/WEoRaz
+| rQit4uDcakJuHUeMGYjOzguxmm5z6s0c7JwYs2vzQQcfIpr+MQw6s3WeJF6s+LZU
+| z3elAdx7GkQXsOZyACmMgOzK9K+uMIfn2PLwbgChpGlWjf3hH34XKaQotCxA53XU
+| 8yDTdbnDCE69fkCuEWOp3OMCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEw
+| CwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBCwUAA4IBAQB/loNKwDA7OvNKnWuc8Qkg
+| SU9S2O5jxL009ZGGv/+0K6JWZXZL/oJC3RI+lKcYlNO9KwFtKh7ouVnkizTy0VhS
+| kNtVy3he6cSfCqr5DK+63RNsBwsU4cbaS3R0zHfjXon4GXGHwLdX3E+M+z3iw3YW
+| 8SzTZS1ezVnQhFXw17xhPAEVm2DT7jjlsdAT2DCpRLZ7m/uAfdpK/Z5zDXGQAh5+
+| 2wmARyJNYws66GVHBMj5tPV3WWl/jc3OKBY1dqj8a8/P8vTBE7osiWAbh2rRaEj3
+| J+3dDnJVsEgZfnA+nY5A02mxVDjwrGMG/LFuMJL0dQA4ZRfQmdguPzhwSQX8GzY3
+|_-----END CERTIFICATE-----
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 10 00:13:02 2023 -- 1 IP address (1 host up) scanned in 90.91 seconds

@@ -1,3 +1,52 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:39:12 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.79/ports.txt 10.11.1.79
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:39:55 2023 -- 1 IP address (1 host up) scanned in 43.86 seconds
+# Nmap 7.93 scan initiated Thu Feb  9 23:48:59 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.79
+Nmap scan report for 10.11.1.79
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-09 23:48:59 HKT for 69s
+Not shown: 65533 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON  VERSION
+2233/tcp open  infocrypt?    syn-ack
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: MARIA
+|   NetBIOS_Domain_Name: MARIA
+|   NetBIOS_Computer_Name: MARIA
+|   DNS_Domain_Name: Maria
+|   DNS_Computer_Name: Maria
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-02-09T15:50:03+00:00
+|_ssl-date: 2023-02-09T15:50:07+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=Maria
+| Issuer: commonName=Maria
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-26T02:29:08
+| Not valid after:  2023-07-28T02:29:08
+| MD5:   c6840562782748c4b8db68b0bfac1d57
+| SHA-1: 5e6ca3bde6cbcf06e1326b1f74a3ed9671309258
+| -----BEGIN CERTIFICATE-----
+| MIICzjCCAbagAwIBAgIQRLAV8mkbHZFOxZyWR8HsTjANBgkqhkiG9w0BAQsFADAQ
+| MQ4wDAYDVQQDEwVNYXJpYTAeFw0yMzAxMjYwMjI5MDhaFw0yMzA3MjgwMjI5MDha
+| MBAxDjAMBgNVBAMTBU1hcmlhMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+| AQEAwfWvxYhpO/8yCodoYzum3sgxVSQc8pu2BPk+wIjTnV6f7IK4m8kqlFCbliTj
+| sHPDlFVUdHq6tZyQ7OGZ4Pdub88VIJjfCxVVtNiy+zMI+pj6gRZ2lXYRJy4VgUhK
+| grd+C9BeYoZQOVvEjQxw1HYF/Y76oKpxcbmTP2qfCmW9/NOpVD+an4DNA6JKNmPi
+| RPsRmhAp5PxjdMj0oEb7j24K4P2Cg1x/RFJD0h6Jj49zypMMwTNjvBOpb7RIwqDf
+| 7u5rAyg3o3jB+ZTo+PCrwh0kinCxzmqhEomeSFo5iyg6RNuxPCKqZimy8dJhRAh+
+| IplYKg1VpRCF0OF4G6yQa7X5YQIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD
+| ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAHeKyOrwLrgv/SVZH/98
+| Npgi9EQP4/gLhanF/DCiqPJOH9vyPit5cdcW626gljE7M9uBaKQBLy2gLBoyGZJJ
+| YKD5/sxDhoWptCayWScCL5zMSN9HgCysn/NXR8IU9eJfB4Cclcuw+aObQi7lpUSl
+| BuH1z2JiOMx/R4UqQeBsT+ihxwH2pA2Yq0rQHrlZFR02820PCtyj3qW9cyQyDIZm
+| Tzn4SMP/rRvZPAefKhYq1vexHcd2sXdKVGb1sSjcw76wNrmPZhflpRoDtO7efoYg
+| +v+LkVD6hYsJYwk/dbnbbxh9nXHsuW6o+3Txe78g6ReHa0qQHsAuUU62EPrixiH1
+| Mnc=
+|_-----END CERTIFICATE-----
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  9 23:50:08 2023 -- 1 IP address (1 host up) scanned in 69.49 seconds

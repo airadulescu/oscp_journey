@@ -1,19 +1,117 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:39:45 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.111/ports.txt 10.11.1.111
+# Nmap 7.93 scan initiated Thu Feb  9 23:50:18 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.111
+Warning: 10.11.1.111 giving up on port because retransmission cap hit (6).
 Nmap scan report for 10.11.1.111
-Host is up, received user-set (0.36s latency).
-Not shown: 60975 filtered tcp ports (no-response), 4555 closed tcp ports (reset)
-Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
-PORT      STATE SERVICE       REASON
-139/tcp   open  netbios-ssn   syn-ack ttl 126
-3389/tcp  open  ms-wbt-server syn-ack ttl 126
-49665/tcp open  unknown       syn-ack ttl 126
-49667/tcp open  unknown       syn-ack ttl 126
-49668/tcp open  unknown       syn-ack ttl 126
-Device type: firewall
-Running (JUST GUESSING): Fortinet embedded (87%)
-OS CPE: cpe:/h:fortinet:fortigate_100d
-Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
-No exact OS matches for host (test conditions non-ideal).
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-09 23:50:18 HKT for 116s
+Not shown: 65432 closed tcp ports (conn-refused), 87 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON  VERSION
+135/tcp   open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds? syn-ack
+1433/tcp  open  ms-sql-s      syn-ack Microsoft SQL Server 2017 14.00.1000.00; RTM
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-26T13:18:25
+| Not valid after:  2053-01-26T13:18:25
+| MD5:   88c64523e3c304ceea0976328c67b89f
+| SHA-1: 986dffe5f1eeccde72460aa01d8abe9ef561f8c3
+| -----BEGIN CERTIFICATE-----
+| MIIDADCCAeigAwIBAgIQSA7Y8vgR6bRIK9Y/WLavcjANBgkqhkiG9w0BAQsFADA7
+| MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA
+| bABsAGIAYQBjAGswIBcNMjMwMTI2MTMxODI1WhgPMjA1MzAxMjYxMzE4MjVaMDsx
+| OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs
+| AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJReGVIk
+| zjbgWGIBp9lmhO7Mn3OrSzQqGhJlQL4sRmtZMbmlFQJgRbY4ZBNambuynHX37N+e
+| +V0fWwnt/tQPgpmnUWTt25LshzFN6WLd90mp0ExZVTvEz7tH38ETv6mI0MWdau5O
+| +JCyPohtNErgW/sVbUnSldwxAYUgj04AhwV0AHP268PMeF7BcdSrPt7E4bPa7bKc
+| msiLuUYK8k0S9957Uc/3DfG9nCn7iZqR0ZR/5E1+g9q5tfzgYMRDpk8iVbOcI8Es
+| c/ibYr2RO3sPwQe6LGTIhIVnYafFvAkSss7/7YMtaTB5WmIOJii3Zgy1f3C6HWgw
+| NpDjMShFvrGOZAECAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAEC+CtsTQdr1QWInW
+| QO3FiWxJx03vDgf4hc39RmFW0iBBhuZcMLV6ZKUJ2otxFkLeund7xzCiEII7unPR
+| VYzfDW3nQm6gOou8/sn6BgmGb7d/E8Oiszl/1SQqt3Z2lAKassw/tdQptA5LzRve
+| g3XzkdKY0N/Df9i0sejFXWDHV7WMQJrQkw6FWN33Nno2c8dOvW1Jo8ORiGBH1ai2
+| w0mgm6VYcMbHWC3gIFnTCM+1l8XseNYQKM3N35m2gHLklR9btsQBAi6XTW9rbvNc
+| pEHdKSMLtHwW9p6zhyAQi1xarbPrQuaourX8tVb+udt8QxQG3sCqbXtTSiOIyG7D
+| igNFyQ==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-02-09T15:52:12+00:00; 0s from scanner time.
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+3389/tcp  open  ms-wbt-server syn-ack Microsoft Terminal Services
+|_ssl-date: 2023-02-09T15:52:12+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: 1NSIDER
+|   NetBIOS_Domain_Name: 1NSIDER
+|   NetBIOS_Computer_Name: 1NSIDER
+|   DNS_Domain_Name: 1nsider
+|   DNS_Computer_Name: 1nsider
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-02-09T15:51:45+00:00
+| ssl-cert: Subject: commonName=1nsider
+| Issuer: commonName=1nsider
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-25T13:18:19
+| Not valid after:  2023-07-27T13:18:19
+| MD5:   e8976e71462fc02840057fd61fc24588
+| SHA-1: d3df18fb8e5d85be32ca339febb108843a75dc2b
+| -----BEGIN CERTIFICATE-----
+| MIIC0jCCAbqgAwIBAgIQJ+Et4qrK7olLB6VPFiwOkjANBgkqhkiG9w0BAQsFADAS
+| MRAwDgYDVQQDEwcxbnNpZGVyMB4XDTIzMDEyNTEzMTgxOVoXDTIzMDcyNzEzMTgx
+| OVowEjEQMA4GA1UEAxMHMW5zaWRlcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+| AQoCggEBAKszeDyUV/zjOhajrE0YU+5lPX6MbMrlmVcpek+7ZfDgOY8FBYqeZCmM
+| Kxk38mTd+wI239ELu5HIZxkcVkOKS/TIqrBgA0upX+3UZycWtQXxncQFPlRNs962
+| HmgbDkExaeXD5fTpwnae7+AhZQ2OMjAvSI+RYdieJsxCub9VSqPKb7PW6e67EVee
+| B/5UjvaQ1Ienb7uPDeYn83lqQgtJhmGdUFzM0fNZ5x29aAIVEW7uQi4DgFQDQZEU
+| mKCH3FLLVkmvHusvU90ttvgDqfIzGRrKb96kVErBlS+qrooNAOcYJ3JSlS0tWaxg
+| mK5ML18Yho9t2v5khKMX+wURR4WbczECAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYB
+| BQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBCwUAA4IBAQAoTcOEyMLtapvs
+| 9NV+GwJ/F4kxE9Ofc3fYX2XpL1I/tj6lqEf068V7DIa9e/E74JYxkFqYqLmeXuvT
+| EHua+KEPfYjKM1FgHJ1/1WpQaF5rSNLTXqEAUHDI8CWiBEbBZ0Hnz0v9qfHsL9qo
+| UXw52IsJTeswa5X6TSGwNfyC/FQcTXKPz5aSUsJJ4uaZoc2Q8G8B3vwQ3YkG7l48
+| T1AzVzx/sHpp1OKp7nFaUCwmmHoP1HD5je/D4SNEE5Ijc/aFXnZnTH/lBJswDE21
+| BhbQxXoogJPYRcv+ZZhlzCp+8pyp7CHKwYa6Qjx7aFa2e2O1uQAnTXV+XnCLdsAX
+| UZpR5jYm
+|_-----END CERTIFICATE-----
+5985/tcp  open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+8732/tcp  open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+47001/tcp open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49664/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49665/tcp open  unknown       syn-ack
+49666/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49667/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49668/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49669/tcp open  unknown       syn-ack
+49670/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49671/tcp open  msrpc         syn-ack Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:41:04 2023 -- 1 IP address (1 host up) scanned in 79.52 seconds
+Host script results:
+| smb2-time: 
+|   date: 2023-02-09T15:51:48
+|_  start_date: N/A
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 63968/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 47703/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 41128/udp): CLEAN (Timeout)
+|   Check 4 (port 34739/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  9 23:52:14 2023 -- 1 IP address (1 host up) scanned in 116.51 seconds

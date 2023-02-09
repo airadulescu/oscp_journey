@@ -1,3 +1,111 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:41:03 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.227/ports.txt 10.11.1.227
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:41:41 2023 -- 1 IP address (1 host up) scanned in 37.91 seconds
+# Nmap 7.93 scan initiated Fri Feb 10 00:08:59 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.227
+Warning: 10.11.1.227 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.11.1.227
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-10 00:08:59 HKT for 139s
+Not shown: 65512 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE        REASON      VERSION
+21/tcp    open     ftp            syn-ack     Microsoft ftpd 5.0
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   SYST: Windows_NT version 5.0
+|   STAT: 
+| jd Microsoft Windows NT FTP Server status:
+|      Version 5.0
+|      Connected to 192.168.45.188
+|      Logged in as IEUser@
+|      TYPE: ASCII, FORM: Nonprint; STRUcture: File; transfer MODE: STREAM
+|      No data connection
+|_End of status.
+25/tcp    open     smtp           syn-ack     Microsoft ESMTP 5.0.2195.5329
+| smtp-commands: jd.acme.local Hello [192.168.45.188], AUTH GSSAPI NTLM LOGIN, AUTH=LOGIN, TURN, ATRN, SIZE 2097152, ETRN, PIPELINING, DSN, ENHANCEDSTATUSCODES, 8bitmime, BINARYMIME, CHUNKING, VRFY, OK
+|_ This server supports the following commands: HELO EHLO STARTTLS RCPT DATA RSET MAIL QUIT HELP AUTH TURN ATRN ETRN BDAT VRFY
+80/tcp    open     http           syn-ack     Microsoft IIS httpd 5.0
+|_http-server-header: Microsoft-IIS/5.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD COPY PROPFIND SEARCH LOCK UNLOCK DELETE PUT POST MOVE MKCOL PROPPATCH
+|_  Potentially risky methods: TRACE COPY PROPFIND SEARCH LOCK UNLOCK DELETE PUT MOVE MKCOL PROPPATCH
+| http-ntlm-info: 
+|   Target_Name: JD
+|   NetBIOS_Domain_Name: JD
+|   NetBIOS_Computer_Name: JD
+|   DNS_Domain_Name: jd.acme.local
+|   DNS_Computer_Name: jd.acme.local
+|_  Product_Version: 5.0.2195
+| http-webdav-scan: 
+|   Allowed Methods: OPTIONS, TRACE, GET, HEAD, COPY, PROPFIND, SEARCH, LOCK, UNLOCK
+|   Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH
+|   Server Type: Microsoft-IIS/5.0
+|   WebDAV type: Unknown
+|_  Server Date: Thu, 09 Feb 2023 16:10:48 GMT
+135/tcp   open     msrpc          syn-ack     Microsoft Windows RPC
+139/tcp   open     netbios-ssn    syn-ack     Microsoft Windows netbios-ssn
+443/tcp   open     https?         syn-ack
+445/tcp   open     microsoft-ds   syn-ack     Windows 2000 microsoft-ds
+1025/tcp  open     msrpc          syn-ack     Microsoft Windows RPC
+1026/tcp  open     msrpc          syn-ack     Microsoft Windows RPC
+1028/tcp  open     unknown        syn-ack
+2094/tcp  filtered nbx-au         no-response
+3372/tcp  open     msdtc          syn-ack     Microsoft Distributed Transaction Coordinator
+4234/tcp  filtered vrml-multi-use no-response
+5800/tcp  open     vnc-http       syn-ack     RealVNC 4.0 (resolution: 400x250; VNC TCP port: 5900)
+|_http-server-header: RealVNC/4.0
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: VNC viewer for Java
+5900/tcp  open     vnc            syn-ack     VNC (protocol 3.8)
+| vnc-info: 
+|   Protocol version: 3.8
+|   Security types: 
+|_    VNC Authentication (2)
+6532/tcp  open     http           syn-ack     Microsoft IIS httpd 5.0
+|_http-server-header: Microsoft-IIS/5.0
+|_http-title: You are not authorized to view this page
+8715/tcp  filtered unknown        no-response
+12928/tcp filtered unknown        no-response
+26095/tcp filtered unknown        no-response
+27900/tcp open     unknown        syn-ack
+42976/tcp filtered unknown        no-response
+45630/tcp filtered unknown        no-response
+54850/tcp filtered unknown        no-response
+Service Info: Host: jd.acme.local; OSs: Windows, Windows 2000; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_2000
+
+Host script results:
+|_clock-skew: mean: -59m58s, deviation: 1h24m47s, median: -1h59m56s
+|_smb2-time: Protocol negotiation failed (SMB2)
+| smb-os-discovery: 
+|   OS: Windows 2000 (Windows 2000 LAN Manager)
+|   OS CPE: cpe:/o:microsoft:windows_2000::-
+|   Computer name: jd
+|   NetBIOS computer name: JD\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2023-02-09T18:10:41+02:00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 11846/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 52871/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 48444/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 53300/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_smb2-security-mode: Couldn't establish a SMBv2 connection.
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| nbstat: NetBIOS name: JD, NetBIOS user: ADMINISTRATOR, NetBIOS MAC: 005056ba1054 (VMware)
+| Names:
+|   JD<00>               Flags: <unique><active>
+|   JD<03>               Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   ADMINISTRATOR<03>    Flags: <unique><active>
+|   JD<20>               Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+| Statistics:
+|   005056ba10540000000000000000000000
+|   0000000000000000000000000000000000
+|_  0000000000000000000000000000
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 10 00:11:18 2023 -- 1 IP address (1 host up) scanned in 138.88 seconds

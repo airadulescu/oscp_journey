@@ -1,3 +1,94 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:41:04 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.231/ports.txt 10.11.1.231
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:41:43 2023 -- 1 IP address (1 host up) scanned in 38.83 seconds
+# Nmap 7.93 scan initiated Fri Feb 10 00:14:02 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.231
+Warning: 10.11.1.231 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.11.1.231
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-10 00:14:02 HKT for 50s
+Not shown: 59398 closed tcp ports (conn-refused), 6132 filtered tcp ports (no-response)
+PORT    STATE SERVICE     REASON  VERSION
+22/tcp  open  ssh         syn-ack OpenSSH 6.7p1 Debian 5+deb8u3 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 b68d1ef380643f8a9652927a9fb1be67 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAKOqKCoxsGRCrpzMUAgIujWPKFBws9ApAvnnn6DQ8GO4GzpSylXDDa6EPNlNRUGJ/DO0XHysjZe4D5cDMvpt/5TVfBm/GPu2cxEIBjAwDMPLhJxwnQIzKueiLX27u63bk0iFcIvPuCFsnsNYADXa1NRgbpQRurujFZsP+OrhAYT1AAAAFQDT/5tCY5KTvJ35FwFf2wsBOM3vEwAAAIBqbVQhGPs4NZ3QcOqC7uglCPwSlldhrsziWlKqenvPoDtYSHNCVdU/snRiIB/4/Fxpy0DxNH/4MRVXf0ZNflHn6KqHlRKWahrqRdp26wnMboZmx1Sb0MG6vkJn0sLQOjAkURj1OWSaYu20xzfLKFOI9DxKJTnhqIGl7S2FmjRlqwAAAIAYeu1nUj/8kKSPu9jKvRiFjnrrTRgYNrHb8FR6jFFuDfR/xDBfdB86jIaO31ZTU46sG6HKBlhPEiv96syacF4JDH/J33DtJKRyiwZzSzCyk0qHMuupGp7fWJTXks0KVuv3Lx1CRV+LO4pCsNx7WbFjQZYkN34SNOEHoMYV3yLriA==
+|   2048 72c406a72f711b6a6b57fecfad3f9c16 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD3mNozgt43qPiwvP667f/13IvfmhMiEKKpbkfFYTOi7NWkwTt7ZL8kRVI4rnZqIjsYRI8bRqX9MH7+kMI43SdKm31/OjMuwKxC5E8yBXr2/FrRupkFCKJpHZRg13inwdNbxCDSh//Z8O9uJItxA+J6Oh7M3LBDUAQFx7TZ87dLASJCnjl+OHxA4QB5T8Ri9dlViQpSs++7GhBYz5dhB+lYtrBo69Iag49jbTZiDooGX/MEW3Qp0eM29hUXsRXx8VH7vM86m9FvCuZZEU7xAhw1xrNtmGZgZoHPhdR3wcvydb6MCEmGRKLQWEWCoalwExxYZStSUj5jr8/bnI5poj67
+|   256 6bc66efbba06dc23f93e01a62a87481a (ECDSA)
+|_ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIcrN2N6CzFzFe9n+SWzgkcbBGGcG/z1NScwCmXKV9sJgy12LiiJlASKc75p4G6zQX5SXjtMyAloIT+T2VRCRYo=
+25/tcp  open  smtp        syn-ack Postfix smtpd
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=localhost.localdomain
+| Issuer: commonName=localhost.localdomain
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2013-05-05T06:42:26
+| Not valid after:  2023-05-03T06:42:26
+| MD5:   2c35f35e5952898d73e2e771e525cd99
+| SHA-1: 95881649542b983758d27e2e2645676a9822d3a6
+| -----BEGIN CERTIFICATE-----
+| MIIC0DCCAbigAwIBAgIJAICqgo+MWpfUMA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNV
+| BAMTFWxvY2FsaG9zdC5sb2NhbGRvbWFpbjAeFw0xMzA1MDUwNjQyMjZaFw0yMzA1
+| MDMwNjQyMjZaMCAxHjAcBgNVBAMTFWxvY2FsaG9zdC5sb2NhbGRvbWFpbjCCASIw
+| DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPqM3C90tDptCUJc1sstub8sjbO9
+| w3b/vWNRhc1AgJbJRsOLamg791PIHoOWiPSsGSwbvanGzhrmQ5ZDi5r4/OiDNc+d
+| 1XyHWPrJULPxwZu1fxbMgJ8eIhZmqVCq3r+FswYwxkq/UARfq/E1AW4RyANxsLS0
+| uYo9wEp+D7dZhyR2qcS9JxmDOJzHxlSWGsPRmZlPXosfXEqn0/gjVwSPxhQlZzE5
+| iFws1/xrbO4h/367PSqEMIrKjPPCxSm8DG7c2hkh4RIXv5WS2Tpn88FBX+BoA2uk
+| f0Cf+6RS6M1nrRWHgB20px9vdZjlYi8qYEAywOzSgThF95aF3uWznmowar8CAwEA
+| AaMNMAswCQYDVR0TBAIwADANBgkqhkiG9w0BAQUFAAOCAQEAiT5k/qA/XLDEF4Hk
+| EqIYXxuuk18aRhnI23Pl/6C9BSv5SGU+XLwk2AoFyR5JWvwxIpEJ/kq1S5qCNhEi
+| 93T29QBkk0cuEXKOESp8taIu+og3QRxdAu7vB5y9tE62ftxCi31axnp8oo8kivCw
+| BGCyG8SEj0cKa0mBYzYipb0sPd+j8AFPN/XGuK/H27/hcKHhTPEAoSZ2XdAk2XRj
+| W5mRKAZ4xb/VOGIpLYwxj+CbuYmyNYoB9ON1aCn2xLS5n8NMCs50UeopmN3BGQ7Q
+| Hm51bRlJs0wsWGuJ5smwXWMZJcdaJIykZrktiPVoqJkkaNmW2hTrhcBX+Aru2qzj
+| UAydaQ==
+|_-----END CERTIFICATE-----
+|_smtp-commands: mail.local, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+111/tcp open  rpcbind     syn-ack 2-4 (RPC #100000)
+139/tcp open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: SECURITY)
+445/tcp open  netbios-ssn syn-ack Samba smbd 4.2.10-Debian (workgroup: SECURITY)
+Service Info: Hosts:  mail.local, MAILMAN; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 1h40m00s, deviation: 2h53m12s, median: 0s
+| smb2-time: 
+|   date: 2023-02-09T16:14:42
+|_  start_date: N/A
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   300: 
+|_    Message signing enabled but not required
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 61659/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 37755/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 51982/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 34019/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| nbstat: NetBIOS name: MAILMAN, NetBIOS user: <unknown>, NetBIOS MAC: 000000000000 (Xerox)
+| Names:
+|   MAILMAN<00>          Flags: <unique><active>
+|   MAILMAN<03>          Flags: <unique><active>
+|   MAILMAN<20>          Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   SECURITY<00>         Flags: <group><active>
+|   SECURITY<1d>         Flags: <unique><active>
+|   SECURITY<1e>         Flags: <group><active>
+| Statistics:
+|   0000000000000000000000000000000000
+|   0000000000000000000000000000000000
+|_  0000000000000000000000000000
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.2.10-Debian)
+|   Computer name: mailman
+|   NetBIOS computer name: MAILMAN\x00
+|   Domain name: local
+|   FQDN: mailman.local
+|_  System time: 2023-02-09T11:14:42-05:00
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 10 00:14:52 2023 -- 1 IP address (1 host up) scanned in 50.13 seconds

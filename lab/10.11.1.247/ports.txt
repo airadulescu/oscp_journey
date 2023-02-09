@@ -1,3 +1,49 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:41:11 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.247/ports.txt 10.11.1.247
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:41:48 2023 -- 1 IP address (1 host up) scanned in 37.87 seconds
+# Nmap 7.93 scan initiated Fri Feb 10 00:21:58 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.247
+Nmap scan report for 10.11.1.247
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-10 00:21:58 HKT for 155s
+Not shown: 65534 filtered tcp ports (no-response)
+PORT     STATE SERVICE            REASON  VERSION
+3389/tcp open  ssl/ms-wbt-server? syn-ack
+| ssl-cert: Subject: commonName=cory
+| Issuer: commonName=cory
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2023-01-26T12:53:52
+| Not valid after:  2023-07-28T12:53:52
+| MD5:   1d757c8016e2e621b0f8eb784fbc6c88
+| SHA-1: c5464d9b7498de58658aa2e117685e3ea1ba0cd5
+| -----BEGIN CERTIFICATE-----
+| MIICzDCCAbSgAwIBAgIQEVf6I/qcvYFD4TCmdUWyVzANBgkqhkiG9w0BAQUFADAP
+| MQ0wCwYDVQQDEwRjb3J5MB4XDTIzMDEyNjEyNTM1MloXDTIzMDcyODEyNTM1Mlow
+| DzENMAsGA1UEAxMEY29yeTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+| AKHOmz8qMPGo4ouwPN9WAfGP22tjvM8CCvRcnyn5SwXZmNg0R36bK2KT3/00pAt9
+| GjKrencXJytDs7pqVIlZb+ObL+eGPcVoLb/tNs+X2KNZ/ZUjgWa8iFxJu6v/GpRV
+| 47UwtJeN+l0OxeAXALh0PZU3EE6N3hprcTKMa/dRNJE78TCzc7xthNluULjImQav
+| fz3oQzaQTSJPyCQTkL99Si5jCNZlHeVuYhPCPLiaLePKPGPyVJd9fsW0Gpr8OeR6
+| gBn9P9dzqDy+ptF7JWSaUyRCQ0nYG+bpQIlJdyOxrBdwb8ywDNfdaOiaLl718yJJ
+| WkhOXa2N8HPq/ZVp40yjI7cCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEw
+| CwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBBQUAA4IBAQB/chTiO2i5EUe80ZzlEsRY
+| xTiczZquXQEyC+bVrPgqiGSyqy62XbF6dEG0kuEDn5LQBsMdxZkILLx9Ewab8M0b
+| uTG+DuCU2PzDRtNGhJlPk9Ez8I3YDLvzCE4ERRVrRBuTsMbS3EMlUfdTfKOyaIOp
+| 2SAol/J8mFMfsm/q2s7BfsQfRNhnzhGLHV/OsIK2nct7ce1WywJI9jkbj5OXVwU6
+| ihvOYBLFwERs8kfPFiKp6Zeyc/DIf97ItaJaINO/uQY6OG0IuDOXGWYc+9xNu6SX
+| a8M+XIzlVwFyIgKVCiHyzzb+12uJRyeqCgGtUFES44WTZrATRbQWGmCUA4/6cjgz
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-02-09T16:24:29+00:00; -1s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: CORY
+|   NetBIOS_Domain_Name: CORY
+|   NetBIOS_Computer_Name: CORY
+|   DNS_Domain_Name: cory
+|   DNS_Computer_Name: cory
+|   Product_Version: 6.3.9600
+|_  System_Time: 2023-02-09T16:24:25+00:00
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 10 00:24:33 2023 -- 1 IP address (1 host up) scanned in 154.68 seconds

@@ -1,3 +1,22 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:39:08 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.71/ports.txt 10.11.1.71
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:39:45 2023 -- 1 IP address (1 host up) scanned in 36.43 seconds
+# Nmap 7.93 scan initiated Thu Feb  9 23:36:49 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.71
+Warning: 10.11.1.71 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.11.1.71
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-09 23:36:49 HKT for 133s
+Not shown: 65531 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE REASON      VERSION
+22/tcp    open     ssh     syn-ack     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 e6438959f985d8e2bbe3d7ed285cc565 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKPA2Hze5sMxed/a1Mlp4J5Cwlc+bcknkXE3iJLITxrSwAsuuJq/7eEXA+vA80qyLh8tlTDQrt0gUaW7v15PhD8=
+|   256 3b0bf3843c7d6e2b2c811194169b717d (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDvb5Nu4EkoIe1euGgqiXD2j0kxmqct0LB0R8G350t16
+80/tcp    open     http    syn-ack     Apache/2.4.7 (Ubuntu)
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+27293/tcp filtered unknown no-response
+37076/tcp filtered unknown no-response
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  9 23:39:02 2023 -- 1 IP address (1 host up) scanned in 132.80 seconds

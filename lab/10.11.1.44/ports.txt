@@ -1,3 +1,65 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:39:08 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.44/ports.txt 10.11.1.44
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:39:45 2023 -- 1 IP address (1 host up) scanned in 36.43 seconds
+# Nmap 7.93 scan initiated Thu Feb  9 23:33:04 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.44
+Warning: 10.11.1.44 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.11.1.44
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-09 23:33:05 HKT for 76s
+Not shown: 65362 closed tcp ports (conn-refused), 171 filtered tcp ports (no-response)
+PORT     STATE SERVICE  REASON  VERSION
+22/tcp   open  ssh      syn-ack OpenSSH 5.3p1 Debian 3ubuntu7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 656369c98b96b1fbbed55cf81e7bde8f (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAPgRl+JiiKTtPRghjaMR4nHJ2qK9+bfBhVJw5fhPu3gsLxPe+dOi9gfpUrM4pVo00RZki0n/9Hn6pVXnJqpnXPtgGhGsnQYkPR6QdiBWWeGGZ3tsDuj1uOX6DrSEy4eVuaAGV9h24BTzgFcZ8o690pDWcKGB8krHHgi0SWnj3xQ1AAAAFQDzMDuRv4XwObvME88LK1VQ28xagQAAAIEAmNnhKZCSEnOhyW5+h5UiB7pBDbfM7WMW/ferRuq57no4GxEbDBUlDp3IovMAOKPt/ZSajiyueew1o4IXq+3qVf1sjtUDOvtptv7aGUpK9ZCeY/J0XEL/526J7DO2bl/aVimy4xGFKdIPFdqwilJdgIAbvxjuBrlTkIMnKzxYpFIAAACABExZb99rpjo3h+6ypzywL+QZL01tVb8I5wuTtRfGTL3619TvOPHXZ74DR8qE2KOgx9WapTKUcFgGwDQZ2fh+EZd2/xx/j0n/gCrfdtHAKWlUvYYJg3nAR2XeYj/5c+c9WUTloY+4EO8Lwb5Uibr9vNxm05/wiJMauAMS/Q4EYAM=
+|   2048 2899c051209b31e1a4fb9a174652cffc (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAwLyVtTmZ588dtDeYaMXwwMpQIteBpzUL7RR9WsiTibncf19LOnq/Ov1wQz9mx6Tty23t4ZD2w1ZQdIHhKpm/cGKFuxue5nCQRHIi93RvXWCTMRvrAeOOSNYLM8NjIEFNPGHyUPmkDQELUpI97i9+ht1brwz/OEBFr4f1r0AC/CTWKDk4WvKwy7n63GvU/Q5hC50WPrj37VS7Y5JxThdKWKQs3bkU2C+nOhlXDzx0x19e4FIN/Ja9SzvE6qvIKBobzY0czT9RcL1npS+wmignR1os/fPtBXhDe37KmBd6Tx+/52YvAdQPTly7yoDP8pAWf80+yM6MIjXT8DRz3LvraQ==
+8000/tcp open  ssl/http syn-ack Rocket httpd 1.2.6 (Python 2.6.5)
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|_    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+| http-methods: 
+|_  Supported Methods: HEAD POST
+|_http-favicon: Unknown favicon MD5: E16917BAD986E06AECDA858806BC9AA8
+|_http-title: Site doesn't have a title (text/plain).
+| ssl-cert: Subject: commonName=Tricia Admin/organizationName=Thinc/stateOrProvinceName=NY/countryName=US
+| Issuer: commonName=Tricia Admin/organizationName=Thinc/stateOrProvinceName=NY/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2013-08-17T11:55:25
+| Not valid after:  2014-08-17T11:55:25
+| MD5:   c935c83b4df2eda075d2cbc75db62987
+| SHA-1: 9dafe8a2b91bf0bdad4ab796e41b389f9507ffec
+| -----BEGIN CERTIFICATE-----
+| MIIC/jCCAeYCCQDkQT0wtumdZTANBgkqhkiG9w0BAQUFADBBMQswCQYDVQQGEwJV
+| UzELMAkGA1UECBMCTlkxDjAMBgNVBAoTBVRoaW5jMRUwEwYDVQQDEwxUcmljaWEg
+| QWRtaW4wHhcNMTMwODE3MTE1NTI1WhcNMTQwODE3MTE1NTI1WjBBMQswCQYDVQQG
+| EwJVUzELMAkGA1UECBMCTlkxDjAMBgNVBAoTBVRoaW5jMRUwEwYDVQQDEwxUcmlj
+| aWEgQWRtaW4wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCmyD7lsCoi
+| OfjfwmI26JGZCiTph1PejkByMzRCBDeshiydLZseptJMa13ozoCS0lNnKRvwkVwf
+| kwMnxvwx8f2fc3SSblfyK0Ub0l8r+F7m+quj3cBvZ74nUpnmbqn/aBtvdvR4Iwcu
+| VEyyAwB/psQ69IrqiuP2Gq+jQZ5LVgeZDYBJCK41Io2Jf2NK2Aw/Pfn2Dfgwnx3K
+| sXAYxjcxKM7T5OMRfqDK4ULMga4ybb6tziXxzMlXzao5swMft82JD/2IAOn8uT7L
+| OjLDpmRDGAf0y+3Qnxf/vgyouz4BA3Zcw9vaz+1wnHu8YX8rbkpbPx5LrN8cwsR9
+| P8t9CAfpikqhAgMBAAEwDQYJKoZIhvcNAQEFBQADggEBABS88rn5n9haoCu/w/Qk
+| 3KO/C3YihONpqsA9kn0jxmXu5X1gPzqJPoIo/hW9gSStk/UIgA9Qb9M5dpBn7zFm
+| dJvw0TqFamsSlMWmPk7y2GpKF7lNy0IHAd4jNLnpcETbRNbLMJaAwixd4MleY3sv
+| bsNVyvzA9t4ApScwxJlPHMzzyKxR1gavsWmVw6D5VWGTdODjsAzEFkrw2OjEH7Mu
+| cGe+wKk0ZEMEzPu5jM7crTxb12n+oP32lPdV/QqcwAN+CKS9HmrUeV926jbPqj4f
+| 163sKlWlWOs57x38vPSYw7qYnSO7XPpSNfg6ZVnKH0gFcPHV7gIIOknWSHq/wAAL
+| yEM=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-02-09T20:34:20+00:00; +5h00m00s from scanner time.
+|_http-server-header: Rocket 1.2.6 Python/2.6.5
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: 4h59m59s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  9 23:34:21 2023 -- 1 IP address (1 host up) scanned in 77.06 seconds

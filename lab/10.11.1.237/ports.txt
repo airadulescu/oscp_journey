@@ -1,3 +1,77 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:41:08 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.237/ports.txt 10.11.1.237
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:41:45 2023 -- 1 IP address (1 host up) scanned in 37.33 seconds
+# Nmap 7.93 scan initiated Fri Feb 10 00:20:09 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.237
+Warning: 10.11.1.237 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.11.1.237
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-10 00:20:09 HKT for 49s
+Not shown: 65525 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE  REASON      VERSION
+22/tcp    open     ssh      syn-ack     OpenSSH 6.0p1 Debian 4 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 fc89ba50c2ea2dabb919f1f90ab4c05a (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAL1caLXdHfBy4Fe2lmGzfvhGBtQ6GY1qaRwk5cYueFYbxp/Ml34zd9qh1TkJlS5npOGOYe5JOYtkEjasFVaH6606wQk4tv7IBB+C6F0/2TANe8FtecMhe7oMS8eLLPvxyLGzqGDmqU5fnVxvRF1DhmNqwKTxpAyicoMUES5EEnEpAAAAFQDphaJ68CKGLRzysPVUsdBQPbIroQAAAIB83eXGXESwUkiNlHCv7x2BZjzFSzu1VUMrz1Iu3AJXchFiDbI3hZu7OH7SUXjEW7Z74gCVjq7yc19lWOqC/68wwCnxJ/MnAd1oQl6oLHq7eKcT6CNuSdrTrgbff4RmKh9v2yfId7r9IFOaiyNnlZMMwZ8YVLlYiGbinyPQ9UHmeAAAAIEAjc8mRkKEeTjpJy1k2wbwQJNb1PMlbtjaRypW/UXbJTs6FSFHhWA89/YuV9Hz5mRGar290jIUvtsL6GL0f6Dtq34KoGpGmkm66MLZGrMTujfIRBBa8KE8t5cJXVYoRG4mFCxMfLmIWx84Gop2fHPt0eKBdEERFMZvk0mVKFTUxWM=
+|   2048 de2db8bd438ac3282bd32284d06ce09d (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDUjqJVHzbY+P21ajq32xg0yozBp4wy5TU6lyigsgb8bMzcwdNV8GkSUatdHNb3Ay5MlK4HWIZfzlKA4Zra0iXUW+tu4byo6GHoV0hfaEMJki89mkZ1Eype89Gj+cIfp11HlKHJqCUaSDveuuUMaYCfQv+RkWm+2m4H27XrS1vuJe7q8L1r9anFJ7fF1Bwi2xD6AbMXXXFg0TIIMzfzmI2EZGB5XAIUqI3kNq7i/+Sd28UGqVWXtLIRiyOFYW2Htd//BYB9muNV4baVVgKM5IRpXnJoi6o4twMUAPdY34iFOVvTr8ndifoFaqNxYM9TUzFdmJOGuo01P78ca+IYjR0T
+|   256 a5584d9de861de5583e2716b5dad83e2 (ECDSA)
+|_ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIDrJaQuMQjLB2z8zoF3HaePoDAza/n0UERp9v5j+LYe77iPp+w21y47q7C6fFlXu7tBc7db9nMyfdealHnQxRg=
+80/tcp    open     http     syn-ack     Apache httpd 2.2.22 ((Debian))
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.2.22 (Debian)
+111/tcp   open     rpcbind  syn-ack     2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          38670/udp   status
+|   100024  1          43071/tcp   status
+|   100024  1          44453/tcp6  status
+|_  100024  1          59946/udp6  status
+443/tcp   open     ssl/http syn-ack     Apache httpd 2.2.22 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2013-12-26T16:25:05
+| Not valid after:  2023-12-24T16:25:05
+| MD5:   7ccbcc7f3cd8df1a0ee90fe0d5a61a8b
+| SHA-1: 3a52a856cb8c13914f2f91929554c3d506539a14
+| -----BEGIN CERTIFICATE-----
+| MIICuDCCAaCgAwIBAgIJALXALYNd5kLOMA0GCSqGSIb3DQEBBQUAMBQxEjAQBgNV
+| BAMTCWxvY2FsaG9zdDAeFw0xMzEyMjYxNjI1MDVaFw0yMzEyMjQxNjI1MDVaMBQx
+| EjAQBgNVBAMTCWxvY2FsaG9zdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+| ggEBAMnjdveRyQ/Vdnj+2m7QqpBX1pwhIuQoXeePEisu9Cgpby6X373Vad9T/h3/
+| iuUxbOMV9bNAgXZaP7XGSYzAr+4wLekhiKXP5p03K7bnywjAdTy/iZdczTiNmJ7v
+| 2sJPpp8XcLaKwn6bmoE60smbetYSIb5oqCH0iQUwoRs5uRe3tAGA6aDMD6BJjDXG
+| ig0ha5Soti4jsL8Ii2P8a/qEn4vJWDa0wb2R77ZhA6AzpmOdYoPekGtwtMNl026Y
+| q8nzmtdgisXSAxnwDBTZDfOusbrDRsRV1ml0UxwmrRrSCkcCXcQgK4jztHvPNzYF
+| YYd6lTLCk6/+VIV69ttmKv3xP5sCAwEAAaMNMAswCQYDVR0TBAIwADANBgkqhkiG
+| 9w0BAQUFAAOCAQEAfjYmRl5fK91FI/2CswNbsNSmXhlLDJ8gI5ACGEVRilH7Aqx9
+| ab6JIB6pCWBJmShm7La51FSz1WGalWas8FEUNl7EaSg+6QFsIihQq0Cpjxr7VXp5
+| rmRQjZW9r9L29eWicv0BF0+pbPMNSXcjx012k9ZnJFWqT93hEnLbepa2YwX5E4TF
+| ukOgljzkrlfzQ89rCLRo7CVqjfu4ibJh7egLQv735jwp21oahEP+PNHWha+i2JOL
+| P45zy82R+Udxg30YoW3AjvFsZKotCfOinHw+/NCh//YVIWQSPTRfOyGxOtgA3tDq
+| Q5PqvU36FvXlUpTR9RIIdI4u5zsRe9FsO0eYkQ==
+|_-----END CERTIFICATE-----
+|_http-server-header: Apache/2.2.22 (Debian)
+|_ssl-date: 2023-02-09T16:21:03+00:00; +6s from scanner time.
+22517/tcp filtered unknown  no-response
+27017/tcp filtered mongod   no-response
+28017/tcp filtered mongod   no-response
+42653/tcp filtered unknown  no-response
+43071/tcp open     status   syn-ack     1 (RPC #100024)
+55693/tcp filtered unknown  no-response
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: 5s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 10 00:20:58 2023 -- 1 IP address (1 host up) scanned in 48.82 seconds

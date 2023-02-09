@@ -1,3 +1,40 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:41:23 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.251/ports.txt 10.11.1.251
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:42:04 2023 -- 1 IP address (1 host up) scanned in 41.26 seconds
+# Nmap 7.93 scan initiated Fri Feb 10 00:25:29 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.251
+Nmap scan report for 10.11.1.251
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-10 00:25:29 HKT for 87s
+Not shown: 65431 filtered tcp ports (no-response), 101 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+21/tcp open  ftp     syn-ack vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.45.188
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV IP 10.1.1.246 is not the same as 10.11.1.251
+22/tcp open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 7acaa24c998b6df44678fe4a696de494 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOtQIoHF+ozLT+P3agCVcLrFkej1b+lOWY2f2cHFqbyJKNA4sx0DOOcD48GDeUcPL1eTn3zNwNlJpySIin2YT4Q//sVgRDiwrmlPk4feKFl5UeYx1N9Ld1tgmoImdQCIRFV5eLwZcO7i4uq9XWJMt3ovo5pz1MKfy/hKjvleH86LYS+26hKE9WkIRbDKr0nfCFQPuxHqEdYZzUMDJNsobgoLVdrf3PYw09erJX3DWIGwnAsRSr79b+g+LIXNE68f5JHaR5wJi6iqwg2TPAEi2Syy837cOqprZ0DnJFnwetl9q4eBVt+Tj4yx+GeQphHwLiNoBwQ1b0iMRsOOQrZxdH
+|   256 042c708484034342a4c333d2950d5e91 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBO3DAvXdh1kU36SBCYPAeM+rj06cDuvVLLrl8RncbpLVPuSqiCVTqgVE2Gr15dcRzRd4uitCVk6fWblgccXUn4o=
+|   256 11ad7355cce9cb0ca423d646e87ddaf0 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMFpjhqvMXWVgNgAcxQYin97baZzNrjLcl+pvwS3Qy+M
+80/tcp open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 10 00:26:56 2023 -- 1 IP address (1 host up) scanned in 86.68 seconds

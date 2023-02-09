@@ -1,3 +1,29 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:41:06 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.234/ports.txt 10.11.1.234
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:41:48 2023 -- 1 IP address (1 host up) scanned in 42.13 seconds
+# Nmap 7.93 scan initiated Fri Feb 10 00:18:16 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.234
+Warning: 10.11.1.234 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.11.1.234
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-10 00:18:16 HKT for 47s
+Not shown: 65418 closed tcp ports (conn-refused), 114 filtered tcp ports (no-response)
+PORT      STATE SERVICE REASON  VERSION
+22/tcp    open  ssh     syn-ack OpenSSH 5.3p1 Debian 3ubuntu3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 2c83670229208799875595926c8da4a3 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAPv8ovXDTY/R7QHpFLGB/YQdu+mlpD86PHe4yJK0zeScXNZupivlcXSqlwMsKDhVEWDXg/LZUVo2GoTzM7nRXHcVsKC2G/E5M2697F1Sa+uTF0pDgS5YeWmoRbix1lqUiv8NSE1bYADmXURWjc5riupDF2X6Z/v8/zrTPCWy4nDdAAAAFQDd9TiPzvaYQNBhMl4QYZjIBr43+QAAAIEAgUaIET0ZzY5fMmR7W4v1AcGBF8HP8u4Y6ZLnraeYaBxlslWluIDiRaHLrqDzXUogRY0Ir1xCWUlULY2MHibGxG4wp9BzXevCtGtkHTXcOQhHMgbZpZVFOOHhA4GqctEol7iV2KITROxKlEDMS6Ey1B0oIaGfQzm4fqm1VYXY3d8AAACBANiP0PegXuOKDJyk+0z/LR0BZfaH4cnAwK/9cRhDux1v3ryoZaQ73mcjtTQ3MvaA26qSmi0MDTh2iL3obwz8iifa7ab7E7z3VIb80FOaV+cXqvJ6koadkyjp8SzbtTKdXtXJGIB/lfBo1cQ7LpXIAxWBZPk50RWEtd7ltLiO2nQu
+|   2048 6b9108a8c090ac68bdc9cd9cbe692bac (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA8TTX+6Zi1VEVW1btBA5wQO/eFME0CfW3BcQUHutLpDntSAe/22wuCNtk3/HQPLTq3X4DeI53cB/V93170FUmbewcKWo0BByBguMlQPI4IwHvN950prdr4FZdRNxe886CXj+TKA53OCkg5OlvSu7lb/zz7Iqwb4RxAxhMLI88MUsCZ4hDvqAhUQdQchQEL/40Sf2pI3DCHXgm+iL2Gd7Ky1aKAYdW0W2vbpZmhKJVXjaewdRUvnPfz9CJM2/ijTxvAjrLVeop4z9z6SyiW/6xtDHINWHtPdC1FsmI+p79r+KeSQ/c/+Iy3OJiaVBL/qI+OrPkR6kXZ+PMt895h1ruKQ==
+80/tcp    open  http    syn-ack Apache httpd 2.2.14 ((Ubuntu))
+|_http-title: Business Statistics | New Server for Thinc&#039;s Business Sta...
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.2.14 (Ubuntu)
+10443/tcp open  http    syn-ack CoreHTTP httpd 0.5.3.1
+|_http-title: Stats! Stats! Stats!
+|_http-favicon: Unknown favicon MD5: C13195015360EFEA26D50D54A936BBBF
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: corehttp-0.5.3.1
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 10 00:19:03 2023 -- 1 IP address (1 host up) scanned in 46.95 seconds

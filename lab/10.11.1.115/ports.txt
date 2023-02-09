@@ -1,19 +1,163 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:39:45 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.115/ports.txt 10.11.1.115
+# Nmap 7.93 scan initiated Thu Feb  9 23:51:02 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.115
+Warning: 10.11.1.115 giving up on port because retransmission cap hit (6).
 Nmap scan report for 10.11.1.115
-Host is up, received user-set (0.33s latency).
-Not shown: 60570 filtered tcp ports (no-response), 4960 closed tcp ports (reset)
-Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
-PORT     STATE SERVICE     REASON
-21/tcp   open  ftp         syn-ack ttl 62
-80/tcp   open  http        syn-ack ttl 62
-139/tcp  open  netbios-ssn syn-ack ttl 62
-143/tcp  open  imap        syn-ack ttl 62
-3306/tcp open  mysql       syn-ack ttl 62
-Device type: firewall
-Running (JUST GUESSING): Fortinet embedded (87%)
-OS CPE: cpe:/h:fortinet:fortigate_100d
-Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
-No exact OS matches for host (test conditions non-ideal).
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-09 23:51:02 HKT for 269s
+Not shown: 65510 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE     REASON      VERSION
+21/tcp    open     ftp         syn-ack     vsftpd 1.1.3
+22/tcp    open     ssh         syn-ack     OpenSSH 3.5p1 (protocol 1.99)
+| ssh-hostkey: 
+|   1024 3670a49f3247ac573fefa1ec0bba441b (RSA1)
+| 1024 35 120344514349960813598898192027051396627887361763055222531835318733333615953493686001723539273400706470352667805953391089140752629026037361205964117661230023762517804970080908830946119043695303514789760902093478918957609252029683456537906417915831994981012299156668111566131900536256194903202189869782287739911
+|   1024 64797dc6a2633254f0d92bf35dc7d269 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAOcEG/6o3Sbn7OVFCeti3eKK4f4lhwAEykhVfB3yt0cRvOvJWHwlrbtNiqXzg8nEcIKEfCf9t1r7Nl50oxr82NOf5xYgZ6EFwsHoomEqmJn5P1Rzf4NdnoQwhEKjcGBNODZgo3ehL0YVvhcpEeTs/QNxHtOU9u+0mE1BE/hNXzjhAAAAFQCsI9EINYsU2RfINgpvY0fBOddU4wAAAIAWg+jjwpiZYVvJwj0+EhiKxF+xNbjKYiMPAGKdv+IMsW+CltGWww/l5qFMimEEIRG34jqR1VSl7BrJTnUouNRO8ZV0VLYYnMPSRaEyYluWEhHRLyf/TPdqDqPsa7yw1mBQKTKOKVLfwMa/1wIbFxo11CrFVluMT47jhL1BQaI6pQAAAIBDjo0gHWj84nO4SMVNT1cIFSB8aonZSV3QYIM1zxteI/MGRrMJyeFA4uggC6Cjrnu5m3LXeY5Q3kZJtGfMGbCvE+hmGc3+zvyUZVDAff4/7Aeq1BXDyv47TskyFM5qdq0rlxOPGw9S1xCuXx9VcLI0BejpjKARu30mSmCpsRjgoQ==
+|   1024 48fb393d308250de6669c5ca4562c0dc (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEA5taj5xQpdm92zd3E7FT1yu0euGgCdQwslVCN6pryfuMqGRZ1Y6VTSk8pNcMYzI3Q0ZA7vlyob4+zVAtM4ofFczNMW8OUwScCyQg28tp2EpncMb8tNr52tbn8ohsFfRXgFdSzJWJ22dYduPSLVDK2EvQREq5q7do8Z4EWgWUcYcM=
+|_sshv1: Server supports SSHv1
+25/tcp    open     smtp?       syn-ack
+|_smtp-commands: Couldn't establish connection on port 25
+80/tcp    open     http        syn-ack     Apache httpd 2.0.40 ((Red Hat Linux))
+|_http-server-header: Apache/2.0.40 (Red Hat Linux)
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-title: Test Page for the Apache Web Server on Red Hat Linux
+111/tcp   open     tcpwrapped  syn-ack
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2            111/tcp   rpcbind
+|   100000  2            111/udp   rpcbind
+|   100024  1          32768/tcp   status
+|   100024  1          32768/udp   status
+|_  391002  2          32769/tcp   sgi_fam
+139/tcp   open     netbios-ssn syn-ack     Samba smbd (workgroup: MYGROUP)
+143/tcp   open     imap        syn-ack     UW imapd 2001.315rh
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--/emailAddress=root@localhost.localdomain/localityName=SomeCity/organizationalUnitName=SomeOrganizationalUnit
+| Issuer: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--/emailAddress=root@localhost.localdomain/localityName=SomeCity/organizationalUnitName=SomeOrganizationalUnit
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: md5WithRSAEncryption
+| Not valid before: 2007-01-16T06:07:45
+| Not valid after:  2008-01-16T06:07:45
+| MD5:   1be170c2456174a1f44ee3bff085614d
+| SHA-1: 720d54efbe4818887d602aeff8696756fc10ee89
+| -----BEGIN CERTIFICATE-----
+| MIIEDDCCA3WgAwIBAgIBADANBgkqhkiG9w0BAQQFADCBuzELMAkGA1UEBhMCLS0x
+| EjAQBgNVBAgTCVNvbWVTdGF0ZTERMA8GA1UEBxMIU29tZUNpdHkxGTAXBgNVBAoT
+| EFNvbWVPcmdhbml6YXRpb24xHzAdBgNVBAsTFlNvbWVPcmdhbml6YXRpb25hbFVu
+| aXQxHjAcBgNVBAMTFWxvY2FsaG9zdC5sb2NhbGRvbWFpbjEpMCcGCSqGSIb3DQEJ
+| ARYacm9vdEBsb2NhbGhvc3QubG9jYWxkb21haW4wHhcNMDcwMTE2MDYwNzQ1WhcN
+| MDgwMTE2MDYwNzQ1WjCBuzELMAkGA1UEBhMCLS0xEjAQBgNVBAgTCVNvbWVTdGF0
+| ZTERMA8GA1UEBxMIU29tZUNpdHkxGTAXBgNVBAoTEFNvbWVPcmdhbml6YXRpb24x
+| HzAdBgNVBAsTFlNvbWVPcmdhbml6YXRpb25hbFVuaXQxHjAcBgNVBAMTFWxvY2Fs
+| aG9zdC5sb2NhbGRvbWFpbjEpMCcGCSqGSIb3DQEJARYacm9vdEBsb2NhbGhvc3Qu
+| bG9jYWxkb21haW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANuYfH3T0AGz
+| WllgAMZ5H1aMr/G6BIUnOdhap7CYPgnqycYZbhLbahfwai9MXsupBqTG9pOiNEyZ
+| bI1ap8xrIcI5hcyaV6HDLn2NzyXkR/xey8x5sYBgS2H2EyX3MXrl4ABoxAw7fPeA
+| A5H3KZb9ufT73l8JZ9s9f2zCEZE8u215AgMBAAGjggEcMIIBGDAdBgNVHQ4EFgQU
+| nRsgHdgwQ1JC3fz86HxarnwPmLswgegGA1UdIwSB4DCB3YAUnRsgHdgwQ1JC3fz8
+| 6HxarnwPmLuhgcGkgb4wgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3Rh
+| dGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9u
+| MR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2Nh
+| bGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0
+| LmxvY2FsZG9tYWluggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADgYEA
+| J1mPl7WbXrzGplCBp37bSfJ3zWI1vg0IgU5DboyjU3uEi3SO1TOYUBS+cbr/u2H2
+| TKy1FkyVIZoE/YNF7pkwRXX/dTh2qyn0jePRgh6+3Ta4o/MdOyY4+6Yj5izSNpCf
+| Abtd84fBBGQB0C7sq7VVwKoHDDhvGIpl8Ly23TmMXag=
+|_-----END CERTIFICATE-----
+|_imap-capabilities: OK THREAD=REFERENCES SORT IMAP4REV1 NAMESPACE MAILBOX-REFERRALS SCAN MULTIAPPEND THREAD=ORDEREDSUBJECT CAPABILITY completed STARTTLS LOGIN-REFERRALS AUTH=LOGINA0001 IDLE
+199/tcp   open     smux        syn-ack     Linux SNMP multiplexer
+205/tcp   filtered at-5        no-response
+414/tcp   filtered infoseek    no-response
+443/tcp   open     ssl/http    syn-ack     Apache httpd 2.0.40 ((Red Hat Linux))
+| ssl-cert: Subject: commonName=redhat/organizationName=ACME LOCAL LTD/stateOrProvinceName=Berkshire/countryName=GB/emailAddress=bob@acme.com/localityName=Newbury/organizationalUnitName=MARKETING
+| Issuer: commonName=redhat/organizationName=ACME LOCAL LTD/stateOrProvinceName=Berkshire/countryName=GB/emailAddress=bob@acme.com/localityName=Newbury/organizationalUnitName=MARKETING
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: md5WithRSAEncryption
+| Not valid before: 2007-01-16T14:54:43
+| Not valid after:  2008-01-16T14:54:43
+| MD5:   e900ada0dfea040806cdddee15fd7d8b
+| SHA-1: 3b9a70e7870e11b8a2215af7bae9dd03ce903cbc
+| -----BEGIN CERTIFICATE-----
+| MIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQQFADCBjjELMAkGA1UEBhMCR0Ix
+| EjAQBgNVBAgTCUJlcmtzaGlyZTEQMA4GA1UEBxMHTmV3YnVyeTEXMBUGA1UEChMO
+| QUNNRSBMT0NBTCBMVEQxEjAQBgNVBAsTCU1BUktFVElORzEPMA0GA1UEAxMGcmVk
+| aGF0MRswGQYJKoZIhvcNAQkBFgxib2JAYWNtZS5jb20wHhcNMDcwMTE2MTQ1NDQz
+| WhcNMDgwMTE2MTQ1NDQzWjCBjjELMAkGA1UEBhMCR0IxEjAQBgNVBAgTCUJlcmtz
+| aGlyZTEQMA4GA1UEBxMHTmV3YnVyeTEXMBUGA1UEChMOQUNNRSBMT0NBTCBMVEQx
+| EjAQBgNVBAsTCU1BUktFVElORzEPMA0GA1UEAxMGcmVkaGF0MRswGQYJKoZIhvcN
+| AQkBFgxib2JAYWNtZS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMRD
+| 0vy4uZz1lnlfh2bzTgArxS0sdOjdJh06Zd3dXmP9bTZwEimXZ1K6fg0wa+qmuTfn
+| eKdDsFVUbAl5Ecx5ovbxPfA6RwlTeLJ9E+I1ugizHasFZYM0/xmzUl4FEftVfgPa
+| 0uuKX8Z+RkzBajHLj0clotgmQPn719o/tgHU8DpxAgMBAAGjge4wgeswHQYDVR0O
+| BBYEFGijV7H5GV+Il9uGefjvjTDSxc4JMIG7BgNVHSMEgbMwgbCAFGijV7H5GV+I
+| l9uGefjvjTDSxc4JoYGUpIGRMIGOMQswCQYDVQQGEwJHQjESMBAGA1UECBMJQmVy
+| a3NoaXJlMRAwDgYDVQQHEwdOZXdidXJ5MRcwFQYDVQQKEw5BQ01FIExPQ0FMIExU
+| RDESMBAGA1UECxMJTUFSS0VUSU5HMQ8wDQYDVQQDEwZyZWRoYXQxGzAZBgkqhkiG
+| 9w0BCQEWDGJvYkBhY21lLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEB
+| BAUAA4GBAHN9rvmYb0fJjcs8eI6p0uheZAQ2OvQ7UunSCpWsFAwLQC6oi7IYhMcp
+| +DGB0RweEQnhZyyf9HA81WtpLK7vyGIZotFqxfQMEBZa5iGObZHoyY3pWTXElKMx
+| aRN/IulZMXFWw66x9+sh0RlNHBIKluH5cLzRWuH5jXnSQ9rJGSi2
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-02-09T16:54:57+00:00; +1h00m12s from scanner time.
+|_http-server-header: Apache/2.0.40 (Red Hat Linux)
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_RC4_64_WITH_MD5
+|_http-title: Bad request!
+3306/tcp  open     mysql       syn-ack     MySQL (unauthorized)
+5918/tcp  filtered unknown     no-response
+6923/tcp  filtered unknown     no-response
+10943/tcp filtered unknown     no-response
+11625/tcp filtered unknown     no-response
+14324/tcp filtered unknown     no-response
+18748/tcp filtered unknown     no-response
+25609/tcp filtered unknown     no-response
+32768/tcp open     status      syn-ack     1 (RPC #100024)
+47134/tcp filtered unknown     no-response
+52283/tcp filtered unknown     no-response
+53269/tcp filtered unknown     no-response
+53319/tcp filtered unknown     no-response
+53999/tcp filtered unknown     no-response
+Service Info: Host: tophat.acme.local; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:40:25 2023 -- 1 IP address (1 host up) scanned in 40.22 seconds
+Host script results:
+|_clock-skew: 1h00m11s
+| nbstat: NetBIOS name: TOPHAT, NetBIOS user: <unknown>, NetBIOS MAC: 000000000000 (Xerox)
+| Names:
+|   TOPHAT<00>           Flags: <unique><active>
+|   TOPHAT<03>           Flags: <unique><active>
+|   TOPHAT<20>           Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   MYGROUP<00>          Flags: <group><active>
+|   MYGROUP<1d>          Flags: <unique><active>
+|   MYGROUP<1e>          Flags: <group><active>
+| Statistics:
+|   0000000000000000000000000000000000
+|   0000000000000000000000000000000000
+|_  0000000000000000000000000000
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 38269/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 38233/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 56765/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 34039/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_smb2-time: Protocol negotiation failed (SMB2)
+|_smb2-security-mode: Couldn't establish a SMBv2 connection.
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  9 23:55:31 2023 -- 1 IP address (1 host up) scanned in 268.76 seconds

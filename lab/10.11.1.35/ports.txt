@@ -1,14 +1,33 @@
-# Nmap 7.93 scan initiated Mon Feb  6 22:39:06 2023 as: nmap -Pn -p- -sS -T4 --min-rate 5000 -O --open --reason -oN ./10.11.1.35/ports.txt 10.11.1.35
+# Nmap 7.93 scan initiated Thu Feb  9 23:27:49 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.35
+Warning: 10.11.1.35 giving up on port because retransmission cap hit (6).
 Nmap scan report for 10.11.1.35
-Host is up, received user-set (0.32s latency).
-Not shown: 58534 filtered tcp ports (no-response), 6999 closed tcp ports (reset)
-Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
-PORT   STATE SERVICE REASON
-22/tcp open  ssh     syn-ack ttl 62
-80/tcp open  http    syn-ack ttl 62
-Aggressive OS guesses: Linux 3.18 (94%), Linux 3.8 (94%), Linux 2.6.32 (91%), Linux 2.6.36 (91%), Linux 3.0 - 3.2 (90%), Kyocera CopyStar CS-2560 printer (90%), Linux 3.10 - 3.12 (90%), Linux 3.11 - 4.1 (90%), Linux 3.16 (90%), Linux 4.4 (90%)
-No exact OS matches for host (test conditions non-ideal).
-Network Distance: 3 hops
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-09 23:27:49 HKT for 35s
+Not shown: 65525 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE   REASON      VERSION
+22/tcp    open     ssh       syn-ack     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 454a21258c04dcc848760c5277146c73 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIeLQ/cBoVBR/UpK+dfFE0CGRw+hg0M0v3Ax2KLCpe5VXyWUBHlw6EUBwTs2UYeCa5ROLZNxmvIakj8D03onunf4U51r6ekwCTnV8Dy1cMYI3o9/zHOtcM1CQ0ALdH74DJpbNaAZzWVpGcdsmIGh2DtCop7l20HqsDZoaIKRvy6ofP6UC+h4gKODzh/GEkVncnowyCQdRbUsXynsgLd56Dh2DzubBAL/40UdFfQQN9BWVt1qQu2KyWlrcxvq7YhjFk4tE/d8AFLAdhFGZCNS+5rp567c4bZv6uqSPFh9pKTSXTY/Q46xhHazjC75fQRjDN6u94uy5N5djYDOtJbR99
+|   256 a0b82d0f07793647ac9fbf539b0f87eb (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGB4nJaIFmENiAJo0/X4G+/6RaKgsQovJpIsdLrsc14ReSSvfZnPqyWW1ExfuoJlESrSp5CowITC93n6c+0ug+0=
+|   256 ee06c514bc2fae9e1e0b88cd3f12e06d (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKHV1+2bIrah7MPMxzjbNoXUWqTeS8Tvw3YYS5cf9oIj
+80/tcp    open     http      syn-ack     Apache httpd 2.4.6 ((CentOS) PHP/5.4.16)
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.4.16
+4353/tcp  filtered f5-iquery no-response
+9062/tcp  filtered unknown   no-response
+9273/tcp  filtered unknown   no-response
+35925/tcp filtered unknown   no-response
+37042/tcp filtered unknown   no-response
+42121/tcp filtered unknown   no-response
+49043/tcp filtered unknown   no-response
+50235/tcp filtered unknown   no-response
 
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Feb  6 22:40:11 2023 -- 1 IP address (1 host up) scanned in 65.17 seconds
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  9 23:28:24 2023 -- 1 IP address (1 host up) scanned in 35.03 seconds
