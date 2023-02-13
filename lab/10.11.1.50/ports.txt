@@ -22,7 +22,7 @@ PORT     STATE SERVICE REASON  VERSION
 |   Supported Methods: OPTIONS TRACE GET HEAD POST
 |_  Potentially risky methods: TRACE
 135/tcp  open  msrpc   syn-ack Microsoft Windows RPC
-9505/tcp open  http    syn-ack HttpFileServer httpd
+m9505/tcp open  http    syn-ack HttpFileServer httpd
 | http-methods: 
 |_  Supported Methods: GET HEAD POST
 |_http-favicon: Unknown favicon MD5: 759792EDD4EF8E6BC2D1877D27153CB1

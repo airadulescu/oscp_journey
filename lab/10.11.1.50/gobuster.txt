@@ -1,0 +1,7 @@
+/misc                [36m (Status: 301)[0m [Size: 146][34m [--> http://10.11.1.50/misc/][0m
+/modules             [36m (Status: 301)[0m [Size: 149][34m [--> http://10.11.1.50/modules/][0m
+/themes              [36m (Status: 301)[0m [Size: 148][34m [--> http://10.11.1.50/themes/][0m
+/scripts             [36m (Status: 301)[0m [Size: 149][34m [--> http://10.11.1.50/scripts/][0m
+/sites               [36m (Status: 301)[0m [Size: 147][34m [--> http://10.11.1.50/sites/][0m
+/includes            [36m (Status: 301)[0m [Size: 150][34m [--> http://10.11.1.50/includes/][0m
+/profiles            [36m (Status: 301)[0m [Size: 150][34m [--> http://10.11.1.50/profiles/][0m
