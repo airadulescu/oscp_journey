@@ -1,70 +1,95 @@
-# Nmap 7.93 scan initiated Thu Feb  9 23:49:33 2023 as: nmap -T4 -Pn -p- -sVC --min-rate=5000 -vv -oN ports.txt 10.11.1.101NWarning: 10.11.1.101 giving up on port because retransmission cap hit (6).
-Nmap scan report for 10.11.1.101
+# Nmap 7.93 scan initiated Tue Feb 14 23:35:21 2023 as: nmap -T4 -Pn -p- -A --min-rate=10000 -vv -oN ports.txt 10.11.1.75
+Nmap scan report for 10.11.1.75
 Host is up, received user-set (0.23s latency).
-Scanned at 2023-02-09 23:49:33 HKT for 45s
-Not shown: 65248 closed tcp ports (conn-refused), 282 filtered tcp ports (no-response)
-PORT    STATE SERVICE     REASON  VERSION
-21/tcp  open  ftp         syn-ack vsftpd 3.0.3
-22/tcp  open  ssh         syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
-|   2048 625416aa0b7377611ba445c0f82e5bed (RSA)
-| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7RQYuEvP3VkLtkJSpEG2zMSNwK2e45WnSaO+1MD8iwxYwJiD0iNR/O9AE9JD5s6j7o2Udn0juM7OWFU9FimUU1jE5qyX7Z55i76f/UU6F4ePvqyOtvHs5lez0F1vVm7TyUpny5uTiUSoB+blCjg+LlKTeBOWXLBDpBEQw0lNJJ2SWhvBmDQ9e8Nt0RkS3GlIWaqWQceMh4bMZW8oa5dz0nZjinQF8nBGv8L8fZdQ8A5e66Y8jcNrzXVV7Tkzb1bcybmi2fJ1WPnWl7rb7/B2z0Lp8dIryKx7lEa3MJr2PPAnErpX9s3FFqVlDKBecqtEyucrpRcUz4jo53oIJaI5d
-|   256 f44223276e90febcf4d9326f8f6b7434 (ECDSA)
-| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBENMAwx7lTSadwadhHkhoFLqwA7a4Q5Y5LrYiINwagsEJ4DWsorPYNNNQRSiNWfDKm4oTUX9RbKmpLzqG1ISrJY=
-|   256 c66afa446e3137dae39edc29f4486bb8 (ED25519)
-|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHN+UUlB0wnxEXrhhh91CD6zbfxTFqECfd/NQcvI8N26
-80/tcp  open  http        syn-ack Apache httpd 2.4.18 ((Ubuntu))
-|_http-server-header: Apache/2.4.18 (Ubuntu)
-| http-robots.txt: 1 disallowed entry 
-|_/passwords/
-| http-methods: 
-|_  Supported Methods: OPTIONS GET HEAD POST
-|_http-title: TryHarder oscp.thinc.local
-139/tcp open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-445/tcp open  netbios-ssn syn-ack Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
-Service Info: Host: BREAK; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+Scanned at 2023-02-14 23:35:21 HKT for 170s
+Not shown: 65524 filtered tcp ports (no-response)
+PORT      STATE SERVICE            REASON  VERSION
+135/tcp   open  msrpc              syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn        syn-ack Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       syn-ack Windows 8.1 Enterprise 9600 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  ssl/ms-wbt-server? syn-ack
+|_ssl-date: 2023-02-14T15:38:11+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: BRUCE
+|   NetBIOS_Domain_Name: BRUCE
+|   NetBIOS_Computer_Name: BRUCE
+|   DNS_Domain_Name: bruce
+|   DNS_Computer_Name: bruce
+|   Product_Version: 6.3.9600
+|_  System_Time: 2023-02-14T15:37:32+00:00
+| ssl-cert: Subject: commonName=bruce
+| Issuer: commonName=bruce
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2023-01-26T02:05:10
+| Not valid after:  2023-07-28T02:05:10
+| MD5:   b39ae7a2d19e1df5538cffef56b7555a
+| SHA-1: 025d9493412ebb6de8b4918022e57e8ab4838f88
+| -----BEGIN CERTIFICATE-----
+| MIICzjCCAbagAwIBAgIQW+eKC+zDvp1HMdV/nz/kbDANBgkqhkiG9w0BAQUFADAQ
+| MQ4wDAYDVQQDEwVicnVjZTAeFw0yMzAxMjYwMjA1MTBaFw0yMzA3MjgwMjA1MTBa
+| MBAxDjAMBgNVBAMTBWJydWNlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+| AQEAlrsXuCMtyLK1b4YkYwL8p5tsUOqPQQ9xg3kYfRYLuUz/BljN7D5bOdEa//32
+| BNK02lqiWwYYKc/RgpgXy/lSQvIWvgXxFgoxCJq0VQn3DAi0tmE76N8EQGiZxA7a
+| oWa0Tlrv0OxP2Z8XDJICnPSkgXb8+OULlrDW4T/3VrbYTJdSs7aAtOZE/cFo57+B
+| p/bxRRL/PwnoxqXwuy2h8//r/ttrvhm9/oNN7atU4Sjp0bYhdnkzJuJPp/KPt3FD
+| hPkeSknyM26UIb4O98HeseGDFcjRnznSe43B5v+5eiL0M4Hedu8Xk/c0/GlAUG5T
+| w5s4KDXI3X0fNu79SMD2rwabpwIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD
+| ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQEFBQADggEBAHefzRN//DT6xlcbI7OJ
+| jgS6D8YmKCdNipJyqA37zobYi9O8w5JBC441QvP1M5fT6DrpYUnvTdpe5QWNZ9d1
+| 6yQ4Y0ZfNjoAFulZQTqYlFhdbIxrmjvXZfDHjTnOj5ObGnT/YWBESn6W5ocXznuK
+| pweZ6fhpyQvmyHtYUgWBGdknz4z6sP0nAvyRyl1jkzFecPUORivLRokIl7lY+8s3
+| UdYla1weLCMkCJwvGcU+iqK7n5KlSKMisbTObSl3AjA+LSitlzVqLZ6Pejdh/59g
+| RW8zCTRPpOU9jL3scIw/m02/ZW9TQEeVZB2qlV+H0AZFy1ev+NSNFILez0PXcsF8
+| u/Q=
+|_-----END CERTIFICATE-----
+49152/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49153/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49154/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49155/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49156/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49157/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49158/tcp open  msrpc              syn-ack Microsoft Windows RPC
+Service Info: Host: BRUCE; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Host script results:
-|_clock-skew: mean: 1h40m00s, deviation: 2h53m12s, median: 0s
-| smb-os-discovery: 
-|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
-|   Computer name: break
-|   NetBIOS computer name: BREAK\x00
-|   Domain name: \x00
-|   FQDN: break
-|_  System time: 2023-02-09T10:50:09-05:00
-| smb2-security-mode: 
-|   311: 
-|_    Message signing enabled but not required
-| nbstat: NetBIOS name: BREAK, NetBIOS user: <unknown>, NetBIOS MAC: 000000000000 (Xerox)
+| nbstat: NetBIOS name: BRUCE, NetBIOS user: <unknown>, NetBIOS MAC: 005056ba7f6b (VMware)
 | Names:
-|   BREAK<00>            Flags: <unique><active>
-|   BREAK<03>            Flags: <unique><active>
-|   BREAK<20>            Flags: <unique><active>
-|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   BRUCE<20>            Flags: <unique><active>
+|   BRUCE<00>            Flags: <unique><active>
 |   WORKGROUP<00>        Flags: <group><active>
-|   WORKGROUP<1d>        Flags: <unique><active>
-|   WORKGROUP<1e>        Flags: <group><active>
 | Statistics:
-|   0000000000000000000000000000000000
+|   005056ba7f6b0000000000000000000000
 |   0000000000000000000000000000000000
 |_  0000000000000000000000000000
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 32841/tcp): CLEAN (Timeout)
+|   Check 2 (port 36275/tcp): CLEAN (Timeout)
+|   Check 3 (port 25258/udp): CLEAN (Timeout)
+|   Check 4 (port 25619/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 8.1 Enterprise 9600 (Windows 8.1 Enterprise 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_8.1::-
+|   Computer name: bruce
+|   NetBIOS computer name: BRUCE\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2023-02-14T15:37:31+00:00
 | smb-security-mode: 
 |   account_used: guest
 |   authentication_level: user
 |   challenge_response: supported
 |_  message_signing: disabled (dangerous, but default)
 | smb2-time: 
-|   date: 2023-02-09T15:50:09
-|_  start_date: N/A
-| p2p-conficker: 
-|   Checking for Conficker.C or higher...
-|   Check 1 (port 17518/tcp): CLEAN (Couldn't connect)
-|   Check 2 (port 28161/tcp): CLEAN (Couldn't connect)
-|   Check 3 (port 19178/udp): CLEAN (Failed to receive data)
-|   Check 4 (port 23440/udp): CLEAN (Failed to receive data)
-|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|   date: 2023-02-14T15:37:31
+|_  start_date: 2023-01-27T02:05:09
+| smb2-security-mode: 
+|   302: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Feb  9 23:50:18 2023 -- 1 IP address (1 host up) scanned in 45.41 seconds
+# Nmap done at Tue Feb 14 23:38:11 2023 -- 1 IP address (1 host up) scanned in 170.23 seconds
