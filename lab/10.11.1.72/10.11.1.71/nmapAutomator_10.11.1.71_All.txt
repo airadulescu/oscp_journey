@@ -1,0 +1,373 @@
+
+[0;33mRunning all scans on [0m10.11.1.71
+[0m
+[0;32mHost is likely running Unknown OS!
+
+
+[0;32m---------------------Starting Port Scan-----------------------
+[0m
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: Connect Scan (0:00:01 elapsed - 0:00:08 remaining)   
+[##########>                                                                                          ] 10% done   
+[2AIn progress: Connect Scan (0:00:02 elapsed - 0:00:12 remaining)   
+[##############>                                                                                      ] 14% done   
+[2AIn progress: Connect Scan (0:00:03 elapsed - 0:00:05 remaining)   
+[#######################################>                                                             ] 39% done   
+[2AIn progress: Connect Scan (0:00:05 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2A[0K
+[0K
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+
+
+[0;32m---------------------Starting Script Scan-----------------------
+[0m
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: Service Scan (0:00:06 elapsed - 0:00:06 remaining)   
+[##################################################>                                                  ] 50% done   
+[2AIn progress: Service Scan (0:00:06 elapsed - 0:00:06 remaining)   
+[##################################################>                                                  ] 50% done   
+[2AIn progress: Service Scan (0:00:06 elapsed - 0:00:06 remaining)   
+[##################################################>                                                  ] 50% done   
+[2AIn progress: Service Scan (0:00:06 elapsed - 0:00:06 remaining)   
+[##################################################>                                                  ] 50% done   
+[2AIn progress: Service Scan (0:00:06 elapsed - 0:00:06 remaining)   
+[##################################################>                                                  ] 50% done   
+[2AIn progress: Script Scan (0:00:17 elapsed - 0:00:00 remaining)   
+[########################################################################################>            ] 88% done   
+[2AIn progress: Script Scan (0:00:19 elapsed - 0:00:00 remaining)   
+[#########################################################################################>           ] 89% done   
+[2AIn progress: Script Scan (0:00:21 elapsed - 0:00:00 remaining)   
+[###########################################################################################>         ] 91% done   
+[2AIn progress: Script Scan (0:00:23 elapsed - 0:00:00 remaining)   
+[###############################################################################################>     ] 95% done   
+[2AIn progress: Script Scan (0:00:25 elapsed - 0:00:00 remaining)   
+[###############################################################################################>     ] 95% done   
+[2AIn progress: Script Scan (0:00:27 elapsed - 0:00:00 remaining)   
+[################################################################################################>    ] 96% done   
+[2AIn progress: Script Scan (0:00:29 elapsed - 0:00:00 remaining)   
+[#################################################################################################>   ] 97% done   
+[2AIn progress: Script Scan (0:00:31 elapsed - 0:00:00 remaining)   
+[#################################################################################################>   ] 97% done   
+[2AIn progress: Script Scan (0:00:33 elapsed - 0:00:00 remaining)   
+[#################################################################################################>   ] 97% done   
+[2AIn progress: Script Scan (0:00:35 elapsed - 0:00:00 remaining)   
+[#################################################################################################>   ] 97% done   
+[2AIn progress: Script Scan (0:00:37 elapsed - 0:00:00 remaining)   
+[#################################################################################################>   ] 97% done   
+[2AIn progress: Script Scan (0:00:39 elapsed - 0:00:00 remaining)   
+[##################################################################################################>  ] 98% done   
+[2AIn progress: Script Scan (0:00:41 elapsed - 0:00:00 remaining)   
+[##################################################################################################>  ] 98% done   
+[2AIn progress: Script Scan (0:00:43 elapsed - 0:00:00 remaining)   
+[##################################################################################################>  ] 98% done   
+[2AIn progress: Script Scan (0:00:45 elapsed - 0:00:00 remaining)   
+[##################################################################################################>  ] 98% done   
+[2AIn progress: Script Scan (0:00:47 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:49 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:51 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:53 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:55 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:57 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:59 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:01 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:03 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:05 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:07 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:09 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:11 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:13 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:15 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:17 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:19 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:21 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:23 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:25 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:27 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:29 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:31 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:33 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:35 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:37 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:39 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:41 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:43 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:45 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:47 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:49 elapsed - 0:00:00 remaining)   
+[###################################################################################################> ] 99% done   
+[2AIn progress: Script Scan (0:01:51 elapsed - 0:00:00 remaining)   
+[#######################################################################################>             ] 87% done   
+[2AIn progress: Script Scan (0:01:53 elapsed - 0:00:00 remaining)   
+[#############################################################################################>       ] 93% done   
+[2AIn progress: Script Scan (0:01:55 elapsed - 0:00:00 remaining)   
+[#############################################################################################>       ] 93% done   
+[2AIn progress: Script Scan (0:01:57 elapsed - 0:00:00 remaining)   
+[#############################################################################################>       ] 93% done   
+[2A[0K
+[0K
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 e6438959f985d8e2bbe3d7ed285cc565 (ECDSA)
+|_  256 3b0bf3843c7d6e2b2c811194169b717d (ED25519)
+80/tcp open  http?
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+[0m
+[0m
+[0;32mOS Detection modified to: Linux
+[0m
+
+
+
+[0;32m---------------------Starting Full Scan------------------------
+[0m
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2A[0K
+[0K
+
+
+[0;33mNo new ports
+[0m
+
+
+
+[0;32m----------------------Starting UDP Scan------------------------
+[0m
+UDP needs to be run as root, running with sudo...
+
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2A[0K
+[0K
+
+
+[0;33mNo UDP ports are open
+[0m
+
+
+
+[0;32m---------------------Starting Vulns Scan-----------------------
+[0m
+[0;33mRunning CVE scan on all ports
+[0m
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2A[0K
+[0K
+
+
+[0;33mRunning Vuln scan on all ports
+[0;33mThis may take a while, depending on the number of detected services..
+[0m
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: No Scan (0:00:06 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: No Scan (0:00:09 elapsed - 0:00:02 remaining)   
+[########################################>          ] 80% done   
+[2AIn progress: No Scan (0:00:09 elapsed - 0:00:02 remaining)   
+[########################################>          ] 80% done   
+[2AIn progress: No Scan (0:00:12 elapsed - 0:00:03 remaining)   
+[########################################>          ] 80% done   
+[2AIn progress: No Scan (0:00:18 elapsed - 0:00:04 remaining)   
+[########################################>          ] 80% done   
+[2AIn progress: No Scan (0:00:21 elapsed - 0:00:05 remaining)   
+[########################################>          ] 80% done   
+[2AIn progress: No Scan (0:00:24 elapsed - 0:00:06 remaining)   
+[########################################>          ] 80% done   
+[2AIn progress: No Scan (0:00:27 elapsed - 0:00:07 remaining)   
+[########################################>          ] 80% done   
+[2AIn progress: No Scan (0:00:30 elapsed - 0:00:07 remaining)   
+[########################################>          ] 80% done   
+[2AIn progress: No Scan (0:00:33 elapsed - 0:00:40 remaining)   
+[######################>                            ] 44% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: Service Scan (0:00:41 elapsed - 0:00:06 remaining)   
+[#########################>                         ] 50% done   
+[2AIn progress: Service Scan (0:00:41 elapsed - 0:00:06 remaining)   
+[#########################>                         ] 50% done   
+[2AIn progress: Service Scan (0:00:41 elapsed - 0:00:06 remaining)   
+[#########################>                         ] 50% done   
+[2AIn progress: Service Scan (0:00:41 elapsed - 0:00:06 remaining)   
+[#########################>                         ] 50% done   
+[2AIn progress: Script Scan (0:00:52 elapsed - 0:00:00 remaining)   
+[#####################################>             ] 75% done   
+[2AIn progress: Script Scan (0:00:54 elapsed - 0:00:01 remaining)   
+[#######################################>           ] 78% done   
+[2AIn progress: Script Scan (0:00:57 elapsed - 0:00:01 remaining)   
+[########################################>          ] 81% done   
+[2AIn progress: Script Scan (0:01:00 elapsed - 0:00:01 remaining)   
+[###########################################>       ] 86% done   
+[2AIn progress: Script Scan (0:01:03 elapsed - 0:00:01 remaining)   
+[#############################################>     ] 90% done   
+[2AIn progress: Script Scan (0:01:06 elapsed - 0:00:01 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:09 elapsed - 0:00:01 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:12 elapsed - 0:00:02 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:15 elapsed - 0:00:02 remaining)   
+[##############################################>    ] 92% done   
+[2AIn progress: Script Scan (0:01:18 elapsed - 0:00:02 remaining)   
+[##############################################>    ] 92% done   
+[2AIn progress: Script Scan (0:01:21 elapsed - 0:00:02 remaining)   
+[##############################################>    ] 92% done   
+[2AIn progress: Script Scan (0:01:24 elapsed - 0:00:03 remaining)   
+[##############################################>    ] 92% done   
+[2AIn progress: Script Scan (0:01:27 elapsed - 0:00:03 remaining)   
+[##############################################>    ] 92% done   
+[2AIn progress: Script Scan (0:01:30 elapsed - 0:00:03 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:33 elapsed - 0:00:03 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:36 elapsed - 0:00:03 remaining)   
+[##############################################>    ] 92% done   
+[2AIn progress: Script Scan (0:01:39 elapsed - 0:00:03 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:42 elapsed - 0:00:04 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:45 elapsed - 0:00:04 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:48 elapsed - 0:00:04 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:51 elapsed - 0:00:04 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:54 elapsed - 0:00:05 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:01:57 elapsed - 0:00:05 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:02:00 elapsed - 0:00:04 remaining)   
+[###############################################>   ] 94% done   
+[2AIn progress: Script Scan (0:02:03 elapsed - 0:00:05 remaining)   
+[###############################################>   ] 94% done   
+[2AIn progress: Script Scan (0:02:06 elapsed - 0:00:05 remaining)   
+[###############################################>   ] 94% done   
+[2AIn progress: Script Scan (0:02:09 elapsed - 0:00:04 remaining)   
+[###############################################>   ] 94% done   
+[2AIn progress: Script Scan (0:02:12 elapsed - 0:00:04 remaining)   
+[###############################################>   ] 95% done   
+[2AIn progress: Script Scan (0:02:15 elapsed - 0:00:00 remaining)   
+[#################################################> ] 99% done   
+[2AIn progress: Script Scan (0:02:18 elapsed - 0:00:00 remaining)   
+[#################################################> ] 99% done   
+[2A[0K
+[0K
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:6.6.1p1: 
+|     	CVE-2015-5600	8.5	https://vulners.com/cve/CVE-2015-5600
+|     	CVE-2015-6564	6.9	https://vulners.com/cve/CVE-2015-6564
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2015-5352	4.3	https://vulners.com/cve/CVE-2015-5352
+|_    	CVE-2015-6563	1.9	https://vulners.com/cve/CVE-2015-6563
+80/tcp open  http    Apache/2.4.7 (Ubuntu)
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+
+
+
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+[0m
+[0;33mWeb Servers Recon:
+[0m
+nikto -host "http://10.11.1.71:80" | tee "recon/nikto_10.11.1.71_80.txt"
+gobuster dir -w /usr/share/wordlists/dirb/common.txt -t 30 -ekx '' -u "http://10.11.1.71:80" -o "recon/gobuster_10.11.1.71_80.txt"
+
+
+
+
+[0;33m
+Which commands would you like to run?[0m
+All (Default), gobuster, nikto, Skip <!>
+
+[2KRunning Default in (30)s: [2KRunning Default in (29)s: [2KRunning Default in (28)s: [2KRunning Default in (27)s: [2KRunning Default in (26)s: [2KRunning Default in (25)s: [2KRunning Default in (24)s: [2KRunning Default in (23)s: [2KRunning Default in (22)s: [2KRunning Default in (21)s: [2KRunning Default in (20)s: [2KRunning Default in (19)s: [2KRunning Default in (18)s: [2KRunning Default in (17)s: [2KRunning Default in (16)s: [2KRunning Default in (15)s: [2KRunning Default in (14)s: [2KRunning Default in (13)s: [2KRunning Default in (12)s: [2KRunning Default in (11)s: [2KRunning Default in (10)s: [2KRunning Default in (9)s: [2KRunning Default in (8)s: [2KRunning Default in (7)s: [2KRunning Default in (6)s: [2KRunning Default in (5)s: [2KRunning Default in (4)s: [2KRunning Default in (3)s: [2KRunning Default in (2)s: [2KRunning Default in (1)s: 
+
+
+[0;32m---------------------Running Recon Commands--------------------
+[0m
+[0m
+[0;33mStarting nikto scan
+[0m
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.11.1.71
++ Target Hostname:    10.11.1.71
++ Target Port:        80
++ Start Time:         2023-02-14 20:17:40 (GMT8)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.7 (Ubuntu)
++ Retrieved x-powered-by header: PHP/5.5.9-1ubuntu4.4
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Root page / redirects to: site/index.php/

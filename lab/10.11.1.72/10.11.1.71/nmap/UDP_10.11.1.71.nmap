@@ -1,0 +1,2 @@
+# Nmap 7.93 scan initiated Tue Feb 14 20:14:33 2023 as: /usr/bin/nmap -sU --max-retries 1 --open --open -oN nmap/UDP_10.11.1.71.nmap --system-dns --stats-every 3s 10.11.1.71
+# Nmap done at Tue Feb 14 20:14:36 2023 -- 1 IP address (0 hosts up) scanned in 3.11 seconds

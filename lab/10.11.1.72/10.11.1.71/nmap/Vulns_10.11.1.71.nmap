@@ -1,0 +1,36 @@
+# Nmap 7.93 scan initiated Tue Feb 14 20:14:45 2023 as: /usr/bin/nmap -sV --script vuln -p22,80 --open -oN nmap/Vulns_10.11.1.71.nmap --system-dns --stats-every 3s 10.11.1.71
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.11.1.71
+Host is up (0.22s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:6.6.1p1: 
+|     	CVE-2015-5600	8.5	https://vulners.com/cve/CVE-2015-5600
+|     	CVE-2015-6564	6.9	https://vulners.com/cve/CVE-2015-6564
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2015-5352	4.3	https://vulners.com/cve/CVE-2015-5352
+|_    	CVE-2015-6563	1.9	https://vulners.com/cve/CVE-2015-6563
+80/tcp open  http    Apache/2.4.7 (Ubuntu)
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb 14 20:17:09 2023 -- 1 IP address (1 host up) scanned in 143.86 seconds

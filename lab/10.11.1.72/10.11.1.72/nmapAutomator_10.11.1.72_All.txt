@@ -1,0 +1,272 @@
+
+[0;33mRunning all scans on [0m10.11.1.72
+[0m
+[0;32mHost is likely running Unknown OS!
+
+
+[0;32m---------------------Starting Port Scan-----------------------
+[0m
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: Connect Scan (0:00:01 elapsed - 0:00:08 remaining)   
+[#####>                                             ] 10% done   
+[2AIn progress: Connect Scan (0:00:02 elapsed - 0:00:11 remaining)   
+[#######>                                           ] 15% done   
+[2AIn progress: Connect Scan (0:00:03 elapsed - 0:00:06 remaining)   
+[################>                                  ] 32% done   
+[2AIn progress: Connect Scan (0:00:04 elapsed - 0:00:04 remaining)   
+[#########################>                         ] 51% done   
+[2AIn progress: Connect Scan (0:00:05 elapsed - 0:00:02 remaining)   
+[#################################>                 ] 67% done   
+[2AIn progress: Connect Scan (0:00:06 elapsed - 0:00:03 remaining)   
+[#################################>                 ] 67% done   
+[2AIn progress: Connect Scan (0:00:07 elapsed - 0:00:03 remaining)   
+[#################################>                 ] 67% done   
+[2AIn progress: Connect Scan (0:00:08 elapsed - 0:00:04 remaining)   
+[#################################>                 ] 67% done   
+[2AIn progress: Connect Scan (0:00:09 elapsed - 0:00:04 remaining)   
+[#################################>                 ] 67% done   
+[2AIn progress: Connect Scan (0:00:10 elapsed - 0:00:05 remaining)   
+[##################################>                ] 68% done   
+[2AIn progress: Connect Scan (0:00:11 elapsed - 0:00:05 remaining)   
+[##################################>                ] 68% done   
+[2AIn progress: Connect Scan (0:00:12 elapsed - 0:00:05 remaining)   
+[##################################>                ] 68% done   
+[2AIn progress: Connect Scan (0:00:13 elapsed - 0:00:06 remaining)   
+[##################################>                ] 69% done   
+[2AIn progress: Connect Scan (0:00:14 elapsed - 0:00:06 remaining)   
+[##################################>                ] 69% done   
+[2AIn progress: Connect Scan (0:00:16 elapsed - 0:00:07 remaining)   
+[##################################>                ] 69% done   
+[2AIn progress: Connect Scan (0:00:16 elapsed - 0:00:07 remaining)   
+[##################################>                ] 69% done   
+[2AIn progress: Connect Scan (0:00:18 elapsed - 0:00:08 remaining)   
+[###################################>               ] 70% done   
+[2AIn progress: Connect Scan (0:00:18 elapsed - 0:00:08 remaining)   
+[###################################>               ] 70% done   
+[2AIn progress: Connect Scan (0:00:20 elapsed - 0:00:08 remaining)   
+[###################################>               ] 70% done   
+[2AIn progress: Connect Scan (0:00:20 elapsed - 0:00:08 remaining)   
+[###################################>               ] 70% done   
+[2AIn progress: Connect Scan (0:00:22 elapsed - 0:00:09 remaining)   
+[###################################>               ] 71% done   
+[2AIn progress: Connect Scan (0:00:22 elapsed - 0:00:09 remaining)   
+[###################################>               ] 71% done   
+[2AIn progress: Connect Scan (0:00:24 elapsed - 0:00:03 remaining)   
+[###########################################>       ] 87% done   
+[2AIn progress: Connect Scan (0:00:24 elapsed - 0:00:03 remaining)   
+[###########################################>       ] 87% done   
+[2A[0K
+[0K
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+110/tcp open  pop3
+111/tcp open  rpcbind
+
+
+
+[0;32m---------------------Starting Script Scan-----------------------
+[0m
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: Service Scan (0:00:06 elapsed - 0:00:05 remaining)   
+[##############################>                    ] 60% done   
+[2AIn progress: Script Scan (0:00:08 elapsed - 0:00:00 remaining)   
+[#################################################> ] 98% done   
+[2AIn progress: Script Scan (0:00:10 elapsed - 0:00:00 remaining)   
+[#################################################> ] 98% done   
+[2AIn progress: Script Scan (0:00:12 elapsed - 0:00:00 remaining)   
+[#################################################> ] 98% done   
+[2AIn progress: Script Scan (0:00:14 elapsed - 0:00:00 remaining)   
+[#################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:16 elapsed - 0:00:00 remaining)   
+[#################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:18 elapsed - 0:00:00 remaining)   
+[#################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:20 elapsed - 0:00:00 remaining)   
+[#################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:22 elapsed - 0:00:00 remaining)   
+[#################################################> ] 99% done   
+[2AIn progress: Script Scan (0:00:24 elapsed - 0:00:00 remaining)   
+[##############################################>    ] 93% done   
+[2AIn progress: Script Scan (0:00:26 elapsed - 0:00:00 remaining)   
+[###############################################>   ] 95% done   
+[2AIn progress: Script Scan (0:00:28 elapsed - 0:00:00 remaining)   
+[###############################################>   ] 95% done   
+[2AIn progress: Script Scan (0:00:30 elapsed - 0:00:00 remaining)   
+[###############################################>   ] 95% done   
+[2AIn progress: Script Scan (0:00:32 elapsed - 0:00:00 remaining)   
+[###############################################>   ] 95% done   
+[2AIn progress: Script Scan (0:00:34 elapsed - 0:00:01 remaining)   
+[###############################################>   ] 95% done   
+[2AIn progress: Script Scan (0:00:36 elapsed - 0:00:01 remaining)   
+[###############################################>   ] 95% done   
+[2AIn progress: Script Scan (0:00:38 elapsed - 0:00:01 remaining)   
+[###############################################>   ] 95% done   
+[2AIn progress: Script Scan (0:00:40 elapsed - 0:00:00 remaining)   
+[################################################>  ] 97% done   
+[2AIn progress: Script Scan (0:00:42 elapsed - 0:00:00 remaining)   
+[################################################>  ] 97% done   
+[2AIn progress: Script Scan (0:00:44 elapsed - 0:00:00 remaining)   
+[################################################>  ] 97% done   
+[2AIn progress: Script Scan (0:00:46 elapsed - 0:00:01 remaining)   
+[################################################>  ] 97% done   
+[2AIn progress: Script Scan (0:00:48 elapsed - 0:00:01 remaining)   
+[################################################>  ] 97% done   
+[2AIn progress: Script Scan (0:00:50 elapsed - 0:00:01 remaining)   
+[################################################>  ] 97% done   
+[2AIn progress: Script Scan (0:00:52 elapsed - 0:00:01 remaining)   
+[################################################>  ] 97% done   
+[2AIn progress: Script Scan (0:00:54 elapsed - 0:00:01 remaining)   
+[################################################>  ] 97% done   
+[2A[0K
+[0K
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 5.8p1 Debian 7ubuntu1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 d32e100d4890ce9a33fb663fa0a69448 (DSA)
+|   2048 ef0a3b8e3f92a45ef0abe77d75f0de0e (RSA)
+|_  256 153a653b97ede0fc85bc4b53482261b1 (ECDSA)
+25/tcp  open  smtp    JAMES smtpd 2.3.2
+|_smtp-commands: beta Hello nmap.scanme.org (192.168.45.197 [192.168.45.197])
+80/tcp  open  http    Apache httpd 2.2.20 ((Ubuntu))
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache/2.2.20 (Ubuntu)
+110/tcp open  pop3    JAMES pop3d 2.3.2
+111/tcp open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100003  2,3,4       2049/tcp   nfs
+|   100003  2,3,4       2049/tcp6  nfs
+|   100003  2,3,4       2049/udp   nfs
+|   100003  2,3,4       2049/udp6  nfs
+|   100005  1,2,3      43047/tcp6  mountd
+|   100005  1,2,3      48117/udp   mountd
+|   100005  1,2,3      48943/udp6  mountd
+|   100005  1,2,3      51996/tcp   mountd
+|   100021  1,3,4      33400/tcp   nlockmgr
+|   100021  1,3,4      47237/udp6  nlockmgr
+|   100021  1,3,4      51409/tcp6  nlockmgr
+|   100021  1,3,4      51428/udp   nlockmgr
+|   100024  1          36843/tcp   status
+|   100024  1          43785/tcp6  status
+|   100024  1          53254/udp   status
+|   100024  1          53438/udp6  status
+|   100227  2,3         2049/tcp   nfs_acl
+|   100227  2,3         2049/tcp6  nfs_acl
+|   100227  2,3         2049/udp   nfs_acl
+|_  100227  2,3         2049/udp6  nfs_acl
+Service Info: Host: beta; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+
+
+
+[0;32m---------------------Starting Full Scan------------------------
+[0m
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: Connect Scan (0:00:03 elapsed - 0:00:00 remaining)   
+[#>                                                  ] 0% done   
+[2AIn progress: Connect Scan (0:00:06 elapsed - 0:05:25 remaining)   
+[#>                                                  ] 1% done   
+[2AIn progress: Connect Scan (0:00:09 elapsed - 0:04:50 remaining)   
+[#>                                                 ] 3% done   
+[2AIn progress: Connect Scan (0:00:15 elapsed - 0:02:56 remaining)   
+[###>                                               ] 7% done   
+[2AIn progress: Connect Scan (0:00:18 elapsed - 0:02:39 remaining)   
+[#####>                                             ] 10% done   
+[2AIn progress: Connect Scan (0:00:21 elapsed - 0:02:29 remaining)   
+[######>                                            ] 12% done   
+[2AIn progress: Connect Scan (0:00:24 elapsed - 0:02:20 remaining)   
+[##############>                                                                                      ] 14% done   
+[2AIn progress: Connect Scan (0:00:27 elapsed - 0:02:13 remaining)   
+[################>                                                                                    ] 16% done   
+[2AIn progress: Connect Scan (0:00:30 elapsed - 0:02:07 remaining)   
+[###################>                                                                                 ] 19% done   
+[2AIn progress: Connect Scan (0:00:33 elapsed - 0:02:02 remaining)   
+[#####################>                                                                               ] 21% done   
+[2AIn progress: Connect Scan (0:00:36 elapsed - 0:01:57 remaining)   
+[#######################>                                                                             ] 23% done   
+[2AIn progress: Connect Scan (0:00:39 elapsed - 0:01:53 remaining)   
+[#########################>                                                                           ] 25% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:01:48 remaining)   
+[###########################>                                                                         ] 27% done   
+[2AIn progress: Connect Scan (0:00:45 elapsed - 0:01:44 remaining)   
+[##############################>                                                                      ] 30% done   
+[2AIn progress: Connect Scan (0:00:48 elapsed - 0:01:41 remaining)   
+[################################>                                                                    ] 32% done   
+[2AIn progress: Connect Scan (0:00:51 elapsed - 0:01:37 remaining)   
+[##################################>                                                                  ] 34% done   
+[2AIn progress: Connect Scan (0:00:54 elapsed - 0:01:33 remaining)   
+[####################################>                                                                ] 36% done   
+[2AIn progress: Connect Scan (0:00:57 elapsed - 0:01:29 remaining)   
+[#######################################>                                                             ] 39% done   
+[2AIn progress: Connect Scan (0:01:00 elapsed - 0:01:26 remaining)   
+[#########################################>                                                           ] 41% done   
+[2AIn progress: Connect Scan (0:01:03 elapsed - 0:01:22 remaining)   
+[###########################################>                                                         ] 43% done   
+[2AIn progress: Connect Scan (0:01:06 elapsed - 0:01:18 remaining)   
+[#############################################>                                                       ] 45% done   
+[2AIn progress: Connect Scan (0:01:09 elapsed - 0:01:15 remaining)   
+[###############################################>                                                     ] 47% done   
+[2AIn progress: Connect Scan (0:01:12 elapsed - 0:01:12 remaining)   
+[##################################################>                                                  ] 50% done   
+[2AIn progress: Connect Scan (0:01:15 elapsed - 0:01:08 remaining)   
+[####################################################>                                                ] 52% done   
+[2AIn progress: Connect Scan (0:01:18 elapsed - 0:01:05 remaining)   
+[######################################################>                                              ] 54% done   
+[2AIn progress: Connect Scan (0:01:21 elapsed - 0:01:01 remaining)   
+[########################################################>                                            ] 56% done   
+[2AIn progress: Connect Scan (0:01:24 elapsed - 0:00:58 remaining)   
+[###########################################################>                                         ] 59% done   
+[2AIn progress: Connect Scan (0:01:27 elapsed - 0:00:55 remaining)   
+[#############################################################>                                       ] 61% done   
+[2AIn progress: Connect Scan (0:01:30 elapsed - 0:00:52 remaining)   
+[###############################################################>                                     ] 63% done   
+[2AIn progress: Connect Scan (0:01:33 elapsed - 0:00:48 remaining)   
+[#################################################################>                                   ] 65% done   
+[2AIn progress: Connect Scan (0:01:36 elapsed - 0:00:45 remaining)   
+[####################################################################>                                ] 68% done   
+[2AIn progress: Connect Scan (0:01:39 elapsed - 0:00:42 remaining)   
+[######################################################################>                              ] 70% done   
+[2AIn progress: Connect Scan (0:01:42 elapsed - 0:00:39 remaining)   
+[########################################################################>                            ] 72% done   
+[2AIn progress: Connect Scan (0:01:45 elapsed - 0:00:35 remaining)   
+[##########################################################################>                          ] 74% done   
+[2AIn progress: Connect Scan (0:01:48 elapsed - 0:00:32 remaining)   
+[#############################################################################>                       ] 77% done   
+[2AIn progress: Connect Scan (0:01:51 elapsed - 0:00:29 remaining)   
+[###############################################################################>                     ] 79% done   
+[2AIn progress: Connect Scan (0:01:54 elapsed - 0:00:26 remaining)   
+[#################################################################################>                   ] 81% done   
+[2AIn progress: Connect Scan (0:01:57 elapsed - 0:00:23 remaining)   
+[###################################################################################>                 ] 83% done   
+[2AIn progress: Connect Scan (0:02:00 elapsed - 0:00:19 remaining)   
+[######################################################################################>              ] 86% done   
+[2AIn progress: Connect Scan (0:02:03 elapsed - 0:00:16 remaining)   
+[########################################################################################>            ] 88% done   
+[2AIn progress: Connect Scan (0:02:06 elapsed - 0:00:13 remaining)   
+[##########################################################################################>          ] 90% done   
+[2AIn progress: Connect Scan (0:02:09 elapsed - 0:00:10 remaining)   
+[############################################################################################>        ] 92% done   
+[2AIn progress: Connect Scan (0:02:12 elapsed - 0:00:07 remaining)   
+[##############################################################################################>      ] 94% done   
+[2AIn progress: Connect Scan (0:02:15 elapsed - 0:00:04 remaining)   
+[#################################################################################################>   ] 97% done   
+[2A

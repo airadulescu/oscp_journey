@@ -1,0 +1,109 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-02-14 20:19 HKT
+Initiating Ping Scan at 20:19
+Scanning 10.11.1.72 [2 ports]
+Completed Ping Scan at 20:19, 0.22s elapsed (1 total hosts)
+Initiating System DNS resolution of 1 host. at 20:19
+Completed System DNS resolution of 1 host. at 20:19, 0.00s elapsed
+Initiating Connect Scan at 20:19
+Scanning 10.11.1.72 [65535 ports]
+Discovered open port 111/tcp on 10.11.1.72
+Discovered open port 80/tcp on 10.11.1.72
+Discovered open port 22/tcp on 10.11.1.72
+Discovered open port 110/tcp on 10.11.1.72
+Discovered open port 25/tcp on 10.11.1.72
+Stats: 0:00:03 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 0.58% done
+Stats: 0:00:06 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 1.82% done; ETC: 20:25 (0:05:25 remaining)
+Stats: 0:00:09 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 3.01% done; ETC: 20:24 (0:04:50 remaining)
+Stats: 0:00:12 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 5.43% done; ETC: 20:23 (0:03:29 remaining)
+Stats: 0:00:15 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 7.85% done; ETC: 20:23 (0:02:56 remaining)
+Stats: 0:00:18 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 10.20% done; ETC: 20:22 (0:02:39 remaining)
+Stats: 0:00:21 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 12.37% done; ETC: 20:22 (0:02:29 remaining)
+Stats: 0:00:24 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 14.60% done; ETC: 20:22 (0:02:20 remaining)
+Stats: 0:00:27 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 16.86% done; ETC: 20:22 (0:02:13 remaining)
+Stats: 0:00:30 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 19.11% done; ETC: 20:22 (0:02:07 remaining)
+Stats: 0:00:33 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 21.28% done; ETC: 20:22 (0:02:02 remaining)
+Stats: 0:00:36 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 23.48% done; ETC: 20:22 (0:01:57 remaining)
+Stats: 0:00:39 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 25.73% done; ETC: 20:22 (0:01:53 remaining)
+Stats: 0:00:42 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 27.97% done; ETC: 20:22 (0:01:48 remaining)
+Discovered open port 51996/tcp on 10.11.1.72
+Stats: 0:00:45 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 30.11% done; ETC: 20:22 (0:01:44 remaining)
+Stats: 0:00:48 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 32.29% done; ETC: 20:22 (0:01:41 remaining)
+Discovered open port 119/tcp on 10.11.1.72
+Discovered open port 49558/tcp on 10.11.1.72
+Stats: 0:00:51 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 34.51% done; ETC: 20:22 (0:01:37 remaining)
+Stats: 0:00:54 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 36.75% done; ETC: 20:22 (0:01:33 remaining)
+Stats: 0:00:57 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 39.00% done; ETC: 20:22 (0:01:29 remaining)
+Stats: 0:01:00 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 41.20% done; ETC: 20:22 (0:01:26 remaining)
+Stats: 0:01:03 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 43.45% done; ETC: 20:22 (0:01:22 remaining)
+Discovered open port 2049/tcp on 10.11.1.72
+Stats: 0:01:06 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 45.71% done; ETC: 20:22 (0:01:18 remaining)
+Stats: 0:01:09 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 47.97% done; ETC: 20:22 (0:01:15 remaining)
+Stats: 0:01:12 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 50.11% done; ETC: 20:22 (0:01:12 remaining)
+Stats: 0:01:15 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 52.37% done; ETC: 20:22 (0:01:08 remaining)
+Stats: 0:01:18 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 54.62% done; ETC: 20:22 (0:01:05 remaining)
+Stats: 0:01:21 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 56.87% done; ETC: 20:22 (0:01:01 remaining)
+Stats: 0:01:24 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 59.02% done; ETC: 20:22 (0:00:58 remaining)
+Stats: 0:01:27 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 61.27% done; ETC: 20:22 (0:00:55 remaining)
+Stats: 0:01:30 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 63.53% done; ETC: 20:22 (0:00:52 remaining)
+Stats: 0:01:33 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 65.79% done; ETC: 20:22 (0:00:48 remaining)
+Stats: 0:01:36 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 68.05% done; ETC: 20:22 (0:00:45 remaining)
+Stats: 0:01:39 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 70.31% done; ETC: 20:22 (0:00:42 remaining)
+Stats: 0:01:42 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 72.56% done; ETC: 20:22 (0:00:39 remaining)
+Stats: 0:01:45 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 74.79% done; ETC: 20:22 (0:00:35 remaining)
+Stats: 0:01:48 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 77.04% done; ETC: 20:22 (0:00:32 remaining)
+Stats: 0:01:51 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 79.31% done; ETC: 20:22 (0:00:29 remaining)
+Stats: 0:01:54 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 81.56% done; ETC: 20:22 (0:00:26 remaining)
+Stats: 0:01:57 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 83.81% done; ETC: 20:22 (0:00:23 remaining)
+Discovered open port 33400/tcp on 10.11.1.72
+Discovered open port 35949/tcp on 10.11.1.72
+Stats: 0:02:00 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 86.06% done; ETC: 20:22 (0:00:19 remaining)
+Stats: 0:02:03 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 88.32% done; ETC: 20:22 (0:00:16 remaining)
+Stats: 0:02:06 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 90.58% done; ETC: 20:22 (0:00:13 remaining)
+Stats: 0:02:09 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 92.84% done; ETC: 20:22 (0:00:10 remaining)
+Stats: 0:02:12 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 94.99% done; ETC: 20:22 (0:00:07 remaining)
+Stats: 0:02:15 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 97.16% done; ETC: 20:22 (0:00:04 remaining)
